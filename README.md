@@ -68,7 +68,7 @@ $> baudot -l
 
 Simple test, will output in shifted letters for 
 MURRAY code has no small ones defined. Default is 
-#7 "Murray" also known as CCITT#2
+Number 7 "Murray" also known as CCITT#2
 ```
 $> echo "hello THIS is a test"|baudot | baudot -d 
 Table 7: Murray (CCITT#2) encoding Bitmode -1
