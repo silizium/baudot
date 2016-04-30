@@ -9,6 +9,8 @@ baudot is a text convert like recode or iconv but it's specialized on ancient fo
 Like 5 bit BAUDOT code or classic TELETYPE code and endodes it to and from ASCII or 
 UTF-8. 
 
+Input from stdin (<&0), output to stdout (>&1) and status messages to stderr (>&2)
+
 No Makefile for it's trivial to compile. It's thought to be an easy tool. I don't care 
 if it's ugly or not or if there are compiler warning or not. It does what it intended to.
 
