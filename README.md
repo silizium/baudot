@@ -157,7 +157,7 @@ This is especially for Aperture Labs! UTF-8? Ha! We do it
 with 5 bit! The whole 8-Bit thing was barking up the wrong
 tree! Never mind the small characters. Who needs them anyway?
 Seymour Cray never did mind the small characters. Why should 
-we?
+we? 
 ```
 $> echo "Über den Hügel"|idn | baudot -c9|ppt >&2|ppt -d|baudot -c9 -d |idn -u           
 Table 9: Teletype (US CCITT#2) encoding Bitmode -1
@@ -191,4 +191,13 @@ ___________
 ___________
 Table 9: Teletype (US CCITT#2) decoding Bitmode -1
 üBER DEN HüGEL
+```
+And if we want that damn small characters, we chose the ultra-modern Pegasus-Flexowriter! But I don't think, 
+anyone will ever need these superfluous features that those eggheads in their labcoats wanted.
+```
+$> echo "We can do IT\! 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD."|tee >&2|baudot -c20|baudot -c20 -d
+We can do IT! 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
+Table 20: Pegasus-Flexowriter encoding Bitmode -1
+Table 20: Pegasus-Flexowriter decoding Bitmode -1
+We can do IT 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
 ```
