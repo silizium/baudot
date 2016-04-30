@@ -153,7 +153,9 @@ amusing to put UTF8 on ancient TELETYPE lines.
 
 This is especially for Aperture Labs! UTF-8? Ha! We do it
 with 5 bit! The whole 8-Bit thing was barking up the wrong
-tree! Never mind the small characters. Whe needs them anyway?
+tree! Never mind the small characters. Who needs them anyway?
+Seymour Cray never did mind the small characters. Why should 
+we?
 ```
 $> echo "Über den Hügel"|idn | baudot -c9|ppt >&2|ppt -d|baudot -c9 -d |idn -u           
 Table 9: Teletype (US CCITT#2) encoding Bitmode -1
