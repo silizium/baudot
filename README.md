@@ -195,9 +195,15 @@ Table 9: Teletype (US CCITT#2) decoding Bitmode -1
 And if we want that damn small characters, we chose the ultra-modern Pegasus-Flexowriter! But I don't think, 
 anyone will ever need these superfluous features that those eggheads in their labcoats wanted.
 ```
-$> echo "We can do IT\! 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD."|tee >&2|baudot -c20|baudot -c20 -d
-We can do IT! 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
+$> echo "We can do IT\!\n4¼ 3½ 2¼.\Well, okay, we don't have the exclamation mark.\nBut everything we say is important anyway, or not?\nJust use the NORMAL LETTERS, IF YOU NEED TO BE LOUD."|tee >&2|baudot -c20|baudot -c20 -d
+We can do IT!
+4¼ 3½ 2¼.\Well, okay, we don't have the exclamation mark.
+But everything we say is important anyway, or not?
+Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
 Table 20: Pegasus-Flexowriter encoding Bitmode -1
 Table 20: Pegasus-Flexowriter decoding Bitmode -1
-We can do IT 4¼ 3½ 2¼. Well, okay, we don't have the exclamation mark. But everything we say is important anyway, or not? Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
+We can do IT
+4¼ 3½ 2¼.Well, okay, we don't have the exclamation mark.
+But everything we say is important anyway, or not?
+Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
 ```
