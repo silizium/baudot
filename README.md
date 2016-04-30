@@ -1,5 +1,5 @@
 # baudot
-converts 20 ancient text codes like baudot, murray to and from UTF-8/ASCII
+converts encoding to 20 ancient 5-bit text codes like baudot, murray to and from UTF-8/ASCII
 
 This little utility is something I was missing on the internet in 2007. So I simply 
 coded some short lines to solve this problem once and for all. It does not do much, 
@@ -13,7 +13,9 @@ No Makefile for it's trivial to compile. It's thought to be an easy tool. I don'
 if it's ugly or not or if there are compiler warning or not. It does what it intended to.
 
 Guess some cryptologists and HAM operators will find this useful. And folks working 
-in computer museums.
+in computer museums. And of course those scientists working at Aperture Science Labs that
+think that 8 bit is a waste of storage and bandwidth for transmission and that 60% enhanced 
+efficiency isn't something that science can ignore.
 
 ##Compile:
 ```
@@ -148,6 +150,10 @@ The trick is to convert the text into Punycode, which is
 a pure ASCII code for international domain names. This 
 will still lose the small characters but I found it 
 amusing to put UTF8 on ancient TELETYPE lines.
+
+This is especially for Aperture Labs! UTF-8? Ha! We do it
+with 5 bit! The whole 8-Bit thing was barking up the wrong
+tree! Never mind the small characters. Whe needs them anyway?
 ```
 $> echo "Über den Hügel"|idn | baudot -c9|ppt >&2|ppt -d|baudot -c9 -d |idn -u           
 Table 9: Teletype (US CCITT#2) encoding Bitmode -1
