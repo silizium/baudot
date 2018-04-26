@@ -163,6 +163,10 @@ tape codetable[]={
 };
 
 static wchar_t letter[][32] = {
+	// Lorenz:
+	// --Name   => "/T3O9HNM4LRGIPCVEZDBSYFXAWJ5UQK8",
+	// Letter => "iTrO_HNMnLRGIPCVEZDBSYFXAWJ<UQK>",
+	// Figure => "i5r9_h,.n)4g80:=3+d?'6f/-2j<71(>"
 	{	//0 Letters/Standard
         '\0',   'E',    '\n',   'A',    ' ',    'S',    'I',    'U',
         '\r',   'D',    'R',    'J',    'N',    'F',    'C',    'K',

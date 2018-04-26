@@ -1,0 +1,3665 @@
+                                   100+ CODES
+
+A collection of papertape, punched card, magnetic tape and other codes.
+
+  Index by code type
+
+     * 5-LEVEL PAPERTAPE, 2/3
+     * 5-LEVEL PAPERTAPE, 3/2
+     * 6-LEVEL TTS PAPERTAPE, ENGLISH
+     * 6-LEVEL TTS PAPERTAPE, USA
+     * 7-LEVEL PAPERTAPE, BIT 7 ODD PARITY
+     * 7-LEVEL PAPERTAPE, BIT 5 ODD PARITY
+     * 7-LEVEL PAPERTAPE, 3 BITS
+     * 8-LEVEL PAPERTAPE, 4 BITS
+     * 8-LEVEL PAPERTAPE, BIT 5 EVEN PARITY
+     * 8-LEVEL PAPERTAPE, BIT 5 ODD PARITY
+     * PUNCH TAG
+     * 80-COLUMN CARD, NON-HOLLERITH
+     * 80-COLUMN CARD, HOLLERITH, 0 IS DIGIT OR ZONE
+     * 80-COLUMN CARD, HOLLERITH, 0 IS ZONE
+     * 90-COLUMN CARD
+     * 96-COLUMN CARD
+     * OPTICAL
+     * TAPE
+     * 6-BIT INTERNAL
+     * 7-BIT INTERNAL
+     * EBCDIC
+     * STANDARD
+     * SOVJET
+
+  Index by code name
+
+     * ALCOR
+     * ALWAC III FLEXOWRITER
+     * ASCII
+     * ASCII-1963
+     * AT&T
+     * BAUDOT
+     * BCD
+     * BCD-A
+     * BCD-CDC
+     * BCD-H
+     * BCD-40
+     * BCDIC
+     * BCL
+     * BCL INTERNAL
+     * BCL TAPE
+     * BRITISH TAB OLD HOLLERITH
+     * BENDIX G20
+     * BIZMAC
+     * BRITISH TAB
+     * BSI PROPOSAL
+     * BULL
+     * BULL INTERNAL
+     * BULL SCIENTIFIC INTERNAL
+     * BULL T8 INTERNAL
+     * BULL T8 SCIENTIFIC
+     * CCITT#01
+     * CCITT#02
+     * CCITT#03
+     * CCITT#05
+     * CDC DISPLAY
+     * CDC DISPLAY SCIENTIFIC
+     * CMC7 MICR
+     * CORRESPONDENCE
+     * DECIMAL ASCII
+     * DENNISON
+     * DENNISON 2 OUT OF 5
+     * EBCD
+     * EBCD-CDC
+     * EBCDIC CARD
+     * EBCDIC STANDARD
+     * EEC SYSTEM 4
+     * EIA
+     * ELLIOT 405
+     * EMI
+     * EMI M/C TOOL
+     * EMI 1100
+     * EMI 2400
+     * EMIDEC
+     * ENGLISH ELECTRIC DEUCE
+     * FIELDATA
+     * FLEXOWRITER 5 LEVEL
+     * FLEXOWRITER 7 LEVEL
+     * GENERAL ELECTRIC
+     * GENERAL ELECTRIC INTERNAL
+     * HIDAC 101
+     * GOST 10859-CARD
+     * GOST 10859-LATIN
+     * GOST 10859-6
+     * GOST 10859-7
+     * GOST 13052
+     * HOLLERITH
+     * HONEYWELL
+     * IBM
+     * IBM WORLD TRADE
+     * IBM 7030
+     * IBMEL
+     * ICT NEW HOLLERITH
+     * ICT 1900
+     * IPC
+     * ISO-6
+     * ISO-6 ALTERNATIVE
+     * ISO-8
+     * KDF ALGOL
+     * KDF 9
+     * KIMBALL
+     * LEO
+     * LGP-30 FLEXOWRITER
+     * MC FLEXOWRITER
+     * MDS 4430
+     * METRO-VICK 950
+     * MOBIDIC
+     * MODIFIED EBCDIC
+     * MOORE 3 OUT OF 7
+     * MURRAY
+     * NCR
+     * NCR 304
+     * PDP-1
+     * PEGASUS-FLEXOWRITER
+     * PEGASUS-MERCURY
+     * PHILCO 2000
+     * POWERS 29-CHARACTER
+     * POWERS 32-CHARACTER
+     * PTTC/BCD
+     * PTTC/EBCD
+     * PTTC/6
+     * PTTC/8
+     * RCA 501
+     * REMINGTON RAND
+     * RPC-4000
+     * SOROBAN
+     * STANTEC ZEBRA
+     * STRETCH
+     * TELETYPE
+     * TELEX 4 OUT OF 8
+     * TTS ENGLISH
+     * TTS USA
+     * UNIVAC
+     * USASCII-8
+     * USS-80
+     * 1103A TYPEWRITER
+     * 2 OUT OF 5
+     * 4 OUT OF 8
+     * 96-COLUMN CARD
+
+   control code meaning
+
+   overprint symbols used
+
+   CM_homepage
+
+     ----------------------------------------------------------------------
+
+The Codes
+
+   CODES, 5-LEVEL PAPERTAPE, 2/3 LEO
+
+    +------------------------+
+    |      00   10   20   30 | DEL  DELete
+    |   +--------------------+ EOB  End Of Block
+    | 0 | NUL        0    8  | EON  End Of Number
+    | 1 |  -         1    9  | NUL  NULl
+    | 2 | EON        2    10 |
+    | 3 |            3    11 |
+    | 4 |            4       |
+    | 5 |            5       |
+    | 6 | EOB        6       |
+    | 7 |            7   DEL |
+    +---+--------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ENGLISH ELECTRIC DEUCE
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | DEL  DELete
+    +--------------------+   +--------------------+ EON  End Of Number
+    |  SP   H    O    U  | 0 |  0    8    16      | FS   Figure Shift
+    |  A    I    P    V  | 1 |  1    9    17   +  | LS   Letter Shift
+    |  B    .    Q    W  | 2 |  2    10   18   -  | NL   New Line
+    |  C    J    R    X  | 3 |  3    11   19   .  | SP   SPace
+    |  D    K    FS   Y  | 4 |  4    12   FS  EON |
+    |  E    L    LS   Z  | 5 |  5    13   LS   SP |
+    |  F    M    S    NL | 6 |  6    14        NL |
+    |  G    N    T   DEL | 7 |  7    15       DEL |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CCITT#01, BAUDOT
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | ER   ERase
+    +--------------------+   +--------------------+ FS   Figure shift Space
+    | NUL   FS   LS   ER | 0 | NUL   FS   LS   ER | LS   Letter shift Space
+    |  Y    B    S    R  | 1 |  3    8    7/   -  | NUL  NULl
+    |  E    G    X    M  | 2 |  2    7    9/   )  |
+    |  I    F    W    N  | 3 |  3/   5/   ?    L  |
+                                               -
+    |  A    J    -    K  | 4 |  1    6    .    (  |
+    |  U    C    T    Q  | 5 |  4    9    2/   /  |
+    |  /    H    Z    L  | 6 |  1/   4/   :    =  |
+    |  O    D    V    P  | 7 |  5    0    '    +  |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CCITT#02, MURRAY
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | (1)  National use
+    +--------------------+   +--------------------+ (2)  Answer back
+    | NUL   LF   E    A  | 0 | NUL   LF   3    -  |
+    |  T    L    Z    W  | 1 |  5    )    "    2  | BEL  BELl
+    |  CR   R    D    J  | 2 |  CR   4   (2)  BEL | CR   Carriage Return
+    |  O    G    B    FS | 3 |  9   (1)   ?    FS | FS   Figure Shift
+    |  SP   I    S    U  | 4 |  SP   8    '    7  | LF   Line Feed
+    |  H    P    Y    Q  | 5 | (1)   0    6    1  | LS   Letter Shift
+    |  N    C    F    K  | 6 |  ,    :   (1)   (  | NUL  NULl
+    |  M    V    X    LS | 7 |  .    ;    /    LS | SP   SPace
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ALCOR
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | (1)  lower ten
+    +--------------------+   +--------------------+ (2)  iron cross
+    | NUL   LF   E    A  | 0 | NUL   LF   3    -  |
+    |  T    L    Z    W  | 1 |  5    )    +    2  | CR   Carriage Return
+    |  CR   R    D    J  | 2 |  CR   4   (2)   ;  | FS   Figure Shift
+    |  O    G    B    FS | 3 |  9    ]    *    FS | LF   Line Feed
+    |  SP   I    S    U  | 4 |  SP   8    '    7  | LS   Letter Shift
+    |  H    P    Y    Q  | 5 | (1)   0    6    1  | NUL  NULl
+    |  N    C    F    K  | 6 |  ,    :    [    (  | SP   SPace
+    |  M    V    X    LS | 7 |  .    =    /    LS |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   TELETYPE
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | BEL  BELl
+    +--------------------+   +--------------------+ CR   Carriage Return
+    | NUL   LF   E    A  | 0 | NUL   LF   3    -  | FS   Figure Shift
+    |  T    L    Z    W  | 1 |  5    )    "    2  | LF   Line Feed
+    |  CR   R    D    J  | 2 |  CR   4    $   BEL | LS   Letter Shift
+    |  O    G    B    FS | 3 |  9    &    ?    FS | NUL  NULl
+    |  SP   I    S    U  | 4 |  SP   8    '    7  | SP   SPace
+    |  H    P    Y    Q  | 5 |  A0    0    6   1  |
+    |  N    C    F    K  | 6 |  ,    :    !    (  |
+    |  M    V    X    LS | 7 |  .    ;    /    LS |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   AT&T
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | BEL  BELl
+    +--------------------+   +--------------------+ CR   Carriage Return
+    | NUL   LF   E    A  | 0 | NUL   LF   3    -  | FS   Figure Shift
+    |  T    L    Z    W  | 1 |  5   3/4   "    2  | LF   Line Feed
+    |  CR   R    D    J  | 2 |  CR   4    $    ,  | LS   Letter Shift
+    |  O    G    B    FS | 3 |  9    &   5/8   FS | NUL  NULl
+    |  SP   I    S    U  | 4 |  SP   8   BEL   7  | SP   SPace
+    |  H    P    Y    Q  | 5 |  A0   0    6    1  |
+    |  N    C    F    K  | 6 | 7/8  1/8  1/4  1/2 |
+    |  M    V    X    LS | 7 |  .   3/8   /    LS |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   FLEXOWRITER 5 LEVEL
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | CR   Carriage Return
+    +--------------------+   +--------------------+ ER   ERror
+    | NUL   LF   E    A  | 0 |  ST   LF   3    -  | FS   Figure Shift
+    |  T    L    Z    W  | 1 |  5    )   PO1   2  | LF   Line Feed
+    |  CR   R    D    J  | 2 |  CR   4    TB   ER | LS   Letter Shift
+    |  O    G    B    FS | 3 |  9    &    $    FS | NP   No Print
+    |  SP   I    S    U  | 4 |  SP   8    /    7  | NUL  NULl
+    |  H    P    Y    Q  | 5 |  (    0    6    1  | PF   Punch ofF
+    |  N    C    F    K  | 6 |  ,    NP   ,    PR | POA0  Punch On A0n
+    |  M    V    X    LS | 7 |  .    PF  PO2   LS | PR   PRint
+    +--------------------+   +--------------------+ SP   SPace
+    |      letters                  figures       | ST   STop
+    +---------------------------------------------+ TB   TaB
+
+   index
+
+     ----------------------------------------------------------------------
+
+   METRO-VICK 950
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | CR   Carriage Return
+    +--------------------+   +--------------------+ DEL  DELete
+    |  LS   LF   E    A  | 0 |  LS   LF   0    8  | FS   Figure Shift
+    |  T    L    Z    W  | 1 |  ?    )    1    9  | LF   Line Feed
+    |  CR   R    D    J  | 2 |  CR   *    2       | LS   Letter Shift
+    |  O    G    B    FS | 3 |  +    &    3    FS | SP   SPace
+    |  SP   I    S    U  | 4 |  SP   %    4    !  |
+    |  H    P    Y    Q  | 5 |  L    -    5    /  |
+                                -
+    |  N    C    F    K  | 6 |  ,         6    (  |
+    |  M    V    X   DEL | 7 |  .    =    7   DEL |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ELLIOT 405
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | CR   Carriage Return
+    +--------------------+   +--------------------+ DEL  DELete
+    | NUL   H    P    X  | 0 | NUL   8    0       | FS   Figure Shift
+    |  A    I    Q    Y  | 1 |  1    !    (    9  | LF   Line Feed
+    |  B    J    R    Z  | 2 |  2    ,    )    L  | LS   Letter Shift
+                                               -
+    |  C    K    S    FS | 3 |  *    +    3    FS | NUL  NULl
+    |  D    L    T    SP | 4 |  4    :    ?    SP | SP   SPace
+    |  E    M    U    CR | 5 |  $    -    5    CR |
+    |  F    N    V    LF | 6 |  =    .    6    LF |
+    |  G    O    W   DEL | 7 |  7    %    /    LS |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EMI 2400
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | (1)  multiply
+    +--------------------+   +--------------------+
+    | NUL   H    P    X  | 0 |  LS   8    0   1/4 | DEL  DELete
+    |  A    I    Q    Y  | 1 |  1    L    >    9  | FS   Figure Shift
+                                     -    -
+    |  B    J    R    Z  | 2 |  2    +    (    10 | LS   Letter Shift
+    |  C    K    S    &  | 3 |  )    11   3   3/4 | NL   New Line
+    |  D    L    T    SP | 4 |  4    /   1/3   SP | NUL  NULl
+    |  E    M    U    NL | 5 | 1/2        5    NL | SP   SPace
+    |  F    N    V    '  | 6 |  %         6   (1) |
+    |  G    O    W    FS | 7 |  7   NUL   *   DEL |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BSI PROPOSAL
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | CR   Carriage Return
+    +--------------------+   +--------------------+ DEL  DELete
+    | NUL   H    P    X  | 0 | NUL   8    0       | FS   Figure Shift
+    |  A    I    Q    Y  | 1 |  1              9  | LF   Line Feed
+    |  B    J    R    Z  | 2 |  2    +   WRU   10 | LS   Letter Shift
+    |  C    K    S    FS | 3 |       11   3    FS | NUL  NULl
+    |  D    L    T    SP | 4 |  4              SP | SP   SPace
+    |  E    M    U    CR | 5 |       -    5    CR | WRU  Who aRe yoU
+    |  F    N    V    LF | 6 |       .    6    LF |
+    |  G    O    W   DEL | 7 |  7              LS |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 5-LEVEL PAPERTAPE, 3/2
+
+   STANTEC ZEBRA
+
+    +------------------------+
+    |      00   10   20   30 | Non-existent letters:
+    |   +--------------------+ F,G,H,J,M,O,S,W
+    | 0 |  0    8    B    A  |
+    | 1 |  1    9    C    X  |
+    | 2 |  2    K    D    +  |
+    | 3 |  3    Q    E    -  |
+    | 4 |  4    .    T    Y  |
+    | 5 |  5    L    U    Z  |
+    | 6 |  6    R    V    P  |
+    | 7 |  7    I    N    A0 |
+    +---+--------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EMI M/C TOOL
+
+    +------------------------+
+    |      00   10   20   30 | DEL  DELete
+    |   +--------------------+ NL   New Line
+    | 0 |  0    8    ST   J  | SP   SPace
+    | 1 |  1    9    B    K  | ST   STop
+    | 2 |  2    S    C    L  |
+    | 3 |  3    T    D    M  | Non-existent letters:
+    | 4 |  4    U    E    N  | I,O,P,Q,W,X,Y,Z
+    | 5 |  5    V    F    A  |
+    | 6 |  6    SP   G    R  |
+    | 7 |  7    NL   H   DEL |
+    +---+--------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EMI 1100
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | (1)  multiply
+    +--------------------+   +--------------------+
+    |  FS   X    A    J  | 0 |  FS  3/4   0    8  | DEL  DELete
+    |  P    Y    B    K  | 1 |  %    '    1    9  | FS   Figure Shift
+    |  Q    Z    C    L  | 2 |  L    (    2    10 | LS   Letter Shift
+                                -
+    |  R    D    E    N  | 3 |  -    )    3    11 | NL   New Line
+    |  S    M    F    O  | 4 |  *    +    4    12 | SP   SPace
+    |  T    U    G    NL | 5 |  /   (1)   5    NL |
+    |  V    &    H    LS | 6 |  .   1/2   6    LS |
+    |  W    SP   I   DEL | 7 | 1/4   SP   7   DEL |
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PEGASUS-MERCURY
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | (1)  upsilon
+    +--------------------+   +--------------------+ (2)  multiply
+    |  FS   H    P    X  | 0 |  FS   8    0   (2) | (3)  eta
+    |  A    I    Q    Y  | 1 |  1    =    >    9  |
+                                     /
+    |  B    J    R    Z  | 2 |  2    =    >    +  | CR   Carriage Return
+                                          _
+    |  C    K    S    LS | 3 |  *    -    3    LS | DEL  DELete
+    |  D    L    T    .  | 4 |  4   (1)   >    .  | FS   Figure Shift
+                                          -
+    |  E    M    U    ?  | 5 |  (    LF   5   (3) | LF   Line Feed
+    |  F    N    V    L  | 6 |  )    SP   6    CR | LS   Letter Shift
+                      -
+    |  G    O    W   DEL | 7 |  7    ,    /   DEL | SP   SPace
+    +--------------------+   +--------------------+
+    |      letters                  figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PEGASUS-FLEXOWRITER
+
+    +---------------------------------------------+
+    |  00   10   20   30        00   10   20   30 | BK   BlacK
+    +--------------------+   +--------------------+ BS   Back Space
+    |  FS   h    p    x  | 0 |  FS   8    0    ST | CR   Carriage Return
+    |  a    i    q    y  | 1 |  1    +    PN   9  | DEL  DELete
+    |  b    j    r    z  | 2 |  2    -    PF   10 | FS   Figure Shift
+    |  c    k    s    LS | 3 |  SW   11   3    LS | HT   Horizontal Tab
+    |  d    l    t    SP | 4 |  4    HT   BK   SP | LC   Lower Case
+    |  e    m    u    UC | 5 |  PR   NL   5    UC | LS   Letter Shift
+    |  f    n    v    LC | 6 |  NP   .    6    LC | NL   New Line
+    |  g    o    w   DEL | 7 |  7         BS  DEL | NP   No Print
+    +--------------------+   +--------------------+ PF   Punch ofF
+    |      letters    lower case    figures       | PN   Punch oN
+    +---------------------------------------------+ PR   PRint
+    |  00   10   20   30        00   10   20   30 | RD   ReD
+    +--------------------+   +--------------------+ SP   SPace
+    |  FS   H    P    X  | 0 |  FS   >    L    ST | ST   STop
+                                          -
+    |  A    I    Q    Y  | 1 | 1/4   '    PN   %  | SW
+    |  B    J    R    Z  | 2 | 1/2   CR   PF   =  | UC   Upper Case
+    |  C    K    S    LS | 3 |  SW   :   3/4   LS |
+    |  D    L    T    SP | 4 |  /    HT   RD   SP |
+    |  E    M    U    UC | 5 |  PR   NL   &    UC |
+    |  F    N    V    LC | 6 |  NP   ,    ?    LC |
+    |  G    O    W   DEL | 7 |  <         BS  DEL |
+    +--------------------+   +--------------------+
+    |      letters    upper case    figures       |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 6-LEVEL TTS PAPERTAPE
+
+   TTS ENGLISH
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  ff ligature
+    +--------------------+    +--------------------+ (2)  fi ligature
+    | NUL   e    TS   ?  | 00 | NUL   E    TS   3  | (3)  fl ligature
+    |  t    z   (1)   )  | 01 |  T    Z    5    (  | (4)  hyphen
+    |  CR   d    '   (4) | 02 |  CR   D    "   (8) | (5)  ae ligature
+    |  o    b   (2)   UR | 03 |  O    B    9    UR | (6)  ffi ligature
+    |  SP   s    AT  EMS | 04 |  SP   S    AT  EMS | (7)  ffl ligature
+    |  h    y   EML  (5) | 05 |  H    Y   EML   6  | (8)  oe ligature
+    |  n    f    ,    QL | 06 |  N    F    ,    QL |
+    |  m    x    .   (6) | 07 |  M    X    .    1  | AT   Add Thin
+    |  LF   a    PF   $  | 10 |  LF   A    PF   !  | BEL  BELl
+    |  l    w    &   (7) | 11 |  L    W    &    2  | CR   Carriage Return
+    |  r    j    *   BEL | 12 |  R    J    4   BEL | DEL  DELete
+    |  g    UC   ;    LR | 13 |  G    UC   :    LR | EML  EM Leader
+    |  i    u    -    L  | 14 |  I    U    8    7  | EMS  EM Space
+                      -
+    |  p    q   (3)  ENL | 15 |  P    Q    0   ENL | ENL  EN Leader
+    |  c    k   ENS   QR | 16 |  C    K   ENS   QR | ENS  EN Space
+    |  v    LC   QC  DEL | 17 |  V    LC   QC  DEL | LC   Lower Case
+    +--------------------+    +--------------------+ LF   Line Feed
+    |     lower case   lower rail   upper case     | LR   Lower Rail
+    +----------------------------------------------+ NUL  NULl
+    |  00   20   40   60         00   20   40   60 | PF   Paper Feed
+    +--------------------+    +--------------------+ QC   Quad Center
+    | NUL   e'   TS   D" | 00 | NUL   E'   TS   A" | QL   Quad Left
+    |  t'   z'   V"   I" | 01 |  T'   Z'   L"   J" | QR   Quad Right
+    |  CR   d'   '   (4) | 02 |  CR   D'   "   (8) | SP   SPace
+    |  o'   b'   G"   UR | 03 |  O'   B'   F"   UR | TS   Thin Space
+    |  SP   s'   AT  EMS | 04 |  SP   S'   AT  EMS | UC   Upper Case
+    |  h'   y'   K"  (5) | 05 |  H'   Y'   K"   P" | UR   Upper Rail
+    |  n'   f'   ,    QL | 06 |  N'   F'   ,    QL |
+    |  m'   x'   .    W" | 07 |  M'   R"   .    E" | letters marked ' are
+    |  LF   a'   PF   Y" | 10 |  LF   A'   PF   Q" | italics
+    |  l'   w'   M"  (7) | 11 |  L'   W'   M"   T" | letters marked " are
+    |  r'   j'   U"  BEL | 12 |  R'   J'   C"  BEL | small upper case
+    |  g'   UC   ;    LR | 13 |  G'   UC   H"   LR |
+    |  i'   u'   -    L  | 14 |  I'   U'   B"   S" | not present:
+                      -
+    |  p'   q'   N"   O" | 15 |  P'   Q'   Z"   O" | X' and X"
+    |  c'   k'  ENS   QR | 16 |  C'   K'  ENS   QR |
+    |  v'   LC   QC  DEL | 17 |  V'   LC   QC  DEL |
+    +--------------------+    +--------------------+
+    |     lower case   upper rail   upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 6-LEVEL TTS PAPERTAPE
+
+   TTS USA
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  hyphen
+    +--------------------+    +--------------------+ (2)  ff ligature
+    | NUL   CR   t    o  | 00 | NUL   CR   T    O  | (3)  ffl ligature
+    |  TS   '   (2)  (6) | 01 |  TS   "    5    9  | (4)  ae ligature
+    |  e    d    z    b  | 02 |  E    D    Z    B  | (5)  fl ligature
+    |  ?   (1)   )    UR | 03 |  3   (8)   (    UR | (6)  fi ligature
+    |  LF   r    l    g  | 04 |  LF   R    L    G  | (7)  ffi ligature
+    |  PF   *    &    ;  | 05 |  PF   4    &    :  | (8)  oe ligature
+    |  a    j    w    UC | 06 |  A    J    W    UC |
+    |  $   BEL  (3)   LR | 07 |  !   BEL   2    LR | AT   Add Thin
+    |  SP   n    h    m  | 10 |  SP   N    H    M  | BEL  BELl
+    |  AT   ,   EML   .  | 11 |  AT   ,   EML   .  | CR   Carriage Return
+    |  s    f    y    x  | 12 |  S    F    Y    X  | DEL  DELete
+    | EMS   QL  (4)  (7) | 13 | EMS   QL   6    1  | EML  EM Leader
+    |  i    c    p    v  | 14 |  I    C    P    V  | EMS  EM Space
+    |  -   ENS  (5)   QC | 15 |  8   ENS   0    QC | ENL  EN Leader
+    |  u    k    q    LC | 16 |  U    K    Q    LC | ENS  EN Space
+    |  L    QR  ENL  DEL | 17 |  7    QR  ENL  DEL | LC   Lower Case
+       -
+    +--------------------+    +--------------------+ LF   Line Feed
+    |     lower case   lower rail   upper case     | LR   Lower Rail
+    +----------------------------------------------+ NUL  NULl
+    |  00   20   40   60         00   20   40   60 | PF   Paper Feed
+    +--------------------+    +--------------------+ QC   Quad Center
+    | NUL   CR   t'   o' | 00 | NUL   CR   T'   O' | QL   Quad Left
+    |  TS   '   (2)  (6) | 01 |  TS   "    E"   T" | QR   Quad Right
+    |  e'   d'   z'   b' | 02 |  E'   D'   U"   B' | SP   SPace
+    |  ?   (1)   Q"   UR | 03 |  C"   H"   A"   UR | TS   Thin Space
+    |  LF   r'   l'   g' | 04 |  LF   R'   L'   G' | UC   Upper Case
+    |  PF   O"   I"   ;  | 05 |  PF   D"   I"   S" | UR   Upper Rail
+    |  a'   j'   w'   UC | 06 |  A'   J'   W'   UC |
+    |  P"  BEL   M"   LR | 07 |  !   BEL   B"   LR | letters marked ' are
+    |  SP   n'   h'   m' | 10 |  SP   N'   H'   M' | italics
+    |  AT   ,   EML   .  | 11 |  AT   ,   EML   .  | letters marked " are
+    |  s'   f'   y'   x' | 12 |  S'   F'   Y'   X' | small upper case
+    | EMS   QL   K"   W" | 13 | EMS   QL   F"   V" |
+    |  i'   c'   p'   v' | 14 |  I'   C'   P'   V' | not present:
+    |  -   ENS   Y"   QC | 15 |  R"  ENS   J"   QC | X", Z' and Z"
+    |  u'   k'   q'   LC | 16 |  U'   K'   Q'   LC |
+    |  N"   QR   L"  DEL | 17 |  G"   QR   L"  DEL |
+    +--------------------+    +--------------------+
+    |     lower case   upper rail   upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 7-LEVEL PAPERTAPE, BIT 7 ODD PARITY
+
+   1103A TYPEWRITER
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  multiply
+    +--------------------+    +--------------------+
+    | NUL   e         8  | 00 | NUL   E         8' | BS   Back Space
+    |  t    z         BS | 01 |  T    Z         BS | COL  COLor
+    | COL   d    .    5  | 02 | COL   D    )    5' | DEL  DELete
+    |  o    b    ST      | 03 |  O    B    ST      | HT   Horizontal Tab
+    |  SP   s    =    4  | 04 |  SP   S   (1)   4' | LC   Lower Case
+    |  h    y    NL      | 05 |  H    Y    NL      | NL   New Line
+    |  n    f    ,    6  | 06 |  N    F    (    6' | NUL  NULl
+    |  m    x    UC      | 07 |  M    X    UC      | SP   SPace
+    |       a    |    3  | 10 |       A    _    3' | ST   STop
+    |  l    w    HT      | 11 |  L    W    HT      | UC   Upper Case
+    |  r    j    "    7  | 12 |  R    J    '    7' |
+    |  g    9    +       | 13 |  G    9'   /       | numbers marked ' are
+    |  i    u         2  | 14 |  I    U         2' | small versions
+    |  p    q            | 15 |  P    Q            |
+    |  c    k    -       | 16 |  C    K    -       |
+    |  v    0    LC  DEL | 17 |  V    0'   LC  DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   FIELDATA, MOBIDIC
+
+    +--------------------------+
+    |      100  120  140  160  | CR   Carriage Return
+    |    +---------------------+ IDLE IDLE
+    | 00 |  MS   K    )    0   | LC   Lower Case
+    | 01 |  UC   L    -    1   | LF   Line Feed
+    | 02 |  LC   M    +    2   | MS   Master Space
+    | 03 |  LF   N    <    3   | SP   SPace
+    | 04 |  CR   O    =    4   | SPEC SPECial
+    | 05 |  SP   P    >    5   | STOP STOP
+    | 06 |  A    Q    _    6   | UC   Upper Case
+    | 07 |  B    R    $    7   |
+    | 10 |  C    S    *    8   |
+    | 11 |  D    T    (    9   |
+    | 12 |  E    U    "    '   |
+    | 13 |  F    V    :    ;   |
+    | 14 |  G    W    ?    /   |
+    | 15 |  H    X    !    .   |
+    | 16 |  I    Y    ,   SPEC |
+    | 17 |  J    Z   STOP IDLE |
+    +----+---------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   LGP-30 FLEXOWRITER
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  triangle
+    +--------------------+    +--------------------+ (2)  pi
+    |  RE   NL   ST      | 00 |  RE   NL   ST      | (3)  sigma
+    |  z    i    p    h  | 01 |  Z    I    P    H  |
+    |  0    4    8    j  | 02 |  )   (1)  (3)   J  | BS   Back Space
+    |  SP   /    o       | 03 |  SP   ?    O       | COL  COLor
+    |  LC   BS           | 04 |  LC   BS           | DEL  DELete
+    |  b    d    e    c  | 05 |  B    D    E    C  | HT   Horizontal Tab
+    |  l    5    9    k  | 06 |  L    %    (    K  | LC   Lower Case
+    |  -    .    x       | 07 |  _    ]    X       | NL   New Line
+    |  UC   HT           | 10 |  UC   HT           | RE   REad
+    |  y    n    u    a  | 11 |  Y    N    U    A  | SP   SPace
+    |  2    6    f    q  | 12 |  *    $    F    Q  | ST   STop
+    |  +    ,            | 13 |  =    [            | UC   Upper Case
+    | COL                | 14 | COL                |
+    |  r    m    t    s  | 15 |  R    M    T    S  |
+    |  3    7    g    w  | 16 |  "   (2)   G    W  |
+    |  ,    v        DEL | 17 |  :    V        DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   RCA 501, BIZMAC
+
+    +-------------------------+
+    |       00   20   40   60 | (1)  black dot
+    |    +--------------------+
+    | 00 |  SP   PC   A    Q  | CS   Carriage Shift
+    | 01 |  _    LF   B    R  | DEL  DELete
+    | 02 |  =    /    C    S  | ED   End Data
+            /
+    | 03 |  c    0    D    T  | EF   End File
+            /
+    | 04 |  )    1    E    U  | LF   Line Feed
+    | 05 |  "    2    F    V  | PC   Page Change
+    | 06 |  :    3    G    W  | SP   SPace
+    | 07 |  $    4    H    X  |
+    | 10 |  %    5    I    Y  |
+    | 11 |  ;    6    J    Z  |
+    | 12 |  &    7    K    EF |
+    | 13 |  '    8    L    ED |
+    | 14 |  -    9    M   (1) |
+    | 15 |  *    .    N    >  |
+    | 16 |  ,    A0   O    <  |
+    | 17 |  CS        P   DEL |
+    +----+--------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   RPC-4000
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  degrees
+    +--------------------+    +--------------------+ (2)  sigma
+    | NUL   0    g    w  | 00 | NUL   )    G    W  | (3)  triangle
+    |  CR   1    h    x  | 01 |  CR  (1)   H    X  |
+    |  HT   2    i    y  | 02 |  HT   "    I    Y  | BS   Back Space
+    |  BS   3    j    z  | 03 |  BS   A0   J    Z  | COL  COLor
+    | COL   4    k    ,  | 04 | COL  (2)   K    $  | CR   Carriage Return
+    |  UC   5    l    =  | 05 |  UC  (3)   L    :  | DEL  DELete
+    |  LC   6    m    [  | 06 |  LC   @    M    ;  | HT   Horizontal Tab
+    |  LF   7    n    ]  | 07 |  LF   &    N    %  | LC   Lower Case
+    |  ST   8    o       | 10 |  ST   '    O       | LF   Line Feed
+    |       9    p       | 11 |       (    P       | NUL  NULl
+    |       a    q    +  | 12 |       A    Q    ?  | SP   SPace
+    |       b    r    -  | 13 |       B    R    _  | ST   STop
+    |       c    s    .  | 14 |       C    S    .  | UC   Upper Case
+    |       d    t    SP | 15 |       D    T    SP |
+    |       e    u    /  | 16 |       E    U    :  |
+                                                -
+    |       f    v   DEL | 17 |       F    V   DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ALWAC III FLEXOWRITER
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  degrees
+    +--------------------+    +--------------------+ (2)  sigma
+    |  SP   g    k    0  | 00 |  SP   G    K    )  | (3)  triangle
+    |  1    h    l    /  | 01 | (1)   H    L    '  |
+    |  2    i    m    s  | 02 |  "    I    M    S  | BS   Back Space
+    |  3         n    t  | 03 |  +         N    T  | COL  COLor
+    |  4         o    u  | 04 |  =         O    U  | DEL  DELete
+    |  5         p    v  | 05 |  %         P    V  | HT   Horizontal Tab
+    |  6         q    w  | 06 |  ?         Q    W  | LC   Lower Case
+    |  7         r    x  | 07 |  !         R    X  | NUL  NULl
+    |  8         LC   y  | 10 | (2)        LC   Y  | SP   SPace
+    |  9         UC   z  | 11 |  (         UC   Z  | ST   STop
+    |  a        COL   $  | 12 |  A        COL  (3) | UC   Upper Case
+    |  b        DEL   |  | 13 |  B        DEL   *  |
+                      !
+    |  c         HT   ST | 14 |  C         HT   ST |
+    |  d         CR      | 15 |  D         CR      |
+    |  e    -    BS   ,  | 16 |  E    _    BS   ;  |
+    |  f    j         .  | 17 |  F    J         :  |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   FLEXOWRITER 7 LEVEL
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | BS   Back Space
+    +--------------------+    +--------------------+ CR   Carriage Return
+    | NUL   e         7  | 00 | NUL   E         7' | CS   Code Select
+    |  t    z         BS | 01 |  T    Z         BS | DEL  DELete
+    |  CS   d    .    4  | 02 |  CS   D    =    4' | HT   Horizontal Tab
+    |  o    b    ST      | 03 |  O    B    ST      | LC   Lower Case
+    |  SP   s    /    3  | 04 |  SP   S    ,    3' | NUL  NULl
+    |  h    y    CR      | 05 |  H    Y    CR      | SP   SPace
+    |  n    f    ,    5  | 06 |  N    F    +    5' | ST   STop
+    |  m    x    UC      | 07 |  M    X    UC      | UC   Upper Case
+    |       a    ;    2  | 10 |       A    :    2' |
+    |  l    w    HT      | 11 |  L    W    HT      | numbers marked ' are
+    |  r    j    -    6  | 12 |  R    J    -    6' | small versions
+    |  g    8            | 13 |  G    8'           |
+    |  i    u    )    1  | 14 |  I    U    (    1' |
+    |  p    q            | 15 |  P    Q            |
+    |  c    k    0       | 16 |  C    K    0'      |
+    |  v    9    LC  DEL | 17 |  V    9'   LC  DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   SOROBAN
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | BS   Back Space
+    +--------------------+    +--------------------+ CR   Carriage Return
+    | NUL   e    ,    7  | 00 | NUL   E    ,    &  | DEL  DELete
+    |  t    z         BS | 01 |  T    Z         BS | HT   Horizontal Tab
+    |  =    d    .    4  | 02 |  :    D    .    $  | LC   Lower Case
+                                 -
+    |  o    b            | 03 |  O    B            | NUL  NULl
+    |  SP   s    /    3  | 04 |  SP   S    ?   A0  | SP   SPace
+    |  h    y    CR      | 05 |  H    Y    CR      | UC   Upper Case
+    |  n    f    +    5  | 06 |  N    F    +    %  |
+    |  m    x    UC      | 07 |  M    X    UC      |
+    |       a    ;    2  | 10 |       A    :    @  |
+    |  l    w    HT      | 11 |  L    W    HT      |
+    |  r    j    -    6  | 12 |  R    J    -    0  |
+                                                /
+    |  g    8            | 13 |  G   1/2           |
+    |  i    u    '    1  | 14 |  I    U    "    *  |
+    |  p    q            | 15 |  P    Q            |
+    |  c    k    0       | 16 |  C    K    )       |
+    |  v    9    LC  DEL | 17 |  V    (    LC  DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 7-LEVEL PAPERTAPE, BIT 5 ODD PARITY
+
+   HIDAC 101
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | CR   Carriage Return
+    |   +---------------------------------+ LF   Line Feed
+    | 0 |  0   8   S   H   X   LF         | SP   SPace
+    | 1 |  1   9   A   I   P   U          |
+    | 2 |  2   +   B   J   Q   V          |
+    | 3 |  3   -   C   K   R   W          |
+    | 4 |  4   .   D   L   T   SP         |
+    | 5 |  5   ,   E   M   Y              |
+    | 6 |  6   (   F   N   CR             |
+    | 7 |  7   )   G   O   Z              |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CORRESPONDENCE
+
+    +----------------------------------------+
+    |  00  20  40  60         00  20  40  60 | BS   Back Space
+    +-----------------+    +-----------------+ BYP  BYPass
+    |  SP  t  1/2  j  | 00 |  SP  T  1/4  J  | DEL  DELete
+    |  1   x   m   g  | 01 |  +   X   M   G  | EOB  End Of Block
+                              _
+    |  2   n   .   =  | 02 |  @   N   .   +  | EOT  End Of Transmission
+    |  3   u   v   f  | 03 |  A0  U   V   F  | HT   Horizontal Tab
+    |  5   e   '   p  | 04 |  %   E   "   P  | IL   IdLe
+    |  7   d   r   ;  | 05 |  &   D   R   :  | LC   Lower Case
+    |  6   k   i   q  | 06 |  c   K   I   Q  | LF   Line Feed
+                              /
+    |  8   c   a   ,  | 07 |  *   C   A   ,  | NL   New Line
+    |  4   l   o   /  | 10 |  $   L   O   ?  | PF   Punch ofF
+    |  0   h   s   y  | 11 |  )   H   S   Y  | PN   Punch oN
+    |  z              | 12 |  Z              | PRE  PREfix
+    |  9   b   w   -  | 13 |  (   B   W   _  | RES  REStore
+    |  PN BYP RES  PF | 14 |  PN BYP RES  PF | RS   Reader Stop
+    |  RS  LF  NL  HT | 15 |  RS  LF  NL  HT | SP   SPace
+    |  UC EOB  BS  LC | 16 |  UC EOB  BS  LC | UC   Upper Case
+    | EOT PRE  IL DEL | 17 | EOT PRE  IL DEL |
+    +-----------------+    +-----------------+
+    |    lower case             upper case   |
+    +----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PTTC/6, PTTC/BCD
+
+    +----------------------------------------+
+    |  00  20  40  60         00  20  40  60 | (1)  lozenge
+    +-----------------+    +-----------------+
+    |  SP  @   -   &  | 00 |  SP  c   _   +  | BS   Back Space
+                                  /
+    |  1   /   j   a  | 01 |  =   ?   J   A  | BYP  BYPass
+    |  2   s   k   b  | 02 | (1)  S   K   B  | DEL  DELete
+    |  3   t   l   c  | 03 |  ;   T   L   C  | EOB  End Of Block
+    |  4   u   m   d  | 04 |  :   U   M   D  | EOT  End Of Transmission
+    |  5   v   n   e  | 05 |  %   V   N   E  | GM   Group Mark
+    |  6   w   o   f  | 06 |  '   W   O   F  | HT   Horizontal Tab
+    |  7   x   p   g  | 07 |  "   X   P   G  | IL   IdLe
+    |  8   y   q   h  | 10 |  *   Y   Q   H  | LC   Lower Case
+    |  9   z   r   i  | 11 |  (   Z   R   I  | LF   Line Feed
+    |  0   RM  <   >  | 12 |  )   GM  WS  TM | NL   New Line
+    |  A0   ,   $  .  | 13 |  +   ,   !   .  | PF   Punch ofF
+                              _
+    |  PN BYP RES  PF | 14 |  PN BYP RES  PF | PN   Punch oN
+    |  RS  LF  NL  HT | 15 |  RS  LF  NL  HT | PRE  PREfix
+    |  UC EOB  BS  LC | 16 |  UC EOB  BS  LC | RES  REStore
+    | EOT PRE  IL DEL | 17 | EOT PRE  IL DEL | RM   Record Mark
+    +-----------------+    +-----------------+ RS   Reader Stop
+    |    lower case             upper case   | SP   SPace
+    +----------------------------------------+ TM   Tape Mark
+                                               UC   Upper Case
+                                               WS   Word Separator
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PTTC/8, PTTC/EBCD
+
+    +----------------------------------------+
+    |  00  20  40  60         00  20  40  60 | (1)  not
+    +-----------------+    +-----------------+
+    |  SP  @   -   &  | 00 |  SP  c   _   +  | BS   Back Space
+                                  /
+    |  1   /   j   a  | 01 |  =   ?   J   A  | BYP  BYPass
+    |  2   s   k   b  | 02 |  <   S   K   B  | DEL  DELete
+    |  3   t   l   c  | 03 |  ;   T   L   C  | EOB  End Of Block
+    |  4   u   m   d  | 04 |  :   U   M   D  | EOT  End Of Transmission
+    |  5   v   n   e  | 05 |  %   V   N   E  | HT   Horizontal Tab
+    |  6   w   o   f  | 06 |  '   W   O   F  | IL   Idle
+    |  7   x   p   g  | 07 |  >   X   P   G  | LC   Lower Case
+    |  8   y   q   h  | 10 |  *   Y   Q   H  | LF   Line Feed
+    |  9   z   r   i  | 11 |  (   Z   R   I  | NL   New Line
+    |  0              | 12 |  )              | PF   Punch ofF
+    |  A0   ,   $   .  | 13 |  "   |   !  (1) | PN   Punch oN
+                                  !
+    |  PN BYP RES  PF | 14 |  PN BYP RES  PF | PRE  PREfix
+    |  RS  LF  NL  HT | 15 |  RS  LF  NL  HT | RES  REStore
+    |  UC EOB  BS  LC | 16 |  UC EOB  BS  LC | RS   Reader Stop
+    | EOT PRE  IL DEL | 17 | EOT PRE  IL DEL | SP   SPace
+    +-----------------+    +-----------------+ UC   Upper Case
+    |    lower case             upper case   |
+    +----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   MC FLEXOWRITER
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  lower ten
+    +--------------------+    +--------------------+ (2)  or
+    |  SP   0    -    +  | 00 |  SP  (3)  (4)   "  | (3)  and
+    |  1    <    j    a  | 01 | (2)   >    J    A  | (4)  not
+    |  2    s    k    b  | 02 |  *    S    K    B  |
+    |  3    t    l    c  | 03 |  /    T    L    C  | BS   Back Space
+    |  4    u    m    d  | 04 |  =    U    M    D  | DEL  DELete
+    |  5    v    n    e  | 05 |  ;    V    N    E  | HT   Horizontal Tab
+    |  6    w    o    f  | 06 |  [    W    O    F  | LC   Lower Case
+    |  7    x    p    g  | 07 |  ]    X    P    G  | NL   New Line
+    |  8    y    q    h  | 10 |  (    Y    Q    H  | PF   Punch ofF
+    |  9    z    r    i  | 11 |  )    Z    R    I  | SP   SPace
+    |  NL   BS        LC | 12 |  NL   BS        LC | STC  STop Code
+    | STC  (1)   ,    .  | 13 | STC   '    ?    :  | UC   Upper Case
+    |                 UC | 14 |                 UC |
+    |                    | 15 |                    |
+    |  _    HT           | 16 |  |    HT           |
+                                 !
+    |       PF       DEL | 17 |       PF       DEL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PDP-1
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | HT   Horizontal Tab
+    +--------------------+    +--------------------+ LC   Lower Case
+    |  SP   0    -    &  | 00 |  SP   )    "    ;  | NL   New Line
+    |  1    /    j    a  | 01 |  '    :    J    A  | SP   SPace
+    |  2    s    k    b  | 02 |  @    S    K    B  | UC   Upper Case
+    |  3    t    l    c  | 03 |  A0   T    L    C  |
+    |  4    u    m    d  | 04 |  =    U    M    D  |
+    |  5    v    n    e  | 05 |  %    V    N    E  |
+    |  6    w    o    f  | 06 |  c    W    O    F  |
+                                 /
+    |  7    x    p    g  | 07 |  ?    X    P    G  |
+    |  8    y    q    h  | 10 |  *    Y    Q    H  |
+    |  9    z    r    i  | 11 |  (    Z    R    I  |
+    |                 LC | 12 |                 LC |
+    |       ,    $    .  | 13 |       ,    _    .  |
+    |                 UC | 14 |                 UC |
+    |                    | 15 |                    |
+    |       HT           | 16 |       HT           |
+    |                 NL | 17 |                 NL |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 7-LEVEL PAPERTAPE, 3 BITS
+
+   MOORE 3 OUT OF 7
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | BEL  BELl
+    |    +---------------------------------+ CR   Carriage Return
+    | 00 | ... ... ... ... ... ... ...     | FS   Figure Shift
+    | 01 | ... ... ...  O  ...  T   CR ... | ILA  IdLe A
+    | 02 | ... ... ...  FS ...  W   J  ... | ILB  IdLe B
+    | 03 | ...  R   L  ...  G  ... ... ... | LF   Line Feed
+    | 04 | ... ... ...  X  ...  Y   F  ... | LS   Letter Shift
+    | 05 | ...  N   H  ...  M  ... ... ... | REQ  REQuest
+    | 06 | ... REQ  Z  ...  U  ... ... ... | SP   SPace
+    | 07 |  I  ... ... ... ... ... ... ... |
+    | 10 | ... ... ...  LS ...  Q   K  ... |
+    | 11 | ...  C   P  ...  V  ... ... ... |
+    | 12 | ... ILB  S  ... ILA ... ... ... |
+    | 13 |  SP ... ... ... ... ... ... ... |
+    | 14 | ...  D   A  ...  B  ... ... ... |
+    | 15 |  LF ... ... ... ... ... ... ... |
+    | 16 |  E  ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    |    +---------------------------------+
+    |               letter shift           |
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 |
+    |    +---------------------------------+
+    | 00 | ... ... ... ... ... ... ...     |
+    | 01 | ... ... ...  9  ...  5   CR ... |
+    | 02 | ... ... ...  FS ...  2  BEL ... |
+    | 03 | ...  4   )  ...  &  ... ... ... |
+    | 04 | ... ... ...  /  ...  6   !  ... |
+    | 05 | ...  ,   A0 ...  .  ... ... ... |
+    | 06 | ... REQ  "  ...  7  ... ... ... |
+    | 07 |  8  ... ... ... ... ... ... ... |
+    | 10 | ... ... ...  LS ...  1   (  ... |
+    | 11 | ...  :   0  ...  ;  ... ... ... |
+    | 12 | ... ILB  '  ... ILA ... ... ... |
+    | 13 |  SP ... ... ... ... ... ... ... |
+    | 14 | ...  $   -  ...  ?  ... ... ... |
+    | 15 |  LF ... ... ... ... ... ... ... |
+    | 16 |  3  ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    |    +---------------------------------+
+    |               figure shift           |
+    +--------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CCITTA#3, 3 OUT OF 7
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  National use
+    |    +---------------------------------+ (2)  Answer back
+    | 00 | ... ... ... ... ... ... ...  I  |
+    | 01 | ... ... ...  Z  ...  M   G  ... | BEL  BELl
+    | 02 | ... ... ...  U  ...  H   L  ... | CR   Carriage Return
+    | 03 | ...  F   J  ...  CR ... ... ... | FS   Figure Shift
+    | 04 | ... ... ... REP ...  N   R  ... | LF   Line Feed
+    | 05 | ...  Y   W  ...  T  ... ... ... | LS   Letter Shift
+    | 06 | ...  X   FS ...  O  ... ... ... | NUL  NULl
+    | 07 | NUL ... ... ... ... ... ... ... | REP  REPeat
+    | 10 | ... ... ...  E  ...  LF  SP ... | SIA  SIgnal A
+    | 11 | ...  B  SIA ...  V  ... ... ... | SIB  SIgnal B
+    | 12 | ...  A   S  ...  P  ... ... ... |
+    | 13 |  K  ... ... ... ... ... ... ... |
+    | 14 | ...  D  SIB ...  C  ... ... ... |
+    | 15 |  Q  ... ... ... ... ... ... ... |
+    | 16 |  LS ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    |    +---------------------------------+
+    |               letter shift           |
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 |
+    |    +---------------------------------+
+    | 00 | ... ... ... ... ... ... ...  8  |
+    | 01 | ... ... ...  "  ...  .  (1) ... |
+    | 02 | ... ... ...  7  ... (1)  )  ... |
+    | 03 | ... (1) BEL ...  CR ... ... ... |
+    | 04 | ... ... ... REP ...  ,   4  ... |
+    | 05 | ...  6   2  ...  5  ... ... ... |
+    | 06 | ...  /   FS ...  9  ... ... ... |
+    | 07 | NUL ... ... ... ... ... ... ... |
+    | 10 | ... ... ...  3  ...  LF  SP ... |
+    | 11 | ...  ?  SIA ...  ;  ... ... ... |
+    | 12 | ...  -   '  ...  0  ... ... ... |
+    | 13 |  (  ... ... ... ... ... ... ... |
+    | 14 | ... (2) SIB ...  :  ... ... ... |
+    | 15 |  1  ... ... ... ... ... ... ... |
+    | 16 |  LS ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    |    +---------------------------------+
+    |               figure shift           |
+    +--------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 8-LEVEL PAPERTAPE, 4 BITS
+
+   TELEX 4 OUT OF 8
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | BEL  BELl
+    |    +---------------------------------+ CR   Carriage Return
+    | 00 | ... ... ... ... ... ... ... ... | LF   Line Feed
+    | 01 | ... ... ... ... ... ... ...  5  | SP   SPace
+    | 02 | ... ... ... ... ... ... ...  C  |
+    | 03 | ... ... ...  )  ...         ... |
+    | 04 | ... ... ... ... ... ... ... A0  |
+    | 05 | ... ... ...  N  ...  R   I  ... |
+    | 06 | ... ... ...     ...  0      ... |
+    | 07 | ...  CR  8  ...  LF ... ... ... |
+    | 10 | ... ... ... ... ... ... ...  V  |
+    | 11 | ... ... ...  9  ...  G      ... |
+    | 12 | ... ... ...  M  ...  SP  P  ... |
+    | 13 | ...  &   4  ...     ... ... ... |
+    | 14 | ... ... ...     ...  .      ... |
+    | 15 | ...  O   ,  ...  L  ... ... ... |
+    | 16 | ...  ;   H  ...  :  ... ... ... |
+    | 17 |  T  ... ... ... ... ... ... ... |
+    +----+---------------------------------+
+    |      200 220 240 260 300 320 340 360 |
+    |    +---------------------------------+
+    | 00 | ... ... ... ... ... ... ...  K  |
+    | 01 | ... ... ...  F  ...  "   3  ... |
+    | 02 | ... ... ...     ...  J   -  ... |
+    | 03 | ...  2   S  ...     ... ... ... |
+    | 04 | ... ... ...     ...  6   U  ... |
+    | 05 | ...  D      ... BEL ... ... ... |
+    | 06 | ...  1   7  ...  A  ... ... ... |
+    | 07 |  E  ... ... ... ... ... ... ... |
+    | 10 | ... ... ...  X  ...  ?   Q  ... |
+    | 11 | ...      $  ...  W  ... ... ... |
+    | 12 | ...  B   Y  ...  '  ... ... ... |
+    | 13 |  Z  ... ... ... ... ... ... ... |
+    | 14 | ...  /      ...     ... ... ... |
+    | 15 |  !  ... ... ... ... ... ... ... |
+    | 16 |  (  ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   4 OUT OF 8
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  SOR2 or ACK2
+    |    +---------------------------------+ (2)  SOR1 or ACK1
+    | 00 | ... ... ... ... ... ... ... ... | (3)  INQ or ERR
+    | 01 | ... ... ... ... ... ... ...  A  | (4)  EOT or WS
+    | 02 | ... ... ... ... ... ... ...  B  | (5)  TEL or )
+    | 03 | ... ... ... (1) ... (2)  C  ... | (6)  lozenge
+    | 04 | ... ... ... ... ... ... ...  D  |
+    | 05 | ... ... ...  TL ...  CL  E  ... | ACKA0 ACKnowledge A0n
+    | 06 | ... ... ...  <  ...  (   F  ... | CL   Control Leader
+    | 07 | ...  7   X  ...  P  ... ... ... | EOT  End Of Transmission
+    | 10 | ... ... ... ... ... ... ...  H  | ERR  ERRor
+    | 11 | ... ... ... IDL ... (3)  I  ... | GM   Group Mark
+    | 12 | ... ... ...  \  ... (4)  ?  ... | IDL  IDLE
+    | 13 | ...  A0   ,  ... $  ... ... ... | INQ  INQuiry
+    | 14 | ... ... ...  ;  ... (5) (6) ... | MC   Mode Change
+    | 15 | ...  TM  SM ...  MC ... ... ... | RM   Record Mark
+    | 16 | ...  >   SB ...  -  ... ... ... | SB   Substitute Blank
+    | 17 |     ... ... ... ... ... ... ... | SM   Segment Mark
+    +----+---------------------------------+ SORA0 Start Of Record A0n
+    |      200 220 240 260 300 320 340 360 | SP   SPace
+    |    +---------------------------------+ TEL  TELephone
+    | 00 | ... ... ... ... ... ... ...  SP | TL   Transmit Leader
+    | 01 | ... ... ...  /  ...  J   1  ... | TM   Tape Mark
+    | 02 | ... ... ...  S  ...  K   2  ... | WS   Word Separator
+    | 03 | ...  3   T  ...  L  ... ... ... |
+    | 04 | ... ... ...  U  ...  M   4  ... |
+    | 05 | ...  5   V  ...  N  ... ... ... |
+    | 06 | ...  6   W  ...  O  ... ... ... |
+    | 07 |  G  ... ... ... ... ... ... ... |
+    | 10 | ... ... ...  Y  ...  Q   8  ... |
+    | 11 | ...  9   Z  ...  R  ... ... ... |
+    | 12 | ...  0   RM ...  !  ... ... ... |
+    | 13 |  .  ... ... ... ... ... ... ... |
+    | 14 | ...  @   %  ...  *  ... ... ... |
+    | 15 |  GM ... ... ... ... ... ... ... |
+    | 16 |  &  ... ... ... ... ... ... ... |
+    | 17 | ... ... ... ... ... ... ... ... |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 8-LEVEL PAPERTAPE, BIT 5 EVEN PARITY
+
+   KDF 9
+
+    Special codes:
+    100: SP
+    177: DEL
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | BS   Back Space
+    +--------------------+    +--------------------+ DEL  DELete
+    |  NUL  0         P  | 00 |  SP   ;         p  | ED   End Data
+    |       1    A    Q  | 01 |      1/4   a    q  | EF   End File
+    |  NL   2    B    R  | 02 |  NL   "    b    r  | EM   End Message
+    |       3    C    S  | 03 |      3/4   c    s  | ESC  ESCape
+    |  HT   4    D    T  | 04 |  HT   @    d    t  | HT   Horizontal Tab
+    |  BS   5    E    U  | 05 |  BS   =    e    u  | ISS  Item Separator Sy
+    |  UC   6    F    V  | 06 |  UC  1/2   f    v  | LC   Lower Case
+    |  LC   7    G    W  | 07 |  LC  1/3   g    w  | NL   New Line
+    |       8    H    X  | 10 |       (    h    x  | NUL  NULl
+    |       9    I    Y  | 11 |       )    i    y  | SP   SPace
+    |       10   J    Z  | 12 |       %    j    z  | UC   Upper Case
+    |       11   K    ED | 13 |       L    k    ED |
+                                      -
+    |      ISS   L    EF | 14 |      ISS   l    EF |
+    |       +    M    EM | 15 |       &    m    EM |
+    |       -    N   ESC | 16 |       *    n   ESC |
+    |  /    .    O       | 17 |  :    ,    o       |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   KDF ALGOL
+
+    Special codes:
+    100: SP
+    177: DEL
+
+    +----------------------------------------------+
+    |  00   20   40   60         00   20   40   60 | (1)  multiply
+    +--------------------+    +--------------------+ (2)  lower ten
+    |  SP   0         P  | 00 |  SP   ;         p  |
+    |       1    A    Q  | 01 |       [    a    q  | BS   Back Space
+    |  NL   2    B    R  | 02 |  NL   ]    b    r  | DEL  DELete
+    |       3    C    S  | 03 |       <    c    s  | ED   End Data
+    |  HT   4    D    T  | 04 |  HT   >    d    t  | EF   End File
+    |  BS   5    E    U  | 05 |  BS   =    e    u  | ESC  ESCape
+    |  UC   6    F    V  | 06 |  UC   <    f    v  | HT   Horizontal Tab
+                                      _
+    |  LC   7    G    W  | 07 |  LC   >    g    w  | ISS  Item Separator
+ Sy
+                                      _
+    |       8    H    X  | 10 |       (    h    x  | LC   Lower Case
+    |       9    I    Y  | 11 |       )    i    y  | NL   New Line
+    |      (1)   J    Z  | 12 |      (2)   j    z  | NUL  NULl
+    |       :    K    ED | 13 |       L    k    ED | SP   SPace
+            -                         -
+    |      ISS   L    EF | 14 |      ISS   l    EF | UC   Upper Case
+    |       +    M    ^  | 15 |       =    m    ^  |
+                      |               /         |
+    |       -    N   ESC | 16 |       *    n   ESC |
+    |  /    .    O       | 17 |  :    ,    o       |
+    +--------------------+    +--------------------+
+    |     lower case                upper case     |
+    +----------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 8-LEVEL PAPERTAPE, BIT 5 ODD PARITY
+
+   BULL
+
+    +---------------------------------------------+
+    |      000  020  040  060  100  120  140  160 | (1)  apostrophe
+    |    +----------------------------------------+ (2)  diaeresis
+    | 00 | NUL   7    8    9                      |
+    | 01 |  1    c    l    u        CCC           | AID  AID
+    | 02 |  2    d    m    v        CCD           | CCA0  Control Code A0n
+    | 03 |  3    e    n    w        CCE           | CDS  Clear Device Set
+    | 04 |  4    f    p    x        CCF           | CNT  CoNTinue
+    | 05 |  5    g    q    y        CCG           | DEL  DELete
+    | 06 |  6    h    r    z        CCH           | FCON
+    | 07 | FCON  LC   UC  OFF   .    &    -       | FF   Form Feed
+    | 10 |  0    b    k    t        CCB           | HT   Horizontal Tab
+    | 11 | STC   a    j    s        CCA           | LC   Lower Case
+    | 12 |  ,                                     | NL   New Line
+    | 13 |  SP                                    | NP   No Print
+    | 14 |  HT  CNT  TST   o                      | NUL  NULl
+    | 15 |  NL             i                      | OFF  OFF
+    | 16 |  `   CDS  AID   FF                     | ON   ON
+    | 17 |  ON   NP   PR  DEL   ^                 | PR   PRint
+    |    +----------------------------------------+ SP   SPace
+    |                lower case                   | STC  STop Code
+    +---------------------------------------------+ TST  TeST
+    |      000  020  040  060  100  120  140  160 | UC   Upper Case
+    |    +----------------------------------------+
+    | 00 | NUL   /    +    (                      |
+    | 01 |  ?    C    L    U        CCC           |
+    | 02 |  "    D    M    V        CCD           |
+    | 03 |  :    E    N    W        CCE           |
+    | 04 |  =    F    P    X        CCF           |
+    | 05 |  %    G    Q    Y        CCG           |
+    | 06 |  $    H    R    Z        CCH           |
+    | 07 | FCON  LC   UC  OFF   L    ;    _       |
+                                -
+    | 10 |  )    B    K    T        CCB           |
+    | 11 | STC   A    J    S        CCA           |
+    | 12 | (1)                                    |
+    | 13 |  SP                                    |
+    | 14 |  HT  CNT  TST   O                      |
+    | 15 |  NL             I                      |
+    | 16 |  '   CDS  AID   FF                     |
+    | 17 |  ON   NP   PR  DEL  (2)                |
+    |    +----------------------------------------+
+    |                upper case                   |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   IBM
+
+    +---------------------------------------------+
+    |      000  020  040  060  100  120  140  160 | (1)  apostrophe
+    |    +----------------------------------------+ (2)  diaeresis
+    | 00 |  SP   0    -    &    NL                |
+    | 01 |  1    `    j    a   PC1                | AID  AID
+    | 02 |  2    s    k    b   PC2                | BS   Back Space
+    | 03 |  3    t    l    c   PC3                | CDS  Clear Device Set
+    | 04 |  4    u    m    d   PC4                | CNT  CoNTinue
+    | 05 |  5    v    n    e   PC5                | DEL  DELete
+    | 06 |  6    w    o    f   PC6                | FCON
+    | 07 |  7    x    p    g   PC7                | FF   Form Feed
+    | 10 |  8    y    q    h   PC8                | HT   Horizontal Tab
+    | 11 |  9    z    r    i   PC9                | LC   Lower Case
+    | 12 |  PI   BS        LC  PC10               | NL   New Line
+    | 13 | STC   ,    ^    .   PC11               | NP   No Print
+    | 14 |  NP   PR   ON   UC  PC12               | OFF  OFF
+    | 15 | TST       AID       PC13               | ON   ON
+    | 16 | CNT   HT  FCON      PC14               | PCA0  Periph Code A0n
+    | 17 | CDS  OFF   FF  DEL  PC15               | PI   Periph Interupt
+    |    +----------------------------------------+ PR   PRint
+    |                lower case                   | SP   SPace
+    +---------------------------------------------+ STC  STop Code
+    |      000  020  040  060  100  120  140  160 | TST  TeST
+    |    +----------------------------------------+ UC   Upper Case
+    | 00 |  SP   )    _    ;    NL                |
+    | 01 |  ?    '    J    A   PC1                |
+    | 02 |  "    S    K    B   PC2                |
+    | 03 |  :    T    L    C   PC3                |
+    | 04 |  =    U    M    D   PC4                |
+    | 05 |  %    V    N    E   PC5                |
+    | 06 |  $    W    O    F   PC6                |
+    | 07 |  /    X    P    G   PC7                |
+    | 10 |  +    Y    Q    H   PC8                |
+    | 11 |  (    Z    R    I   PC9                |
+    | 12 |  PI   BS        LC  PC10               |
+    | 13 | STC  (1)  (2)   L   PC11               |
+                           -
+    | 14 |  NP   PR   ON   UC  PC12               |
+    | 15 | TST       AID       PC13               |
+    | 16 | CNT   HT  FCON      PC14               |
+    | 17 | CDS  OFF   FF  DEL  PC15               |
+    |    +----------------------------------------+
+    |                upper case                   |
+    +---------------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EIA
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | NL   New Line
+    |    +---------------------------------+ SP   SPace
+    | 00 |  SP  0   -   +   NL             |
+    | 01 |  1   /   J   A                  |
+    | 02 |  2   S   K   B                  |
+    | 03 |  3   T   L   C                  |
+    | 04 |  4   U   M   D                  |
+    | 05 |  5   V   N   E                  |
+    | 06 |  6   W   O   F                  |
+    | 07 |  7   X   P   G                  |
+    | 10 |  8   Y   Q   H                  |
+    | 11 |  9   Z   R   I                  |
+    | 12 |  :   ]   !   <                  |
+    | 13 |  =   ,   $   .                  |
+    | 14 |  "   (   *   )                  |
+    | 15 |  @   _   '   \                  |
+    | 16 |  %   A0  ?   ^                  |
+    | 17 |  [   &   >   ;                  |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   HONEYWELL
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | CR   Carriage Return
+    |    +---------------------------------+ ECA0  EsCape A0n
+    | 00 |  SP  0   -   &   NL             | ERR  ERRor
+    | 01 |  1   /   J   A                  | NL   New Line
+    | 02 |  2   S   K   B                  | PIA0  Periph Interupt A0n
+    | 03 |  3   T   L   C                  | SK   SKip
+    | 04 |  4   U   M   D                  | SP   SPace
+    | 05 |  5   V   N   E                  | SPA0  SPecial A0n
+    | 06 |  6   W   O   F                  |
+    | 07 |  7   X   P   G                  |
+    | 10 |  8   Y   Q   H                  |
+    | 11 |  9   Z   R   I                  |
+    | 12 | PI1 PI3 PI2 SP1                 |
+    | 13 |  A0  ,   $   .                  |
+    | 14 |  @   %   *  (1)                 |
+    | 15 | PI7 PI4 PI6 PI5                 |
+    | 16 | EC1  SK  CR SP2                 |
+    | 17 |     EC2 ERR  TF                 |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, PUNCH TAG
+
+   KIMBALL
+
+    +---------------------+
+    |      00  10  20  30 | NUL  NULl
+    |   +-----------------+
+    | 0 | NUL  7   V   F  | Non-existent letters:
+    | 1 |  1   8   -      | G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,W,X,Y,Z
+    | 2 |  2   9          |
+    | 3 |  3   C   0      |
+    | 4 |  4   +          |
+    | 5 |  5   E          |
+    | 6 |  6   A          |
+    | 7 |  B   D          |
+    +---+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   DENNISON
+
+    +---------------------+
+    |      00  10  20  30 | NUL  NULl
+    |   +-----------------+
+    | 0 | NUL  7   B   F  | Non-existent letters:
+    | 1 |  1   8   C      | G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,W,X,Y,Z
+    | 2 |  2   9   D      |
+    | 3 |  3   -   0      |
+    | 4 |  4   +   E      |
+    | 5 |  5              |
+    | 6 |  6              |
+    | 7 |  A   V          |
+    +---+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   2 OUT OF 5
+
+    +--------------------------------------+
+    |       -   2   3   23  6   26  36 236 |
+    +----+---------------------------------+
+    |  - | ... ... ...  5  ...  8   9  ... |
+    | 0  | ...  2   3  ...  6  ... ... ... |
+    | 1  | ...  0   4  ...  7  ... ... ... |
+    | 01 |  1  ... ... ... ... ... ... ... |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   DENNISON 2 OUT OF 5
+
+    +--------------------------------------+
+    |       -   4   7   47  0   40  70 470 |
+    +----+---------------------------------+
+    |  - | ... ... ...  0  ...  4   7  ... |
+    | 1  | ...  5   8  ...  1  ... ... ... |
+    | 2  | ...  6   9  ...  2  ... ... ... |
+    | 12 |  3  ... ... ... ... ... ... ... |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 80-COLUMN CARD, NON-HOLLERITH
+
+   IBM WORLD TRADE
+
+    +---------------------+
+    |      -   0   X   Y  | SP   SPace
+    |   +-----------------+
+    | - |  SP  9   -   *  |
+    | 9 |  0   .   J   A  |
+    | 8 |  1   S   K   B  |
+    | 7 |  2   T   L   C  |
+    | 6 |  3   U   M   D  |
+    | 5 |  4   V   N   E  |
+    | 4 |  5   W   O   F  |
+    | 3 |  6   X   P   G  |
+    | 2 |  7   Y   Q   H  |
+    | 1 |  8   Z   R   I  |
+    +---+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BRITISH TAB
+
+    +-----------------+
+    |      -   X   Y  | SP   SPace
+    |   +-------------+
+    | - |  SP  A   Z  | Non-existent letters:
+    | 0 |  0   B   N  | G,I,O,S
+    | 1 |  1   C   P  |
+    | 2 |  2   D   Q  |
+    | 3 |  3   E   R  |
+    | 4 |  4   F   T  |
+    | 5 |  5   H   U  |
+    | 6 |  6   J   V  |
+    | 7 |  7   K   W  |
+    | 8 |  8   L   X  |
+    | 9 |  9   M   Y  |
+    +---+-------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EMI
+
+    +-----------------------------------+
+    |        -   0   X   Y   3   4   5  | (1)  multiply
+    |     +-----------------------------+ (2)  solid block
+    |  -  |  SP  0   11  10 ... ... ... |
+    |  1  |  1   S   J   A  1/2  *   L  | NC   No Character
+                                     -
+    |  2  |  2   T   K   B   /  1/4  $  | SP   SPace
+    |  3  |  3   U   L   C  ... ... ... |
+    |  4  |  4   V   M   D   %  ... ... |
+    |  5  |  5   W   N   E  1/3 3/4 ... |
+    |  6  |  6   X   O   F  (1)  '  (2) |
+    |  7  |  7   Y   P   G   &   (   12 |
+    |  8  |  8   Z   Q   H   .   )      |
+    |  9  |  9   NC  R   I   -   +      |
+    +-----+-----------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BRITISH TAB OLD HOLLERITH
+
+    +---------------------+
+    |      -   0   X   Y  | SP   SPace
+    |   +-----------------+
+    | - |  SP  0   10  11 |
+    | 1 |  1   A   B   C  |
+    | 2 |  2   D   E   F  |
+    | 3 |  3   G   H   I  |
+    | 4 |  4   J   K   L  |
+    | 5 |  5   M   N   O  |
+    | 6 |  6   P   Q   R  |
+    | 7 |  7   S   T   U  |
+    | 8 |  8   V   W   X  |
+    | 9 |  9   Y   Z   &  |
+    +---+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   POWERS 29-CHARACTER
+
+    +-----------------+
+    |      -   X   Y  | SP   SPace
+    |   +-------------+
+    | - |  SP  0   A  | Non-existent letters:
+    | 0 |  1   M   B  | G,I,O,S,V,X,Z
+    | 1 |  2   N   C  |
+    | 2 |  3   P   D  |
+    | 3 |  4   Q   E  |
+    | 4 |  5   R   F  |
+    | 5 |  6   T   H  |
+    | 6 |  7   U   J  |
+    | 7 |  8   W   K  |
+    | 8 |  9   Y   L  |
+    +---+-------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   POWERS 32-CHARACTER
+
+    +-----------------+
+    |      -   X   Y  | SP   SPace
+    |   +-------------+
+    | - |  SP  B   A  | Non existent letters:
+    | 0 |  0   P   C  | G,I,O,S
+    | 1 |  1   Q   D  |
+    | 2 |  2   R   E  |
+    | 3 |  3   T   F  |
+    | 4 |  4   U   H  |
+    | 5 |  5   V   J  |
+    | 6 |  6   W   K  |
+    | 7 |  7   X   L  |
+    | 8 |  8   Y   M  |
+    | 9 |  9   Z   N  |
+    +---+-------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BULL T8
+
+    +-----------------------------+
+    |      -   7   8   9  7-9 8-9 | (1)  square
+    |   +-------------------------+ (2)  credit
+    | - |  SP  7   8   9   /   =  |
+    | Y |  *   O   I   0   $  (1) | SP   SPace
+                       /
+    | X |  .   A   J   S   L   ,  |
+                           -
+    | 0 |  0   B   K   T   o   (  |
+                           _
+    | 1 |  1   C   L   U   :   )  |
+    | 2 |  2   D   M   V   <   -  |
+                           -
+    | 3 |  3   E   N   W   "   +  |
+    | 4 |  4   F   P   X   %  1/2 |
+    | 5 |  5   G   Q   Y  1/4 (2) |
+    | 6 |  6   H   R   Z  3/4 1/3 |
+    +---+-------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BULL T8 SCIENTIFIC
+
+    +-----------------------------+
+    |      -   7   8   9  7-9 8-9 | SP   SPace
+    |   +-------------------------+
+    | - |  SP  7   8   9   /   =  |
+    | Y |  *   O   I   '   $   >  |
+    | X |  .   A   J   S   \   ,  |
+    | 0 |  0   B   K   T   A0  (  |
+    | 1 |  1   C   L   U   :   )  |
+    | 2 |  2   D   M   V   <   -  |
+                           -
+    | 3 |  3   E   N   W   "   +  |
+    | 4 |  4   F   P   X   %   ]  |
+    | 5 |  5   G   Q   Y   &   ?  |
+    | 6 |  6   H   R   Z   ;   @  |
+    +---+-------------------------+
+    |      X   Y  |
+    |   +---------+
+    | 0 |  ^   !  |
+           |
+    | 1 |  [   <  |
+    +---+---------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ICT NEW HOLLERITH
+
+    +---------------------------+
+    |        -   Y   X   0   1  | SP   SPace
+    |     +---------------------+
+    |  -  |  SP  10  11  0  ... |
+    |  1  |  1   A   J   &  ... |
+    |  2  |  2   B   K   S   %  |
+    |  3  |  3   C   L   T  1/4 |
+    |  4  |  4   D   M   U   -  |
+    |  5  |  5   E   N   V   /  |
+    |  6  |  6   F   O   W  1/2 |
+    |  7  |  7   G   P   X   .  |
+    |  8  |  8   H   Q   Y   @  |
+    |  9  |  9   I   R   Z  3/4 |
+    +-----+---------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   DECIMAL ASCII
+
+    +-----------------------------------------------+
+    |        -    Y    X   Y-X   0   Y-0  X-0 Y-X-0 | for symbol meanings
+    |     +-----------------------------------------+ see ASCII
+    |  -  |  0    @    P   DLE   SP   `    p   NUL  |
+    |  1  |  1    A    Q   DC1   !    a    q   SOH  |
+    |  2  |  2    B    R   DC2   "    b    r   STX  |
+    |  3  |  3    C    S   DC3   A0   c    s   ETX  |
+    |  4  |  4    D    T   DC4   $    d    t   EOT  |
+    |  5  |  5    E    U   NAK   %    e    u   ENQ  |
+    |  6  |  6    F    V   SYN   &    f    v   ACK  |
+    |  7  |  7    G    W   ETB   '    g    w   BEL  |
+    |  8  |  8    H    X   CAN   (    h    x    BS  |
+    |  9  |  9    I    Y    EM   )    i    y    HT  |
+    | 8-2 |  :    J    Z   SUB   *    j    z    LF  |
+    | 8-3 |  ;    K    [   ESC   +    k    {    VT  |
+    | 8-4 |  <    L    \    FS   ,    l    |    FF  |
+    | 8-5 |  =    M    ]    GS   -    m    }    CR  |
+    | 8-6 |  >    N    ^    RS   .    n    ~    SO  |
+    | 8-7 |  ?    O    _    US   /    o   DEL   SI  |
+    +-----+-----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 80-COLUMN CARD, HOLLERITH, 0 IS DIGIT OR ZONE
+
+   BCD-40
+
+    +-----------------------+
+    |        -   0   X   Y  | SP   SPace
+    |     +-----------------+
+    |  -  |  SP ...  -   &  |
+    |  0  |  0  ...         |
+    |  1  |  1       J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-4 |          *      |
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCD-A
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  lozenge
+    |     +-----------------+
+    |  -  |  SP ...  -   &  | SP   SPace
+    |  0  |  0  ...         |
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 |  @   %   *  (1) |
+    +-----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCD-H
+
+    +-----------------------+
+    |        -   0   X   Y  | SP   SPace
+    |     +-----------------+
+    |  -  |  SP ...  -   +  |
+    |  0  |  0  ...         |
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-3 |  =   ,   $   .  |
+    | 8-4 |  '   (   *   )  |
+    +-----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCD
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  lozenge
+    |     +-----------------+
+    |  -  |  SP ...  -   &  | GM   Group Mark
+    |  0  |  0  ...  !   ?  | MC   Mode Change
+    |  1  |  1   /   J   A  | RM   Record Mark
+    |  2  |  2   S   K   B  | SB   Substitute Blank
+    |  3  |  3   T   L   C  | SM   Segment Mark
+    |  4  |  4   U   M   D  | SP   SPace
+    |  5  |  5   V   N   E  | TM   Tape Mark
+    |  6  |  6   W   O   F  | WS   Word Separator
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  SB  RM         |
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 |  @   %   *  (1) |
+    | 8-5 |  :   WS  ]   [  |
+    | 8-6 |  >   \   ;   <  |
+    | 8-7 |  TM  SM  MC  GM |
+    +-----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCD-CDC
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  and
+    |     +-----------------+ (2)  or
+    |  -  |  SP ...  -   +  | (3)  not
+    |  0  |  0  ... (2)  <  |
+    |  1  |  1   /   J   A  | SP   SPace
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  :   ]          |
+    | 8-3 |  =   ,   $   .  |
+    | 8-4 |  =   (   *   )  |
+             /
+    | 8-5 |  <   >   ^   >  |
+             _   -   |   _
+    | 8-6 |  %   =   v  (3) |
+                 _   |
+    | 8-7 |  [  (1)  >   ;  |
+    +-----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 80-COLUMN CARD, HOLLERITH, 0 IS ZONE
+
+   EBCD
+
+    +-----------------------+
+    |        -   0   X   Y  | SP   SPace
+    |     +-----------------+
+    |  -  |  SP  0   -   &  |
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  :   \   ]   [  |
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 |  @   %   *   <  |
+    | 8-5 |  '   _   )   (  |
+    | 8-6 |  =   >   ;   +  |
+    | 8-7 |  "   ?   ^   !  |
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   IBMEL
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  or
+    |     +-----------------+ (2)  lower ten
+    |  -  |  SP  0   -  (4) | (3)  not
+    |  1  |  1   /   J   A  | (4)  and
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  | SP   SPace
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  :  (2)  [   ]  |
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 | (1)  %   *   <  |
+    | 8-5 |  '   _   )   (  |
+    | 8-6 |  =   >   ;   +  |
+    | 8-7 |  "   ?  (3)  |  |
+                         !
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCL
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  multiply
+    |     +-----------------+
+    |  -  |  SP  0   -   &  | SP   SPace
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  ?   =  (1)  +  |
+                 /
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 |  @   %   *   [  |
+    | 8-5 |  :   =   )   (  |
+    | 8-6 |  >   ]   ;   <  |
+    | 8-7 |  >   "   <   <  |
+              _       _   -
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GENERAL ELECTRIC
+
+    +-----------------------+
+    |        -   0   X   Y  | SP   SPace
+    |     +-----------------+
+    |  -  |  SP  0   -   &  |
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  [   <   ^   +  |
+                 -   |
+    | 8-3 |  A0  ,   $   .  |
+    | 8-4 |  @   %   *   ]  |
+    | 8-5 |  :   =   )   (  |
+    | 8-6 |  >   "   ;   <  |
+    | 8-7 |  ?   !   '   \  |
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ICT 1900
+
+    +-----------------------+
+    |        -   0   X   Y  | SP   SPace
+    |     +-----------------+
+    |  -  |  SP  0   -   &  |
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  "   +   [   L  |
+                         -
+    | 8-3 |  A0  .   $   ,  |
+    | 8-4 |  @   ;   *   %  |
+    | 8-5 |  (   :   >   ?  |
+    | 8-6 |  )   '   <   =  |
+    | 8-7 |  ]   !   ^   <  |
+                     |   -
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EBCD-CDC
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  or
+    |     +-----------------+ (2)  not
+    |  -  |  SP  0   -  (3) | (3)  and
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  | SP   SPace
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  :   >  (1)  <  |
+                 _
+    | 8-3 |  =   ,   $   .  |
+             _
+    | 8-4 |  ^   %   *   <  |
+             |           _
+    | 8-5 |  [   >   )   (  |
+                 -
+    | 8-6 |  =   >   ;   +  |
+    | 8-7 |  =   v  (2)  ]  |
+             /   |
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   PHILCO 2000
+
+    +-----------------------+
+    |        -   0   X   Y  | (1)  not
+    |     +-----------------+
+    |  -  |  SP  0   -   &  | SP   SPace
+    |  1  |  1   /   J   A  |
+    |  2  |  2   S   K   B  |
+    |  3  |  3   T   L   C  |
+    |  4  |  4   U   M   D  |
+    |  5  |  5   V   N   E  |
+    |  6  |  6   W   O   F  |
+    |  7  |  7   X   P   G  |
+    |  8  |  8   Y   Q   H  |
+    |  9  |  9   Z   R   I  |
+    | 8-2 |  @   |  (1)  n  |
+                 !
+    | 8-3 |  =   ,   $   .  |
+    | 8-4 |  ;   (   *   )  |
+    | 8-5 |  =   >   <   %  |
+             _
+    | 8-6 |  &   :  A0   ?  |
+    | 8-7 |  '   e   _   "  |
+    +-----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 90-COLUMN CARD
+
+   REMINGTON RAND
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | SP   SPace
+    |   +---------------------------------+
+    | 0 |  SP  3   1   O   0   E          |
+    | 1 |  9   4   2   Y   L   V   =      |
+    | 2 |  7   H   R   P   C   W   c   @  |
+                                   /
+    | 3 |  8   T   F   :   X   A0      '  |
+    | 4 |  5   I   B   J   M   D   %      |
+    | 5 |  6   K   A   .   N   ,   ?   $  |
+    | 6 |  G   Q   S   )   U   -   A0     |
+    | 7 |  Z   /   +   ;   (   "          |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 96-COLUMN CARD
+
+   96-COLUMN CARD
+
+    +------------------------------------------------+
+    |        -    A    B    BA   C    CA   CB   CBA  | (1)  not
+    |      +-----------------------------------------+ (2)  line
+    | -    |  SP   0    -    }   NUL        DS       | (3)  chair
+    | 1    |  1    /    J    A        SOS   j    a   | (4)  hook
+    | 2    |  2    S    K    B         s    k    b   | (5)  fork
+    | 21   |  3    T    L    C         t    l    c   |
+    | 4    |  4    U    M    D         u    m    d   | for symbol meanings
+    | 41   |  5    V    N    E         v    n    e   | see EBCDIC
+    | 42   |  6    W    O    F         w    o    f   |
+    | 421  |  7    X    P    G         x    p    g   |
+    | 8    |  8    Y    Q    H         y    q    h   |
+    | 81   |  9    Z    R    I         z    r    i   |
+    | 82   |  :    &    !    c        DLE   CC  SMM  |
+    | 821  |  A0   ,    $    .   CU3  CU2  CU1   VT  |
+    | 84   |  @    %    *    <   DC4       IFS   FF  |
+    | 841  |  '    _    )    (   NAK  ENQ  IGS   CR  |
+    | 842  |  =    >    ;    +        ACK  IRS   SO  |
+    | 8421 |  "    ?   (1)   !   SUB  BEL  IUS   SI  |
+                             |
+    +------+-----------------------------------------+
+    |        D    DA   DB   DBA  DC   DCA  DCB  DCBA |
+    |      +-----------------------------------------+
+    | -    |  {         \    |                   SM  |
+    | 1    |                           ~   DC1  SOH  |
+    | 2    |                     SYN   FS  DC2  STX  |
+    | 21   |                                TM  ETX  |
+    | 4    |                      PN  BYP  RES   PF  |
+    | 41   |                      RS   LF   NL   HT  |
+    | 42   |                      UC  ETB   BS   LC  |
+    | 421  |                     EOT  ESC   IL  DEL  |
+    | 8    |                               CAN   GE  |
+    | 81   |  `                             EM  RLF  |
+    | 82   | (2)                                     |
+    | 821  |                                         |
+    | 84   |      (3)       (4)                      |
+    | 841  |                                         |
+    | 842  |                (5)                      |
+    | 8421 |  EO                                     |
+    +------+-----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, OPTICAL
+
+   CMC7 MICR
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | SP   SPace
+    |   +---------------------------------+
+    | 0 |  SP  E   T   5   I   >   ^   C  |
+                               -   |
+    | 1 |  R   4   1   D   /   S   G  ... |
+    | 2 |  A   9   8   P   ,   W   L  ... |
+    | 3 |  7   U   X  ...  V  ... ... ... |
+    | 4 |  N   0   6   M   .   Z   F  ... |
+    | 5 |  3   H   B  ...  O  ... ... ... |
+    | 6 |  2   J   K  ...  Y  ... ... ... |
+    | 7 |  Q  ... ... ... ... ... ... ... |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, TAPE
+
+   BCDIC
+
+    +------------------------+
+    |         -   A   B   BA | GM   Group Mark
+    |      +-----------------+ MC   Mode Change
+    | -    |  SP  SB  -   &  | RM   Record Mark
+    | 1    |  1   /   J   A  | SB   Substitute Blank
+    | 2    |  2   S   K   B  | SM   Segment Mark
+    | 21   |  3   T   L   C  | SP   SPace
+    | 4    |  4   U   M   D  | TM   Tape Mark
+    | 41   |  5   V   N   E  | WS   Word Separator
+    | 42   |  6   W   O   F  |
+    | 421  |  7   X   P   G  |
+    | 8    |  8   Y   Q   H  |
+    | 81   |  9   Z   R   I  |
+    | 82   |  0   RM  !   ?  |
+    | 821  |  A0  ,   $   .  |
+    | 84   |  @   %   *  (1) |
+    | 841  |  :   WS  ]   [  |
+    | 842  |  >   \   ;   <  |
+    | 8421 |  TM  SM  MC  GM |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BCL TAPE
+
+    +------------------------+
+    |         -   A   B   BA | (1)  multiply
+    |      +-----------------+
+    | -    |  ?   SP  -   &  | SP   SPace
+    | 1    |  1   /   J   A  |
+    | 2    |  2   S   K   B  |
+    | 21   |  3   T   L   C  |
+    | 4    |  4   U   M   D  |
+    | 41   |  5   V   N   E  |
+    | 42   |  6   W   O   F  |
+    | 421  |  7   X   P   G  |
+    | 8    |  8   Y   Q   H  |
+    | 81   |  9   Z   R   I  |
+    | 82   |  0   =  (1)  +  |
+                  /
+    | 821  |  A0  ,   $   .  |
+    | 84   |  @   %   *   [  |
+    | 841  |  :   =   )   (  |
+    | 842  |  >   ]   ;   <  |
+    | 8421 |  >   "   <   <  |
+              _       _   -
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 6-BIT INTERNAL
+
+   BCL INTERNAL
+
+    +------------------------+
+    |         -   A   B   BA | (1)  multiply
+    |      +-----------------+
+    | -    |  0   +  (1)  SP | SP   SPace
+    | 1    |  1   A   J   /  |
+    | 2    |  2   B   K   S  |
+    | 21   |  3   C   L   T  |
+    | 4    |  4   D   M   U  |
+    | 41   |  5   E   N   V  |
+    | 42   |  6   F   O   W  |
+    | 421  |  7   G   P   X  |
+    | 8    |  8   H   Q   Y  |
+    | 81   |  9   I   R   Z  |
+    | 82   |  A0  .   $   ,  |
+    | 821  |  @   [   *   %  |
+    | 84   |  ?   &   -   =  |
+                          /
+    | 841  |  :   (   )   =  |
+    | 842  |  >   <   ;   ]  |
+    | 8421 |  >   <   <   "  |
+              _   -   _
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GENERAL ELECTRIC INTERNAL
+
+    +------------------------+
+    |         -   A   B   AB | SP   SPace
+    |      +-----------------+
+    | -    |  0   SP  ^   +  |
+                      |
+    | 1    |  1   A   J   /  |
+    | 2    |  2   B   K   S  |
+    | 21   |  3   C   L   T  |
+    | 4    |  4   D   M   U  |
+    | 41   |  5   E   N   V  |
+    | 42   |  6   F   O   W  |
+    | 421  |  7   G   P   X  |
+    | 8    |  8   H   Q   Y  |
+    | 81   |  9   I   R   Z  |
+    | 82   |  [   &   -   <  |
+                          -
+    | 821  |  A0  .   $   ,  |
+    | 84   |  @   ]   *   %  |
+    | 841  |  :   (   )   =  |
+    | 842  |  >   <   ;   "  |
+    | 8421 |  ?   \   '   !  |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BULL SCIENTIFIC INTERNAL
+
+    +--------------------------------------+
+    |       00  10  20  30  40  50  60  70 | SP   SPace
+    |    +---------------------------------+
+    | 00 |  SP  8   0   .   L   =   /   *  |
+    | 01 |  1   9   C   J   U   )   :   I  |
+    | 02 |  2   M   D   A   V   -   <   O  |
+                                    -
+    | 03 |  3   N   E   [   W   +   "   <  |
+    | 04 |  4   P   F   S   X   ]   %   '  |
+    | 05 |  5   Q   G   ,   Y   ?   &   >  |
+    | 06 |  6   R   H   \   Z   @   ;   $  |
+    | 07 |  7   K   B   ^   T   (   A0  !  |
+                        |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BULL INTERNAL
+
+    +--------------------------------------+
+    |       00  10  20  30  40  50  60  70 | (1)  credit
+    |    +---------------------------------+ (2)  square
+    | 00 |  SP  8   0   .   L   =   /   *  |
+    | 01 |  1   9   C   J   U   )   :   I  | SP   SPace
+    | 02 |  2   M   D   A   V   -   '   O  |
+    | 03 |  3   N   E       W   +   "      |
+    | 04 |  4   P   F   S   X  1/2  %   0  |
+                                        /
+    | 05 |  5   Q   G   ,   Y  (1) 1/4 (2) |
+    | 06 |  6   R   H   L   Z  1/3 3/4  $  |
+                        -
+    | 07 |  7   K   B       T   (   o      |
+                                    _
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   NCR
+
+    +------------------------+
+    |         -   A   B   BA | SP   SPace
+    |      +-----------------+
+    | -    |  0   !   +   *  |
+    | 1    |  1   A   J   A0 |
+    | 2    |  2   B   K   S  |
+    | 21   |  3   C   L   T  |
+    | 4    |  4   D   M   U  |
+    | 41   |  5   E   N   V  |
+    | 42   |  6   F   O   W  |
+    | 421  |  7   G   P   X  |
+    | 8    |  8   H   Q   Y  |
+    | 81   |  9   I   R   Z  |
+    | 82   |  @   ;   %   <  |
+    | 821  |  ,   "   =   >  |
+    | 84   |  SP  ?   $   '  |
+    | 841  |  &   :   (   [  |
+    | 842  |  .   _   )   ]  |
+    | 8421 |  -   ^   /   \  |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   NCR 304
+
+    +------------------------+
+    |         -   A   B   BA | (1)  square
+    |      +-----------------+ (2)  triangle
+    | -    |  0   -   +   *  |
+    | 1    |  1   A   J   A0 | SP   SPace
+    | 2    |  2   B   K   S  |
+    | 21   |  3   C   L   T  |
+    | 4    |  4   D   M   U  |
+    | 41   |  5   E   N   V  |
+    | 42   |  6   F   O   W  |
+    | 421  |  7   G   P   X  |
+    | 8    |  8   H   Q   Y  |
+    | 81   |  9   I   R   Z  |
+    | 82   |  @  (1)  %   d  |
+    | 821  |  c  (2)  L   s  |
+              /       -
+    | 84   |  SP  m   $   u  |
+    | 841  |  &   n   (   v  |
+    | 842  |  .   o   )   w  |
+    | 8421 |  ,   p   /   x  |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   UNIVAC
+
+    +------------------------+
+    |         -   A   B   BA | (1)  triangle
+    |      +-----------------+ (2)  dagger
+    | -    |  i   n  (2) (3) | (3)  sigma
+    | 1    | (1)  ,   "  (4) | (4)  beta
+    | 2    |  -   .   |   :  | (5)  delta
+                      !
+    | 21   |  0   ;   )   +  |
+    | 4    |  1   A   J   /  |
+    | 41   |  2   B   K   S  |
+    | 42   |  3   C   L   T  |
+    | 421  |  4   D   M   U  |
+    | 8    |  5   E   N   V  |
+    | 81   |  6   F   O   W  |
+    | 82   |  7   G   P   X  |
+    | 821  |  8   H   Q   Y  |
+    | 84   |  9   I   R   Z  |
+    | 841  |  '   A0  $   %  |
+    | 842  |  &   c   *   =  |
+                  /
+    | 8421 |  (   @   ?  (5) |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CDC DISPLAY SCIENTIFIC
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | (1)  or
+    |   +---------------------------------+ (2)  and
+    | 0 |  NL  H   P   X   5   /   =   '  | (3)  not
+                                   _
+    | 1 |  A   I   Q   Y   6   (   [   v  |
+                                       |
+    | 2 |  B   J   R   Z   7   )   ]   <  | NL   New Line
+    | 3 |  C   K   S   0   8   $   :   >  | SP   SPace
+    | 4 |  D   L   T   1   9   =   =   <  |
+                                   /   _
+    | 5 |  E   M   U   2   +   SP  >   >  |
+                                   -   _
+    | 6 |  F   N   V   3   -   ,  (1) (3) |
+    | 7 |  G   O   W   4   *   .  (2)  ^  |
+                                       |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   CDC DISPLAY
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | NL   New Line
+    |   +---------------------------------+ SP   SPace
+    | 0 |  NL  H   P   X   5   /   A0  '  |
+    | 1 |  A   I   Q   Y   6   (   [   ?  |
+    | 2 |  B   J   R   Z   7   )   ]   <  |
+    | 3 |  C   K   S   0   8   $   :   >  |
+    | 4 |  D   L   T   1   9   =   "   @  |
+    | 5 |  E   M   U   2   +   SP  _   \  |
+    | 6 |  F   N   V   3   -   ,   !   ^  |
+    | 7 |  G   O   W   4   *   .   &   ;  |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EMIDEC
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | (1)  multiply
+    |   +---------------------------------+ (2)  black square
+    | 0 |  0   8   *   +   NC  C   K   S  |
+    | 1 |  1   9   /  (1) 1/2  D   L   T  | BC   Buffer Control
+    | 2 |  2   10  .  1/3  -   E   M   U  | FS   Figure Shift
+    | 3 |  3   11 1/4  $   SP  F   N   V  | LS   Letter Shift
+    | 4 |  4   12 3/4 (2)  BC  G   O   W  | NC   No Character
+    | 5 |  5   %   '   FS      H   P   X  | NL   New Line
+    | 6 |  6   L   (   LS  A   I   Q   Y  | SP   SPace
+               -
+    | 7 |  7   &   )   NL  B   J   R   Z  |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   USS-80
+
+    +-------------------------------------+
+    |      00  10  20  30  40  50  60  70 | SP   SPace
+    |   +---------------------------------+
+    | 0 |  0   5   &   E   -   N   SP  V  |
+    | 1 |  1   6   A   F   J   O   /   W  |
+    | 2 |  2   7   B   G   K   P   S   X  |
+    | 3 |  3   8   C   H   L   Q   T   Y  |
+    | 4 |  4   9   D   I   M   R   U   Z  |
+    | 5 |  A0  (   .       $       ,      |
+    | 6 |  +   ;   :       *       %      |
+    | 7 |  )   '                          |
+    +---+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, 7-BIT INTERNAL
+
+   STRETCH, IBM 7030
+
+    +--------------------------+
+    |      000  040  100  140  | (1)  and
+    |    +---------------------+ (2)  or
+    | 00 |  SP   &    k    0   | (3)  or barred
+    | 01 |  +    +    K    0'  | (4)  parallel
+            _
+    | 02 |  -    $    l    1   | (5)  implies
+            >
+    | 03 |  =    =    L    1'  | (6)  circle
+            /
+    | 04 | (1)   *    m    2   | (7)  not
+    | 05 |  {    (    M    2'  | (8)  square root
+    | 06 |  ^    /    n    3   | (9)  diamond
+            |
+    | 07 |  }    )    N    3'  |
+    | 10 | (2)   ,    o    4   | SP   SPace
+    | 11 | (3)   ;    O    4'  |
+    | 12 |  v    '    p    5   | numbers marked ' are small versions
+            |
+    | 13 | (4)   "    P    5'  |
+    | 14 |  >    a    q    6   | 89 character subset:
+    | 15 |  >    A    Q    6'  |    code 000 and all codes from 040 to 167
+            _
+    | 16 |  <    b    r    7   |
+    | 17 |  <    B    R    7'  | 49 character subset:
+            _
+    | 20 |  [    c    s    8   |    code 000, even codes from 030 to 053,
+    | 21 | (5)   C    S    8'  |    odd codes from 054 to 137 and even
+    | 22 |  ]    d    t    9   |    codes from 140 to 167
+    | 23 | (6)   D    T    9'  |
+    | 24 |  -    e    u    .   |
+            <
+    | 25 |  =    E    U    :   |
+            _
+    | 26 | (7)   f    v    -   |
+    | 27 | (8)   F    V    ?   |
+    | 30 |  %    g    w        |
+    | 31 |  \    G    W        |
+    | 32 | (9)   h    x        |
+    | 33 |  |    H    X        |
+    | 34 |  A0   i    y        |
+    | 35 |  !    J    Y        |
+    | 36 |  @    j    z        |
+    | 37 |  ~    J    Z        |
+    +----+---------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   IPC
+
+    +--------------------------+
+    |      000  040  100  140  | (1)  degrees
+    |    +---------------------+ (2)  pi
+    | 00 |  0    K    (   (11) | (3)  omega
+    | 01 |  1    k    !   1/4  | (4)  alfa
+    | 02 |  2    L    ?    <   | (5)  multiply
+                           _
+    | 03 |  3    l    A0   1/2 | (6)  beta
+    | 04 |  4    M   (1)   >   | (7)  dash
+                           _
+    | 05 |  5    m    /   3/4  | (8)  square root
+    | 06 |  6    N        (12) | (9)  integral
+    | 07 |  7    n         v   | (10) xi
+                           |
+    | 10 |  8    O    *   (13) | (11) summation
+    | 11 |  9    o    )    ^   | (12) infinite
+                           |
+    | 12 |  SP   P    .   (14) | (13) theta
+    | 13 | RES   p    ,    >   | (14) phi
+                           -
+    | 14 |  A    Q   (2)  (15) | (15) kappa
+    | 15 |  a    q    -    <   | (16) cubed
+                           -
+    | 16 |  B    R   (3)   [   | (17) squared
+    | 17 |  b    r    +    ]   | (18) center dot
+    | 20 |  C    S   (4)  (16) |
+    | 21 |  c    s   (5)  (17) | BKA0  Blank Key A0n
+    | 22 |  D    T   (6)  ESC2 | CA0   Control A0n
+    | 23 |  d    t    :   ESC1 | ESCA0 ESCape A0n
+                      -
+    | 24 |  E    U    =   BK1  | RES  REServed
+    | 25 |  e    u   (7)  BK2  | SP   SPace
+    | 26 |  F    V   (8)  BK3  |
+    | 27 |  f    v   (9)  BK4  | 6-bit subset: codes 000-077
+    | 30 |  G    W    :   (18) | 5-bit subset: space and upper case letters
+    | 31 |  g    w    ;    C1  | 4-bit subset: digits only
+    | 32 |  H    X    @    C2  |
+    | 33 |  h    x   (10)  C3  |
+    | 34 |  I    Y    "    C4  |
+    | 35 |  i    y    '    C5  |
+    | 36 |  J    Z    $    C6  |
+    | 37 |  j    z    c    C7  |
+                      /
+    +----+---------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   MDS 4330
+
+    +---------------------------------------+
+    |      000 020 040 060 100 120 140 160  | (1)  lower left corner
+    |    +----------------------------------+ (2)  upper left corner
+    | 00 |  SP  @   P   !   `   p   0' (1)  | (3)  lower right corner
+    | 01 |  *   A   Q   %   a   q   1' (2)  | (4)  upper right corner
+    | 02 |  -   B   R   &   b   r   2' (3)  | (5)  lozenge
+    | 03 |  ,   C   S   '   c   s   3' (4)  | (6)  degrees
+    | 04 |  0   D   T   <   d   t   4'  +   | (7)  black dot
+                                        _
+    | 05 |  1   E   U   =   e   u   5'  >   | (8)  black square
+                                        _
+    | 06 |  2   F   V   >   f   v   6' (5)  | (9)  left angle
+    | 07 |  3   G   W   ?   g   w   7'  <   | (10) right angle
+                                        _
+    | 10 |  4   H   X   [   h   x   8' (6)  |
+    | 11 |  5   I   Y   ;   i   y   9' (7)  | SP   SPace
+    | 12 |  6   J   Z   :   j   z   (' (8)  |
+    | 13 |  7   K   A0  "   k   {   )'  =   | symbols marked ' are
+                                        /
+    | 14 |  8   L   (   \   l   |   +'  !   | subscript versions
+                                        |
+    | 15 |  9   M   )   ]   m   }   -'  c   | symbols marked " are
+                                        /
+    | 16 |  $   N   +   ^   n   ~   +" (9)  | large versions
+    | 17 |  .   O   /   _   o   =   -" (10) |
+    +----+----------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   BENDIX G20
+
+    +---------------------------------------+
+    |      000 020 040 060 100 120 140 160  | (1)  not
+    |    +----------------------------------+ (2)  lower ten
+    | 00 |  SP  P   0   =   HT  p           | (3)  or
+    | 01 |  A   Q   1  (3)  a   q           | (4)  and
+    | 02 |  B   R   2   =   b   r           |
+                        /
+    | 03 |  C   S   3  (4)  c   s           | BS   Back Space
+    | 04 |  D   T   4   <   d   t           | HT   Horizontal Tab
+    | 05 |  E   U   5   $   e   u           | NL   New Line
+    | 06 |  F   V   6   >   f   v           | SP   SPace
+    | 07 |  G   W   7   ;   g   w           |
+    | 10 |  H   X   8   (   h   x           |
+    | 11 |  I   Y   9   [   i   y           |
+    | 12 |  J   Z  (2)  ]   j   z           |
+    | 13 |  K   |   .   )   k   NL          |
+                !
+    | 14 |  L   <   +   |   l   BS          |
+                -       v
+    | 15 |  M   >   -   |   m               |
+                -       ^
+    | 16 |  N  (1)  *   :   n               |
+    | 17 |  O   ,   /   '   o               |
+    +----+----------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, EBCDIC
+
+   EBCDIC CARD
+
+    +-------------------------------------------------+
+    |          Y    X    0    -   Y-0  Y-X  Y-0 Y-X-0 | (1)  not
+    |       +-----------------------------------------+ (2)  hook
+    |   -   |  &    -    0    SP   {    |    }        | (3)  fork
+    |   1   |  A    J    /    1    a    j    ~        | (4)  chair
+    |   2   |  B    K    S    2    b    k    s        | (5)  line
+    |   3   |  C    L    T    3    c    l    t        |
+    |   4   |  D    M    U    4    d    m    u        | for symbol meanings
+    |   5   |  E    N    V    5    e    n    v        | see next page
+    |   6   |  F    O    W    6    f    o    w        |
+    |   7   |  G    P    X    7    g    p    x        |
+    |   8   |  H    Q    Y    8    h    q    y        |
+    |   9   |  I    R    Z    9    i    r    z        |
+    |  8-2  |  c    !    \    :                       |
+               /
+    |  8-3  |  .    $    ,    A0                      |
+    |  8-4  |  <    *    %    @                       |
+    |  8-5  |  (    )    _    '                       |
+    |  8-6  |  +    ;    >    =                       |
+    |  8-7  |  !   (1)   ?    "                       |
+               |
+    |  8-1  |                 `                       |
+    |  9-1  | SOH  DC1  SOS                           |
+    |  9-2  | STX  DC2  FS   SYN                      |
+    |  9-3  | ETX   TM                                |
+    |  9-4  |  PF  RES  BYP   PN                      |
+    |  9-5  |  HT   NL   LF   RS                      |
+    |  9-6  |  LC   BS  ETB   UC                      |
+    |  9-7  | DEL   IL  ESC  EOT                      |
+    |  9-8  |  GE  CAN                                |
+    | 9-8-1 | RLF   EM            NUL  DLE            |
+    | 9-8-2 | SMM   CC   SM                      (5)  |
+    | 9-8-3 |  VT  CU1  CU2  CU3                      |
+    | 9-8-4 |  FF  IFS       DC4  (2)       (4)       |
+    | 9-8-5 |  CR  IGS  ENQ  NAK                      |
+    | 9-8-6 |  SO  IRS  ACK       (3)                 |
+    | 9-8-7 |  SI  IUS  BEL  SUB                  EO  |
+    +-------+-----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EBCDIC STANDARD
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | for notes see previous page
+    |    +---------------------------------+
+    | 00 | NUL DLE  DS      SP  &   -      | ACK  ACKnowledge
+    | 01 | SOH DC1 SOS              /      | BEL  BELl
+    | 02 | STX DC2  FS SYN                 | BS   Back Space
+    | 03 | ETX  TM                         | BYP  BYPass
+    | 04 |  PF RES BYP  PN                 | CAN  CANcel
+    | 05 |  HT  NL  LF  RS                 | CC   Cursor Control
+    | 06 |  LC  BS ETB  UC                 | CR   Carriage Return
+    | 07 | DEL  IL ESC EOT                 | CUA0  Customer Use A0n
+    | 10 |  GE CAN                         | DCA0  Device Code A0n
+    | 11 | RLF  EM                      `  | DEL  DELete
+    | 12 | SMM  CC  SM      c   !   |   :  | DLE  Data Link Escape
+                            /
+    | 13 |  VT CU1 CU2 CU3  .   $   ,  A0  | DS   Digit Select
+    | 14 |  FF IFS     DC4  <   *   %   @  | EM   End of Medium
+    | 15 |  CR IGS ENQ NAK  (   )   _   '  | ENQ  ENQuiry
+    | 16 |  SO IRS ACK      +   ;   >   =  | EO   Eight Ones
+    | 17 |  SI IUS BEL SUB  !  (1)  ?   "  | EOT  End Of Transmission
+                            |
+    +----+---------------------------------+ ESC  ESCape
+    |      200 220 240 260 300 320 340 360 | ETB  End of Transmission Block
+    |    +---------------------------------+ ETX  End of TeXt
+    | 00 |                  {   }   \   0  | FF   Form Feed
+    | 01 |  a   j   ~       A   J       1  | FS   File Separator
+    | 02 |  b   k   s       B   K   S   2  | GE   Graphics Escape
+    | 03 |  c   l   t       C   L   T   3  | HT   Horizontal Tab
+    | 04 |  d   m   u       D   M   U   4  | IFS  Internal File Separator
+    | 05 |  e   n   v       E   N   V   5  | IGS  Internal Group Separator
+    | 06 |  f   o   w       F   O   W   6  | IL   IdLe
+    | 07 |  g   p   x       G   P   X   7  | IRS  Internal Record Separator
+    | 10 |  h   q   y       H   Q   Y   8  | IUS  Internal Unit Separator
+    | 11 |  i   r   z       I   R   Z   9  | LC   Lower Case
+    | 12 |                             (5) | LF   Line Feed
+    | 13 |                                 | NAK  Negative AcKnowledge
+    | 14 |                 (2)     (4)     | NL   New Line
+    | 15 |                                 | NUL  NULl
+    | 16 |                 (3)             | PF   Punch ofF
+    | 17 |                              EO | PN   Punch oN
+    +----+---------------------------------+ RES  REStore
+                                             RLF  Reverse Line Feed
+                                             RS   Record Separator
+                                             SI   Shift In
+                                             SM   Segment Mark
+                                             SMM  Start of Manual Message
+                                             SO   Shift Out
+                                             SOH  Start Of Header
+                                             SOS  Start Of Significance
+                                             SP   SPace
+                                             STX  Start of TeXt
+                                             SUB  SUBstitute
+                                             SYN  SYNchronous idle
+                                             TM   Tape Mark
+                                             UC   Upper Case
+                                             VT   Vertical Tab
+
+   index
+
+     ----------------------------------------------------------------------
+
+   EEC SYSTEM 4
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  not
+    |    +---------------------------------+
+    | 00 | NUL      DS      SP  &   -      | ACK  ACKnowledge
+    | 01 |         SST              /      | BEL  BELl
+    | 02 |         FDS                     | BS   Back Space
+    | 03 |      TM                         | CAK  Command AcKnowledge
+    | 04 |                                 | CAN  CANcel
+    | 05 |  HT  NL                         | CR   Carriage Return
+    | 06 |      BS                         | DAK  Decision AcKnowledge
+    | 07 |                                 | DCA0  Device Control A0n
+    | 10 |                                 | DLE  Data Link Escape
+    | 11 |     DC1      EM              `  | DOS  Decision OutStanding
+    | 12 |     DC2     SUB  L   !   ^   :  | DS   Digit Select
+                            -
+    | 13 |     DC3  VT ESC  .   $   ,  A0  | EM   End of Medium
+    | 14 |     STP  FF  FS  <   *   %   @  | ENQ  ENQuiry
+    | 15 |          CR  GS  (   )   _   '  | EOT  End Of Transmission
+    | 16 |          SO  RS  +   ;   >   =  | ERR  ERRor
+    | 17 |          SI  US  !  (1)  ?   "  | ESC  ESCape
+                            |
+    +----+---------------------------------+ ETB  End of Transmission Block
+    |      200 220 240 260 300 320 340 360 | ETX  End of TeXt
+    |    +---------------------------------+ FDS  FielD Separator
+    | 00 |                  {   }   \   0  | FF   Form Feed
+    | 01 |  a   j   ~       A   J       1  | FS   File Separator
+    | 02 |  b   k   s       B   K   S   2  | GS   Group Separator
+    | 03 |  c   l   t       C   L   T   3  | HT   Horizontal Tab
+    | 04 |  d   m   u       D   M   U   4  | NAK  Negative AcKnowledge
+    | 05 |  e   n   v       E   N   V   5  | NL   New Line
+    | 06 |  f   o   w       F   O   W   6  | NUL  NULl
+    | 07 |  g   p   x       G   P   X   7  | RS   Record Separator
+    | 10 |  h   q   y       H   Q   Y   8  | SI   Shift In
+    | 11 |  i   r   z       I   R   Z   9  | SO   Shift Out
+    | 12 |         SOH STX                 | SOH  Start Of Header
+    | 13 |         DLE ETX                 | SP   SPace
+    | 14 |         CAN EOT                 | SST  Significance STart
+    | 15 |         NAK ENQ                 | STP  SToP
+    | 16 |         SYN ACK                 | STX  Start of TeXt
+    | 17 |         ETB BEL CAK DAK DOS ERR | SUB  SUBstitute
+    +----+---------------------------------+ SYN  SYNchronous idle
+                                             TM   Tape Mark
+                                             US   Unit Separator
+                                             VT   Vertical Tab
+
+   index
+
+     ----------------------------------------------------------------------
+
+   MODIFIED EBCDIC
+
+    +------------------------+
+    |         -   A   B   BA | (1)  not
+    |      +-----------------+
+    | -    |  SP  &   -   0  | SP   SPace
+    | 1    |  A   J   /   1  |
+    | 2    |  B   K   S   2  |
+    | 21   |  C   L   T   3  |
+    | 4    |  D   M   U   4  |
+    | 41   |  E   N   V   5  |
+    | 42   |  F   O   W   6  |
+    | 421  |  G   P   X   7  |
+    | 8    |  H   Q   Y   8  |
+    | 81   |  I   R   Z   9  |
+    | 82   |  c   !   ^   :  |
+              /
+    | 821  |  .   $   ,   A0 |
+    | 84   |  <   *   %   @  |
+    | 841  |  (   )   _   '  |
+    | 842  |  +   ;   >   =  |
+    | 8421 | (1)  !   ?   "  |
+                  |
+    +------+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, STANDARD
+
+   ISO-6
+
+    +-----------------------------+
+    |          -    A    B    AB  | CR   Carriage Return
+    |      +----------------------+ DEL  DELete
+    | -    |   SP   0   NUL   P   | ESC  ESCape
+    | 1    | F1/HT  1    A    Q   | FA0   Format effector A0n
+    | 2    | F2/LF  2    B    R   | FF   Form Feed
+    | 21   | F3/VT  3    C    S   | HT   Horizontal Tab
+    | 4    | F4/FF  4    D    T   | LF   Line Feed
+    | 41   | F5/CR  5    E    U   | NUL  NULl
+    | 42   |   SO   6    F    V   | SI   Shift In
+    | 421  |   SI   7    G    W   | SO   Shift Out
+    | 8    |   (    8    H    X   | SP   SPace
+    | 81   |   )    9    I    Y   | VT   Vertical Tab
+    | 82   |   *    :    J    Z   |
+    | 821  |   +    ;    K    [   |
+    | 84   |   ,    $    L    L   |
+                              -   |
+    | 841  |   -    %    M    ]   |
+    | 842  |   .    &    N   ESC  |
+    | 8421 |   /    '    O   DEL  |
+    +------+----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ISO-6 ALTERNATIVE
+
+    +-----------------------------+
+    |          -    A    B    AB  | BS   Back Space
+    |      +----------------------+ DEL  DELete
+    | -    |   SP   0   NUL   P   | ESC  ESCape
+    | 1    | F1/HT  1    A    Q   | FA0   Format effector A0n
+    | 2    | F2/NL  2    B    R   | FF   Form Feed
+    | 21   | F3/VT  3    C    S   | HT   Horizontal Tab
+    | 4    | F4/FF  4    D    T   | NL   New Line
+    | 41   | F5/BS  5    E    U   | NUL  NULl
+    | 42   |   SO   6    F    V   | SI   Shift In
+    | 421  |   SI   7    G    W   | SO   Shift Out
+    | 8    |   (    8    H    X   | SP   SPace
+    | 81   |   )    9    I    Y   | VT   Vertical Tab
+    | 82   |   *    :    J    Z   |
+    | 821  |   +    ;    K    [   |
+    | 84   |   ,    <    L    L   |
+                              -   |
+    | 841  |   -    =    M    ]   |
+    | 842  |   .    >    N   ESC  |
+    | 8421 |   /    '    O   DEL  |
+    +------+----------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ASCII-1963
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  HT or SK
+    |    +---------------------------------+ (2)  unassigned control
+    | 00 | NUL DC0  SP  0   @   P          |
+    | 01 | SOM DC1  !   1   A   Q          | ACK  ACKnowledge
+    | 02 | EOA DC2  "   2   B   R          | BEL  BELl
+    | 03 | EOM DC3  A0   3   C   S         | CR   Carriage Return
+    | 04 | EOT DC4  $   4   D   T          | DCA0  Device Control A0n
+    | 05 | WRU ERR  %   5   E   U          | DEL  DELete
+    | 06 |  RU SYN  &   6   F   V          | EOA  End Of Address
+    | 07 | BEL LEM  '   7   G   W          | EOM  End Of Message
+    | 10 | FE0  S0  (   8   H   X          | EOT  End Of Text
+    | 11 | (1)  S1  )   9   I   Y          | ERR  ERRor
+    | 12 |  LF  S2  *   :   J   Z          | ESC  ESCape
+    | 13 |  VT  S3  +   ;   K   [          | FE0  Format Effector 0
+    | 14 |  FF  S4  ,   <   L   \      ACK | FF   Form Feed
+    | 15 |  CR  S5  -   =   M   ]      (2) | HT   Horizontal Tab
+    | 16 |  SO  S6  .   >   N   ^      ESC | LEM  Logical End of Media
+                                |
+    | 17 |  SI  S7  /   ?   O   <      DEL | LF   Line Feed
+                                -
+    +----+---------------------------------+ NUL  NULl
+                                             RU   aRe yoU
+                                             SA0   Separator A0n
+                                             SI   Shift In
+                                             SK   SKip
+                                             SO   Shift Out
+                                             SOM  Start Of Message
+                                             SP   SPace
+                                             SYN  SYNchronous idle
+                                             VT   Vertical Tab
+                                             WRU  Who aRe yoU
+
+   index
+
+     ----------------------------------------------------------------------
+
+   USASCII-8
+
+    +--------------------------------------+
+    |      000 020 100 120 240 260 340 360 | codes see above and the
+    |    +---------------------------------+ following:
+    | 00 | NUL DC0  SP  0   @   P          |
+    | 01 | SOM DC1  !   1   A   Q          | BS   Back Space
+    | 02 | EOA DC2  "   2   B   R          |
+    | 03 | EOM DC3  A0  3   C   S          | columns 040, 060, 140, 160,
+    | 04 | EOT DC4  $   4   D   T          | 200, 220, 300 and 320 not
+    | 05 | WRU ERR  %   5   E   U          | used.
+    | 06 |  RU SYN  &   6   F   V          |
+    | 07 | BEL LEM  '   7   G   W          |
+    | 10 |  BS  S0  (   8   H   X          |
+    | 11 |  HT  S1  )   9   I   Y          |
+    | 12 |  LF  S2  *   :   J   Z          |
+    | 13 |  VT  S3  +   ;   K   [          |
+    | 14 |  FF  S4  ,   <   L   \          |
+    | 15 |  CR  S5  -   =   M   ]          |
+    | 16 |  SO  S6  .   >   N   ^      ESC |
+                                |
+    | 17 |  SI  S7  /   ?   O   <      DEL |
+                                -
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   HOLLERITH
+
+    +-------------------------------------------------+
+    |          -    Y    X   Y-X   0   Y-0  X-0 Y-X-0 | for symbol meanings
+    |       +-----------------------------------------+ see next page
+    |   -   |  SP   &    -    |    0    {    }        |
+    |   1   |  1    A    J    j    /    a    ~        |
+    |   2   |  2    B    K    k    S    b    s        |
+    |   3   |  3    C    L    l    T    c    t        |
+    |   4   |  4    D    M    m    U    d    u        |
+    |   5   |  5    E    N    n    V    e    v        |
+    |   6   |  6    F    O    o    W    f    w        |
+    |   7   |  7    G    P    p    X    g    x        |
+    |   8   |  8    H    Q    q    Y    h    y        |
+    |  8-1  |  `                                      |
+    |  8-2  |  :    [    ]         \                  |
+    |  8-3  |  A0    .   $         ,                  |
+    |  8-4  |  @    <    *         %                  |
+    |  8-5  |  '    (    )         _                  |
+    |  8-6  |  =    +    ;         >                  |
+    |  8-7  |  "    !    ^         ?                  |
+    |   9   |  9    I    R    r    Z    i    z        |
+    |  9-1  |      SOH  DC1                           |
+    |  9-2  | SYN  STX  DC2                           |
+    |  9-3  |      ETX  DC3                           |
+    |  9-4  |                                         |
+    |  9-5  |       HT             LF                 |
+    |  9-6  |            BS       ETB                 |
+    |  9-7  | EOT  DEL            ESC                 |
+    |  9-8  |           CAN                           |
+    | 9-8-1 |            EM  DLE       NUL            |
+    | 9-8-2 |                                         |
+    | 9-8-3 |       VT                                |
+    | 9-8-4 | DC4   FF   FS                           |
+    | 9-8-5 | NAK   CR   GS       ENQ                 |
+    | 9-8-6 |       SO   RS       ACK                 |
+    | 9-8-7 | SUB   SI   US       BEL                 |
+    +-------+-----------------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   ASCII, CCITT#05, ISO-8
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | ACK  ACKnowledge
+    |    +---------------------------------+ BEL  BELl
+    | 00 | NUL DLE  SP  0   @   P   `   p  | BS   Back Space
+    | 01 | SOH DC1  !   1   A   Q   a   q  | CAN  CANcel
+    | 02 | STX DC2  "   2   B   R   b   r  | CR   Carriage Return
+    | 03 | ETX DC3  A0  3   C   S   c   s  | DCA0  Device Code A0n
+    | 04 | EOT DC4  $   4   D   T   d   t  | DEL  DELete
+    | 05 | ENQ NAK  %   5   E   U   e   u  | DLE  Data Link Escape
+    | 06 | ACK SYN  &   6   F   V   f   v  | EM   End of Medium
+    | 07 | BEL ETB  '   7   G   W   g   w  | ENQ  ENQuiry
+    | 10 |  BS CAN  (   8   H   X   h   x  | EOT  End Of Transmission
+    | 11 |  HT  EM  )   9   I   Y   i   y  | ESC  ESCape
+    | 12 |  LF SUB  *   :   J   Z   j   z  | ETB  End of Transmission Block
+    | 13 |  VT ESC  +   ;   K   [   k   {  | ETX  End of TeXt
+    | 14 |  FF  FS  ,   <   L   \   l   |  | FF   Form Feed
+    | 15 |  CR  GS  -   =   M   ]   m   }  | FS   File Separator
+    | 16 |  SO  RS  .   >   N   ^   n   ~  | GS   Group Separator
+    | 17 |  SI  US  /   ?   O   _   o  DEL | HT   Horizontal Tab
+    +----+---------------------------------+ LF   Line Feed
+                                             NAK  Negative AcKnowledge
+                                             NUL  NULl
+                                             RS   Record Separator
+                                             SI   Shift In
+                                             SO   Shift Out
+                                             SOH  Start Of Header
+                                             SP   SPace
+                                             STX  Start of TeXt
+                                             SUB  SUBstitute
+                                             SYN  SYNchronous idle
+                                             US   Unit Separator
+                                             VT   Vertical Tab
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CODES, SOVJET
+
+   GOST 10859-6
+
+    +----------------------+
+    |      000 020 040 060 | (1)  lower ten
+    |    +-----------------+ (2)  multiply
+    | 00 |  0  (1) *A  *R  | (3)  *SHCH
+    | 01 |  1   ^  *B  *S  | (4)  SOFT SIGN
+                |
+    | 02 |  2   (  *V  *T  |
+    | 03 |  3   )  *G  *U  | DEL  DELete
+    | 04 |  4  (2) *D  *F  | SP   SPace
+    | 05 |  5   =  *YE *KH |
+    | 06 |  6   ;  *ZH *TS | symbols marked * are CYRILLIC symbols
+    | 07 |  7   [  *Z  *CH |
+    | 10 |  8   ]  *I  *SH |
+    | 11 |  9   *  *J  (3) |
+    | 12 |  +   '  *K  *Y  |
+    | 13 |  -   `  *L  (4) |
+    | 14 |  /   =  *M  *E  |
+                /
+    | 15 |  ,   <  *N  *YU |
+    | 16 |  .   >  *O  *YA |
+    | 17 |  SP  :  *P  DEL |
+    +----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GOST 10859-LATIN
+
+    +----------------------+
+    |      000 020 040 060 | (1)  lower ten
+    |    +-----------------+ (2)  multiply
+    | 00 |  0  (1)  A   Q  | (3)  or
+    | 01 |  1   ^   B   R  | (4)  and
+                |
+    | 02 |  2   (   C   S  | (5)  implies
+    | 03 |  3   )   D   T  | (6)  not
+    | 04 |  4  (2)  E   U  |
+    | 05 |  5   =   F   V  | DEL  DELete
+    | 06 |  6   ;   G   W  | SP   SPace
+    | 07 |  7   [   H   X  |
+    | 10 |  8   ]   I   Y  |
+    | 11 |  9   *   J   Z  |
+    | 12 |  +   '   K  (3) |
+    | 13 |  -   `   L  (4) |
+    | 14 |  /   =   M  (5) |
+                /
+    | 15 |  ,   <   N  (6) |
+    | 16 |  .   >   O   :  |
+                        -
+    | 17 |  SP  :   P  DEL |
+    +----+-----------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GOST 10859-CARD
+
+    +---------------------------------+
+    |              -    Y    X   Y-X  | (1)  lower ten
+    |           +---------------------+ (2)  multiply
+    |     -     |  0   (1)  *A   *R   | (3)  *SHCH
+    |     1     |  1    ^   *B   *S   | (4)  SOFT SIGN
+                        |
+    |     2     |  2    (   *V   *T   | (5)  overline
+    |     3     |  3    )   *G   *U   | (6)  or
+    |     4     |  4   (2)  *D   *F   | (7)  and
+    |     5     |  5    =   *YE  *KH  | (8)  implies
+    |     6     |  6    ;   *ZH  *TS  | (9)  not
+    |     7     |  7    [   *Z   *CH  | (10) diamond
+    |     8     |  8    ]   *I   *SH  | (11) hyphen
+    |     9     |  9    *   *J   (3)  | (12) HARD SIGN
+    |    8-2    |  +    '   *K   *Y   | (13) degrees
+    |    8-3    |  -    `   *L   (4)  | (14) apostrophe
+    |    8-4    |  /    =   *M   *E   | (15) reverse triangle
+                        /
+    |    8-5    |  ,    <   *N   *YU  |
+    |    8-6    |  .    >   *O   *YA  | DEL  DELete
+    |    8-7    |  SP   :   *P    D   | SP   SPace
+    +-----------+---------------------+
+    |              -    Y    X   Y-X  | symbols marked * are CYRILLIC
+    |           +---------------------+ symbols
+    |    3-9    |  F   (6)   >        |
+                             -
+    |   3-9-1   |  G   (7)   <        | NOTE: symbol 0 has punching 0 and
+                             -
+    |   3-9-2   |  I   (8)   ?        | not no punching
+    |  3-9-2-1  |  J   (9)   v        |
+                             |
+    |   3-9-4   |  L    :    0        |
+                        -    /
+    |   3-9-5   |  N    =    +        |
+                        _    _
+    |   3-9-6   |  Q    %   (15)      |
+    |   3-9-7   |  R   (10)           |
+    |   3-9-8   |  S    |             |
+                        !
+    |  3-9-8-1  |  U   (11)           |
+    |  3-9-8-2  |  V    _             |
+    | 3-9-8-2-1 |  W    !             |
+    |  3-9-8-4  |  Z    "             |
+    |  3-9-8-5  | (5)  (12)           |
+    |  3-9-8-6  |  <   (13)           |
+                   _
+    |  3-9-8-7  |  >   (14)       DEL |
+                   _
+    +-----------+---------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GOST 10859-7
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  lower ten
+    +    +---------------------------------+ (2)  multiply
+    | 00 |  0  (1) *A  *R   F  (6)  >      | (3)  *SHCH
+                                    -
+    | 01 |  1   ^  *B  *S   G  (7)  <      | (4)  SOFT SIGN
+                |                   -
+    | 02 |  2   (  *V  *T   I  (8)  ?      | (5)  overline
+    | 03 |  3   )  *G  *U   J  (9)  v      | (6)  or
+                                    |
+    | 04 |  4  (2) *D  *F   L   :   0      | (7)  and
+                                -   /
+    | 05 |  5   =  *YE *KH  N   =   +      | (8)  implies
+                                _   _
+    | 06 |  6   ;  *ZH *TS  Q   %  (15)    | (9)  not
+    | 07 |  7   [  *Z  *CH  R  (10)        | (10) diamond
+    | 10 |  8   ]  *I  *SH  S   |          | (11) hyphen
+                                !
+    | 11 |  9   *  *J  (3)  U  (11)        | (12) HARD SIGN
+    | 12 |  +   '  *K  *Y   V   _          | (13) degrees
+    | 13 |  -   `  *L  (4)  W   !          | (14) apostrophe
+    | 14 |  /   =  *M  *E   Z   "          | (15) reverse triangle
+                /
+    | 15 |  ,   <  *N  *YU (5) (12)        |
+    | 16 |  .   >  *O  *YA  <  (13)        | DEL  DELete
+                            _
+    | 17 |  SP  :  *P   D   >  (14)    DEL | SP   SPace
+                            _
+    +----+---------------------------------+
+                                             symbols marked * are CYRILLIC
+                                             symbols
+
+   index
+
+     ----------------------------------------------------------------------
+
+   GOST 13052
+
+    +--------------------------------------+
+    |      000 020 040 060 100 120 140 160 | (1)  soft sign
+    |    +---------------------------------+ (2)  *shch
+    | 00 | NUL DLE  SP  0  *yu *p  *YU *P  | (3)  SOFT SIGN
+    | 01 | SOH DC1  !   1  *a  *ya *A  *YA | (4)  *SHCH
+    | 02 | STX DC2  "   2  *b  *r  *B  *R  |
+    | 03 | ETX DC3  A0  3  *ts *s  *TS *S  | symbols marked * are CYRILLIC
+    | 04 | EOT DC4  $   4  *d  *t  *D  *T  | symbols
+    | 05 | ENQ NAK  %   5  *ye *u  *YE *U  |
+    | 06 | ACK SYN  &   6  *f  *zh *F  *ZH | for symbol meanings and
+    | 07 | BEL ETB  '   7  *g  *v  *G  *V  | equivalent card coding see
+    | 10 |  BS CAN  (   8  *kh (1) *KH (3) | ASCII
+    | 11 |  HT  EM  )   9  *i  *y  *I  *Y  |
+    | 12 |  LF SUB  *   :  *j  *z  *J  *Z  |
+    | 13 |  VT ESC  +   ;  *k  *sh *K  *SH |
+    | 14 |  FF  FS  ,   <  *l  *e  *L  *E  |
+    | 15 |  CR  GS  -   =  *m  (2) *M  (4) |
+    | 16 |  SO  RS  .   >  *n  *ch *N  *CH |
+    | 17 |  SI  US  /   ?  *o   _  *O  DEL |
+    +----+---------------------------------+
+
+   index
+
+     ----------------------------------------------------------------------
+
+  CONTROL CODE MEANING
+
+
+    ACK  ACKnowledge
+    ACKA0 ACKnowledge A0n (0 to 7: ANSI; 1 to 2: 4 OUT OF 8)
+    AEF  Announce Extended Facilities
+    AGRA0 Alternate Graphic Rendition A0n (1 to 3)
+    AID  AID
+    APC  Application Program Command
+    AT   Add Thin
+    BEL  BELl
+    BK   BlacK
+    BKA0  Blank Key A0n (1 to 4)
+    BLKA0 BLocK A0n (0 to 7)
+    BS   Back Space
+    BYP  BYPass
+    CA0   Control A0n (1 to 7)
+    CAK  Command AcKnowledge
+    CAN  CANcel
+    CBT  Cursor Backward Tabulation
+    CC   Cursor Control
+    CCA0  Control Code A0n (A to H)
+    CCH  Cancel CHaracter
+    CD   Command Delimiter
+    CDS  Clear Device Set
+    CHA  Cursor Horizontal Absolute
+    CHR  single additional CHaRacter
+    CHT  Cursor Horizontal Tabulation
+    CL   Control Leader
+    CLS  CLear Selective
+    CNL  Cursor New Line
+    CNT  CoNTinue
+    COL  COLor
+    CPL  Cursor Previous Line
+    CPR  Cursor Position Report
+    CR   Carriage Return
+    CRM  Control Representation Mode
+    CS   Carriage Shift
+    CS   Code Select
+    CSA  Clear Selected to Address
+    CSI  Control Sequence Introducer
+    CUA0  Customer Use A0n (1 to 3)
+    CUB  CUrsor Backward
+    CUD  CUrsor Down
+    CUF  CUrsor Forward
+    CUH  CUrsor Home
+    CUL  CUrsor Left
+    CUP  CUrsor Position
+    CUR  CUrsor Right
+    CUU  CUrsor Up
+    CTC  Cursor Tabulation Control
+    CVT  Cursor Vertical Tabulation
+    DA   Device Attributes
+    DAK  Decision AcKnowledge
+    DAQ  Define Area Qualification
+    DCA0  Device Code A0n (1 to 4: ASCII; EBCDIC not 3; ASCII-1963 also 0)
+    DCD  Delete Character in Display
+    DCH  Delete CHaracter
+    DCL  Delete Character in Line
+    DCS  Device Control String
+    DED  DEsignate Device
+    DEL  DELete
+    DEOT mandatory Disconnect End Of Transmission
+    DGA0  Define character set G A0n (0 to 3)
+    DGRA0 Designate Graphic Rendition A0n (1 to 3)
+    DGRP Designate Graphic Rendition Primary
+    DL   Delete Line
+    DLE  Data Link Escape
+    DMI  Disable Manual Input
+    DOS  Decision OutStanding
+    DS   Digit Select
+    DSL  Delete Specified Line
+    DSR  Device Status Report
+    EA   Erase in Area
+    EBM  Editing Boudary Mode
+    ECA0  EsCape A0n (1 to 2)
+    ECH  Erase CHaracter
+    ED   End Data
+    ED   Erase in Display
+    EDT  EDiT function
+    EED  Erase to End of Display
+    EEL  Erase to End of Line
+    EF   End File
+    EF   Erase in Field
+    EL   Erase in Line
+    EM   End Message
+    EM   End of Medium
+    EMI  Enable Manual Input
+    EML  EM Leader
+    EMS  EM Space
+    ENL  EN Leader
+    ENQ  ENQuiry
+    ENS  EN Space
+    EO   Eight Ones
+    EOA  End Of Address
+    EOB  End Of Block
+    EOM  End Of Message
+    EON  End Of Number
+    EOT  End Of Text
+    EOT  End Of Transmission
+    EPA  End of Protected Area
+    ER   ERase
+    ERM  Erasure Mode
+    ERR  ERRor
+    ESA  End of Selected Area
+    ESC  ESCape
+    ESCA0 ESCape A0n (1 to 2)
+    ETB  End of Transmission Block
+    ETX  End of TeXt
+    FA0  Format effector A0n (1 to 5)
+    FCON
+    FDS  FielD Separator
+    FEA0 Format Effector A0n (0 to 5: ASCII; 0 only: ASCII-1963)
+    FEAM Format Effector Action Mode
+    FETM Format Effector Transfer Mode
+    FF   Form Feed
+    FHL  Forward Half Line feed
+    FNT  FoNT selection
+    FNTA0 FoNT selection A0n (1 to 3)
+    FS   Figure Shift
+    FS   Figure shift Space
+    FS   File Separator
+    GATM Guarded Area Transmission Mode
+    GE   Graphics Escape
+    GM   Group Mark
+    GRH  GRaphic Height
+    GRW  GRaphic Width
+    GS   Group Separator
+    GSM  Graphic Size Modification
+    GSS  Graphic Size Selection
+    HAK  Hardware AcKnowledge
+    HDW  HarDWare malfunction
+    HEM  Horizontal Editing Mode
+    HPA  Horizontal Position Absolute
+    HPR  Horizontal Position Relative
+    HPS  Horizontal Position Select
+    HSB  Half Space Backward
+    HT   Horizontal Tab
+    HTC  Horizontal Tabulation Clear
+    HTJ  Horizontal Tabulation with Justification
+    HTS  Horizontal Tabulation Set
+    HVP  Horizontal and Vertical Position
+    ICA0  Invoke control character set C A0n (0 to 1)
+    ICD  Insert Character in Display
+    ICH  Insert CHaracter
+    ICL  Insert Character in Line
+    IDL  IDLE
+    IDLE IDLE
+    IFS  Internal File Separator
+    IGS  Internal Group Separator
+    IL   IdLe
+    IL   Insert Line
+    ILA  IdLe A
+    ILB  IdLe B
+    IND  INDex
+    INQ  INQuiry
+    INT  INTerrupt
+    IRM  Insertion-Replacement Mode
+    IRS  Internal Record Separator
+    ISA0  Information Separator A0n (1 to 4)
+    ISL  Insert Specified Line
+    ISS  Item Separator Symbol
+    IUS  Internal Unit Separator
+    JFY  JustiFY
+    KAM  Keyboard Action Mode
+    LC   Lower Case
+    LD   Line Delete
+    LDR  LeaDeR start
+    LEM  Logical End of Media
+    LF   Line Feed
+    LI   Line Insert
+    LNM  Line feed New line Mode
+    LR   Lower Rail
+    LS   Letter Shift
+    LS   Letter shift Space
+    LSP  LetterSPace
+    MATM Multiple Area Transfer Mode
+    MBC  Multi Byte Character set G0
+    MC   Media Copy
+    MC   Mode Change
+    MFNT Master FoNT selection
+    MS   Master Space
+    MW   Message Waiting
+    NAK  Negative AcKnowledge
+    NC   No Character
+    NEL  NExt Line
+    NL   New Line
+    NP   Next Page
+    NP   No Print
+    NUL  NULl
+    OFF  OFF
+    ON   ON
+    OSC  Operating System Command
+    PC   Page Change
+    PCA0 Periph Code A0n (1 to 15)
+    PCD  Parametric Control Dimensioned
+    PCP  Parametric Control Pointer
+    PF   Paper Feed
+    PF   Punch ofF
+    PGR  Primary Graphic Rendition
+    PI   Periph Interupt
+    PIA0  Periph Interupt A0n (1 to 7)
+    PLD  Partial Line Down
+    PLU  Partial Line Up
+    PM   Privacy Message
+    PN   Punch oN
+    POA0 Punch oN A0n (1 to 2)
+    PP   Previous Page
+    PR   PRint
+    PRE  PREfix
+    PRV  PRiVacy delimiter
+    PUA0 Private Use A0n (1 to 2)
+    PUM  Positioning Unit Mode
+    QC   Quad Center
+    QL   Quad Left
+    QR   Quad Right
+    QUAD QUAD
+    RD   ReD
+    RE   REad
+    REP  REPeat
+    REQ  REQuest
+    RES  REServed
+    RES  REStore
+    RHL  Reverse Half Line feed
+    RHS  Request Hardware Status
+    RI   Reverse Index
+    RINT Reverse INTerupt
+    RIS  Reset to Initial State
+    RLF  Reverse Line Feed
+    RM   Record Mark
+    RM   Reset Mode
+    RS   Read Selective
+    RS   Reader Stop
+    RS   Record Separator
+    RSS  Request Specified State
+    RU   aRe yoU
+    SA0  Separator A0n (0 to 7)
+    SATM Selected Area Transfer Mode
+    SB   Substitute Blank
+    SD   Scroll Down
+    SEM  Select Editing extent Mode
+    SGR  Select Graphic Rendition
+    SGS  Single Graphic Shift
+    SI   Shift In
+    SIH  Spacing Increment Horizontal
+    SIV  Spacing Increment Vertical
+    SK   SKip
+    SKX  SKip to channel X
+    SL   Scroll Left
+    SM   Segment Mark
+    SM   Set Mode
+    SMM  Start of Manual Message
+    SO   Shift Out
+    SOH  Start Of Header
+    SOM  Start Of Message
+    SORA0 Start Of Record A0n (1 to 2)
+    SOS  Start Of Significance
+    SOSS Start Of Supervisory Sequence
+    SOTB Start Of Transmission Block
+    SP   SPace
+    SPA0 SPecial A0n (1 to 2)
+    SPA  Start of Protected Area
+    SPC  SPeCial escape code
+    SPEC SPECial
+    SPI  SPacing Increment
+    SPN  SPace N width
+    SPM  SPace M width
+    SR   Scroll Right
+    SRM  Send-Receive Mode
+    SRTM Status Reporting Transfer Mode
+    SSA0 Single Shift A0n (2 to 3)
+    SSA  Start of Selected Area
+    SST  Significance STart
+    ST   STop
+    ST   String Terminator
+    STC  STop Code
+    STS  Set Transmit State
+    STOP STOP
+    STP  SToP
+    STX  Start of TeXt
+    SU   Scroll Up
+    SUB  SUBstitute
+    SW
+    SYN  SYNchronous idle
+    SYU  SYstem Use
+    TB   TaB
+    TBC  TaBulation Clear
+    TCA0 Transmission Control A0n (1 to 10)
+    TD   Terminating Delimiter
+    TDLE Transparant data DLE
+    TEL  TELephone
+    TENQ Transparant ENQ
+    TETB Transparant ETB
+    TETX Transparant ETX
+    TL   Transmit Leader
+    TM   Tape Mark
+    TS   Thin Space
+    TSM  Tabulation Stop Mode
+    TSOH Transparant SOH
+    TSS  Thin Space Specification
+    TST  TeST
+    TSTX Transparant STX
+    TSYN Transparant SYN
+    TTM  Transfer Termination Mode
+    UC   Upper Case
+    UR   Upper Rail
+    US   Unit Separator
+    VEM  Vertical Editing Mode
+    VPA  Vertical Position Absolute
+    VPR  Vertical Position Relative
+    VPS  Vertical Position Select
+    VT   Vertical Tab
+    VTC  Vertical Tabulation Clear
+    VTS  Vertical Tabulation Set
+    WABT WAit Before Transmit
+    WACK Wait ACKnowledge
+    WRU  Who aRe yoU
+    WS   Word Separator
+    XDGA0 auXiliary Define character set G A0n (0 to 3)
+    XMT  XMiT
+
+   index
+
+     ----------------------------------------------------------------------
+
+  OVERPRINT SYMBOLS USED
+
+     * arrows:
+
+        arrow left:         <
+                            -
+        arrow up:           ^
+                            |
+        arrow right:        >
+                            -
+        arrow down:         v
+                            |
+       
+
+     * mathematical symbols:
+
+        at least:           >
+                            _
+        at most:            <
+                            _
+        not equal:          =
+                            /
+        equivalent:         =
+                            _
+        integer division:   :
+                            -
+        
+
+     * special symbols:
+
+        pound symbol:       L
+                            -
+        plus-minus:         +
+                            _
+        dollar-cent:        c
+                            /
+        unbroken-bar:       !
+                            |
+        barred-zero:        0
+                            /
+        underlined-o:       o
+                            _
+       
+
+   index
+
+     ----------------------------------------------------------------------
+
+   Compiled by the late Dik Winter (CWI, Amsterdam). HTML reformatting by Edo
+   Dooijes, Computer Museum, University of Amsterdam, 1997, 2001, 2007, 2010.
+
+   CM_homepage
+
+   .
