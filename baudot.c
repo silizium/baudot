@@ -2,7 +2,7 @@
  ccitt converter
  by Hanno Behrens (pebbles@schattenlauf.de)
  published under project Jathene on http://pebbles.schattenlauf.de/ 2007
- Licence GPL
+ Licence MIT
 */
 #include <stdio.h>
 #include <stdlib.h>
