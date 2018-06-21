@@ -8,22 +8,23 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <unistd.h>
 #include <wctype.h>
 #include <wchar.h>
 
 int figure=1;
 int decode=false;
 
-static wchar_t paper[][3]{
+static wchar_t paper[][3]={
 	{' ', 'o', '.'}, 	//0 ASCII
 	{' ', L'●', L'·'},	// 1 UTF-8
-}
+};
 enum {BORDER_TL, BORDER_TM, BORDER_TR, BORDER_ML, BORDER_MR, BORDER_BL, BORDER_BM, BORDER_BR};
-static wchar_t border[][8]{
+static wchar_t border[][8]={
 	{'-', '-', '-', '|', '|', '-', '-', '-'},	// 0 ASCII
 	{L'┌', L'─', L'┐', L'│', L'│', L'└', L'─', L'┘'}, // 1 UTF slim Border
 	{L'▛', L'▀', L'▜', L'▌', L'▐', L'▙', L'▄', L'▟'} ,
-}
+};
 
 wint_t fgetutf8c(FILE *fp){
 	wint_t utf, ch;
@@ -106,7 +107,7 @@ int main(int argc, char **argv){
 			decode=true;
 			break;
 		case 'l':
-			list();
+			//list();
 			exit(0);
 			break;
 		case 'c':
