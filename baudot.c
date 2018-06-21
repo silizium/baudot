@@ -549,7 +549,7 @@ int main(int argc, char **argv){
 	wint_t ch;
 //	extern char *optarg;
 
-	while(-1 != (opt=getopt(argc, argv, "dlc:b:h"))){
+	while(-1 != (opt=getopt(argc, argv, "dvlc:b:h"))){
 		switch(opt){
 		case 'd':
 			decode=true;
