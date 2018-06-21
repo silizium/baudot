@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <stdbool.h>
 #include <wctype.h>
 #include <wchar.h>
@@ -460,7 +461,7 @@ int baudot_dec(wint_t baudot, int *mode, int code, int bitmode, int autoreset){
 		}
 	}
 	c=letter[codetable[code].table[*mode]][baudot];
-	fpututf8c(c, stdout);
+	fputwc(c, stdout);
 	return c;
 }
 
@@ -480,6 +481,7 @@ void help(char *name){
 		"  Available Options:\n"
 		"   -h	this help\n"
 		"   -l	list of available codings\n"
+		"   -v  print verbose tables on stderr\n"
 		"   -d	decode from 5-tape to utf\n"
 		"   -cNUM	used coding (default=7)\n"	
 		"   -bBIT	bitmode (default -1=standard for coding)\n",name);
@@ -543,8 +545,9 @@ int fpututf8c(wint_t utf, FILE *fp){
 
 int main(int argc, char **argv){
 	int opt,mode,code=7,bitmode=-1,autoreset=0;
+	bool verbose=false;
 	wint_t ch;
-	extern char *optarg;
+//	extern char *optarg;
 
 	while(-1 != (opt=getopt(argc, argv, "dlc:b:h"))){
 		switch(opt){
@@ -565,6 +568,9 @@ int main(int argc, char **argv){
 		case 'b':
 			bitmode=atoi(optarg);
 			break;
+		case 'v':
+			verbose=true;
+			break;
 		case 'h':
 		case '-':
 			help(argv[0]);
@@ -572,7 +578,7 @@ int main(int argc, char **argv){
 			break;
 		}
 	}
-	fprintf(stderr, "Table %d: %s %s Bitmode %d\n", code, codetable[code].name, decode?"decoding":"encoding", bitmode);
+	if(verbose) fprintf(stderr, "Table %d: %s %s Bitmode %d\n", code, codetable[code].name, decode?"decoding":"encoding", bitmode);
 	mode=0;
 	while((ch=fgetutf8c(stdin))!=WEOF){
 		if(decode){
