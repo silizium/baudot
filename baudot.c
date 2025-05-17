@@ -474,7 +474,7 @@ void list(){
 }
 
 void help(char *name){
-	printf("%s [OPTION]\n"
+	fprintf(stderr,"%s [OPTION]\n"
 		"  Encodes or decodes UTF-8 to and from Baudot-like 5-tape text encoding\n"
 		"  uses stdin and stdout as input and output\n"
 		"  © 2007 Hanno Behrens (pebbles@schattenlauf.de) Licence GPL\n\n"
