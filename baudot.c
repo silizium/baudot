@@ -477,7 +477,7 @@ void help(char *name){
 	fprintf(stderr,"%s [OPTION]\n"
 		"  Encodes or decodes UTF-8 to and from Baudot-like 5-tape text encoding\n"
 		"  uses stdin and stdout as input and output\n"
-		"  © 2007 Hanno Behrens (pebbles@schattenlauf.de) Licence GPL\n\n"
+		"  © 2007-2025 Hanno Behrens DL7HH <behrens.hanno@gmail.com> CC-BY\n\n"
 		"  Available Options:\n"
 		"   -h	this help\n"
 		"   -l	list of available codings\n"
