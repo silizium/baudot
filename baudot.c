@@ -83,85 +83,96 @@ tape codetable[]={
 	{11, 12},
 	{'\037', '\033'}
 },{//8
+	"Baudot (Original UK)",
+	ORDER_FROMRIGHT,
+	2,
+	{35,36},
+	{'\x08','\x10'}
+},{//9
+	"Baudot (Original Continental)",
+	ORDER_FROMRIGHT,
+	2,
+	{37,38},
+	{'\x08','\x10'}
+},{//10
 	"Alcor (Algol 60, DIN)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,13},
 	{'\037', '\033'}
-},{//9
+},{//11
 	"Teletype (US CCITT#2)",
 	ORDER_FROMRIGHT,
 	2,
 	{11, 14},
 	{'\037', '\033'}
-},{//10
+},{//12
 	"AT&T (US Stock Market)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,15},
 	{'\037','\033'}
-},{//11
+},{//13
 	"Flexowriter",
 	ORDER_FROMRIGHT,
 	2,
 	{11,16},
 	{'\037','\033'}
-},{//12
+},{//14
 	"Metro-Vick 950",
 	ORDER_FROMRIGHT,
 	2,
 	{17,18},
 	{'\0', '\033'}
-},{//13
+},{//15
 	"Elliott 405",
 	ORDER_FROMRIGHT,
 	2,
 	{19,20},
 	{'\037', '\033'}
-},{//14
+},{//16
 	"EMI 2400",
 	ORDER_FROMRIGHT,
 	2,
 	{21,22},
 	{'\0', '\037'}
-},{//15
+},{//17
 	"BSI Proposal",
 	ORDER_FROMRIGHT,
 	2,
 	{23,24},
 	{'\037','\033'}
-},{//16
+},{//18
 	"Stantec Zebra",
 	ORDER_FROMLEFT,
 	1,
 	{25},
 	{255}
-},{//17
+},{//19
 	"EMI M/C Tool",
 	ORDER_FROMLEFT,
 	1,
 	{26},
 	{255}
-},{//18
+},{//20
 	"EMI 1100",
 	ORDER_FROMLEFT,
 	2,
 	{27, 28},
 	{'\036','\0'}
-},{//19
+},{//21
 	"Pegasus-Mercury",
 	ORDER_FROMLEFT,
 	2,
 	{29,30},
 	{'\033','\0'}
-},{//20
+},{//22
 	"Pegasus-Flexowriter",
 	ORDER_FROMLEFT,
 	4,
 	{31,32,33,34},
 	{'\033','\0','\036','\035'}
-}
-};
+}};
 
 static wchar_t letter[][32] = {
 	// Lorenz:
@@ -378,7 +389,31 @@ static wchar_t letter[][32] = {
 		'>', '\'', '\r', ':', '\t', '\n', ',', L'·', 
 		L'£', '\021', '\022', L'¾', '\024', '&', '?', '\b', 
 		'\030', '%', '=', '\033', ' ', '\035', '\036', '\b'
-	}
+	},
+	{	// 35 Baudot Original UK Let
+		'\0', 'A', 'E', '/', 'Y', 'U', 'I', 'O', 
+		' ', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
+		' ', '-', 'X', 'Z', 'S', 'T', 'W', 'V', 
+		'\b', 'K', 'M', 'L', 'R', 'Q', 'N', 'P'
+	},
+	{	// 36 Baudot Original UK Fig
+		'\0', '1', '2', L'⅟', '3', '4', L'³', '5', 
+		' ', '6', '7', L'¹', '8', '9', L'⁵', '0', 
+		' ', '.', L'⁹', ':', L'⁷', L'²', '?', '\'', 
+		'\b', '(', ')', '=', '-', '/', L'£', '+'
+	},
+	{	// 37 Baudot Original Continental Let
+		'\0', 'A', 'E', L'É', 'Y', 'U', 'I', 'O', 
+		' ', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
+		' ', '-', 'X', 'Z', 'S', 'T', 'W', 'V', 
+		'\b', 'K', 'M', 'L', 'R', 'Q', 'N', 'P'
+	},
+	{	// 38 Baudot Original Continental Fig
+		'\0', '1', '2', '&', '3', '4', L'°', '5', 
+		' ', '6', '7', L'ʰ', '8', '9', L'ᶠ', '0', 
+		' ', '.', ',', ':', ';', '!', '?', '\'', 
+		'\b', '(', ')', '=', '-', '/', L'№', '%'
+	},
 };
 //		'', '', '', '', '', '', '', '', 
 
