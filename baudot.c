@@ -75,25 +75,25 @@ tape codetable[]={
 	ORDER_FROMRIGHT,
 	2,
 	{9,10},
-	{'\020','\010'}
+	{'\x10','\x08'}
 },{//7
 	"Murray (CCITT#2)",
 	ORDER_FROMRIGHT,
 	2,
 	{11, 12},
-	{'\037', '\033'}
+	{'\x1f', '\x1b'}
 },{//8
 	"Baudot (Original UK)",
 	ORDER_FROMRIGHT,
 	2,
 	{35,36},
-	{'\x08','\x10'}
+	{'\x10','\x08'}
 },{//9
 	"Baudot (Original Continental)",
 	ORDER_FROMRIGHT,
 	2,
 	{37,38},
-	{'\x08','\x10'}
+	{'\x10', '\x08'}
 },{//10
 	"Baudot-Murray (Variant 0x04/0x1b)",
 	ORDER_FROMRIGHT,
@@ -101,96 +101,102 @@ tape codetable[]={
 	{39,40},
 	{'\x04','\x1b'}
 },{//11
+	"Baudot (Variant ITA1)",
+	ORDER_FROMRIGHT,
+	2,
+	{45,46},
+	{'\x10','\x08'}
+},{//12
 	"Baudot (Variant ITA2/US-TTY)",
 	ORDER_FROMRIGHT,
 	2,
 	{41,42},
 	{'\x1f','\x1b'}
-},{//12
+},{//13
 	"Baudot (Variant ITA2)",
 	ORDER_FROMRIGHT,
 	2,
 	{41,43},
 	{'\x1f','\x1b'}
-},{//13
+},{//14
 	"Baudot (Variant ITA2/Weather)",
 	ORDER_FROMRIGHT,
 	2,
 	{41,44},
 	{'\x1f','\x1b'}
-},{//14
+},{//15
 	"Alcor (Algol 60, DIN)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,13},
 	{'\037', '\033'}
-},{//15
+},{//16
 	"Teletype (US CCITT#2)",
 	ORDER_FROMRIGHT,
 	2,
 	{11, 14},
 	{'\037', '\033'}
-},{//16
+},{//17
 	"AT&T (US Stock Market)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,15},
 	{'\037','\033'}
-},{//17
+},{//18
 	"Flexowriter",
 	ORDER_FROMRIGHT,
 	2,
 	{11,16},
 	{'\037','\033'}
-},{//18
+},{//19
 	"Metro-Vick 950",
 	ORDER_FROMRIGHT,
 	2,
 	{17,18},
 	{'\0', '\033'}
-},{//19
+},{//20
 	"Elliott 405",
 	ORDER_FROMRIGHT,
 	2,
 	{19,20},
 	{'\037', '\033'}
-},{//20
+},{//21
 	"EMI 2400",
 	ORDER_FROMRIGHT,
 	2,
 	{21,22},
 	{'\0', '\037'}
-},{//21
+},{//22
 	"BSI Proposal",
 	ORDER_FROMRIGHT,
 	2,
 	{23,24},
 	{'\037','\033'}
-},{//22
+},{//23
 	"Stantec Zebra",
 	ORDER_FROMLEFT,
 	1,
 	{25},
 	{255}
-},{//23
+},{//24
 	"EMI M/C Tool",
 	ORDER_FROMLEFT,
 	1,
 	{26},
 	{255}
-},{//24
+},{//25
 	"EMI 1100",
 	ORDER_FROMLEFT,
 	2,
 	{27, 28},
 	{'\036','\0'}
-},{//25
+},{//26
 	"Pegasus-Mercury",
 	ORDER_FROMLEFT,
 	2,
 	{29,30},
 	{'\033','\0'}
-},{//26
+},{//27
 	"Pegasus-Flexowriter",
 	ORDER_FROMLEFT,
 	4,
@@ -208,25 +214,25 @@ static wchar_t letter[][32] = {
         '\0',   'E',    '\n',   'A',    ' ',    'S',    'I',    'U',
         '\r',   'D',    'R',    'J',    'N',    'F',    'C',    'K',
         'T',    'Z',    'L',    'W',    'H',    'Y',    'P',    'Q',
-        'O',    'B',    'G',    L'·',    'M',    'X',    'V',    L'·'
+        'O',    'B',    'G',    L'␏',    'M',    'X',    'V',    L'␎'
 	},
 	{	//1 fig: Mix of ITA-2 and U.S.
         '\0',   '3',    '\n',   '-',    ' ',    '\'',   '8',    '7',
         '\r',   '$',    '4',    '\a',   ',',    '!',    ':',    '(',
         '5',    '+',    ')',    '2',    '#',    '6',    '0',    '1',
-        '9',    '?',    '&',    L'·',    '.',    '/',    '=',   L'·'
+        '9',    '?',    '&',    L'␏',    '.',    '/',    '=',   L'␎'
 	},
 	{	//2 fig: ITA-2
         '\0',   '3',    '\n',   '-',    ' ',    '\'',   '8',    '7',
         '\r',   L'·',    '4',    '\a',   ',',    L'·',    ':',    '(',
         '5',    '+',    ')',    '2',    L'·',    '6',    '0',    '1',
-        '9',    '?',    L'·',    L'·',    '.',    '/',    '=',    L'·'
+        '9',    '?',    L'·',    L'␏',    '.',    '/',    '=',    L'␎'
 	},
 	{	//3 fig: U.S.
         '\0',   '3',    '\n',   '-',    ' ',    '\a',   '8',    '7',
         '\r',   '$',    '4',    '\'',   ',',    '!',    ':',    '(',
         '5',    '"',    ')',    '2',    '#',    '6',    '0',    '1',
-        '9',    '?',    '&',    L'·',    '.',    '/',    ';',    L'·'
+        '9',    '?',    '&',    L'␏',    '.',    '/',    ';',    L'␎'
 	},
 	{	//4 LEO
 		'\0', '-', '\002', L'·', L'·', L'·', '\006', L'·',
@@ -237,123 +243,123 @@ static wchar_t letter[][32] = {
 	{	//5 EED Let
 		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G',
 		'H', 'I', '.', 'J', 'K', 'L', 'M', 'N',
-		'O', 'P', 'Q', 'R', '\025','\024', 'S', 'T',
+		'O', 'P', 'Q', 'R', L'␏', L'␎', 'S', 'T',
 		'U', 'V', 'W', 'X', 'Y', 'Z', '\n', '\b'
 	},
 	{	//6 EED Fig
 		'0', '1', '2', '3', '4', '5', '6', '7',
 		'8', '9', 0x247d, 0x247e, 0x247f, 0x2480, 0x2481, 0x2482,
-		0x2483, 0x2484, 0x2485, 0x2486, '\025','\024', L'·', L'·',
+		0x2483, 0x2484, 0x2485, 0x2486, L'␏', L'␎', L'·', L'·',
 		L'·', '+', '-', ',', '\034', ' ', '\n', '\b'
 	},
-	{	//7 Illiac Let
+	{	//7 Illiac Let 
 		'P', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 
 		'I', 'O', 'K', 'S', 'N', 'J', 'F', 'L', 
-		'\b', 'D', '\n', 'B', '\024', 'V', 'A', 'X', 
-		'\b', 'G', 'M', '\033', 'H', 'C', 'Z', ' '
+		'\b', 'D', '\n', 'B', L'␎', 'V', 'A', 'X', 
+		'\b', 'G', 'M', L'␏', 'H', 'C', 'Z', ' '
 
 	},
 	{	//8 Illiac Fig
 		'0', '1', '2', '3', '4', '5', '6', '7', 
 		'8', '9', '+', '-', 'N', 'J', 'F', 'L', 
-		'\b', '$', '\n', '(', '\024', ',', ')', '/', 
-		'\b', '=', '.', '\033', '\'', ':', '*', ' '
+		'\b', '$', '\n', '(', L'␎', ',', ')', '/', 
+		'\b', '=', '.', L'␏', '\'', ':', '*', ' '
 	},
-	{	// 9 Baudot Let
+	{	// 9 Baudot Let 0x20 0x10
 		'\0', 'Y', 'E', 'I', 'A', 'U', L'É', 'O', // É=/?
-		' ', 'B', 'G', 'F', 'J', 'C', 'H', 'D', 
+		L'␏', 'B', 'G', 'F', 'J', 'C', 'H', 'D', 
 		' ', 'S', 'X', 'W', '-', 'T', 'Z', 'V', 
 		'\b', 'R', 'M', 'N', 'K', 'Q', 'L', 'P'
 	},
 	{	// 10 Baudot Fig
 		'\0', '3', '2', L'³', '1', '4', L'¹', '5', 
 		' ', '8', '7', 0x2075, '6', '9', 0x2074, '0', 
-		' ', 0x2077, 0x2079, '?', '.', L'²', ':', '\'', 
+		L'␎', 0x2077, 0x2079, '?', '.', L'²', ':', '\'', 
 		'\b', '-', ')', L'£', '(', '/', '=', '+'
 	},
 	{	// 11 Murray Let
 		'\0', 'T', '\r', 'O', ' ', 'H', 'N', 'M', 
 		'\n', 'L', 'R', 'G', 'I', 'P', 'C', 'V', 
 		'E', 'Z', 'D', 'B', 'S', 'Y', 'F', 'X', 
-		'A', 'W', 'J', '\033', 'U', 'Q', 'K', '\037'
+		'A', 'W', 'J', L'␏', 'U', 'Q', 'K', L'␎'
 	},
 	{	// 12 Murray Fig
 		'\0', '5', '\r', '9', ' ', L'·', ',', '.', 
 		'\n', ')', '4', L'·', '8', '0', ':', ';', 
 		'3', '"', '\022', '?', '\'', '6', L'·', '/', 
-		'-', '2', '\a', '\033', '7', '1', '(', '\037'
+		'-', '2', '\a', L'␏', '7', '1', '(', L'␎'
 	},
 	{	// 13 Alcor Fig
 		'\0', '5', '\r', '9', ' ', 0x2469, ',', '.', 
 		'\n', ')', '4', ']', '8', '0', ':', '=', 
 		'3', '+', 0x2670, '*', '\'', '6', '[', '/', 
-		'-', '2', ';', '\033', '7', '1', '(', '\037'
+		'-', '2', ';', L'␏', '7', '1', '(', L'␎'
 	},
 	{	// 14 Teletype Fig
 		'\0', '5', '\r', '9', ' ', '#', ',', '.', 
 		'\n', ')', '4', '&', '8', '0', ':', ';', 
 		'3', '"', '$', '?', '\'', '6', '!', '/', 
-		'-', '2', '\a', '\033', '7', '1', '(', '\037'
+		'-', '2', '\a', L'␏', '7', '1', '(', L'␎'
 	},
 	{	// 15 AT&T Fig
 		'\0', '5', '\r', '9', ' ', '#', '%', '.', 
 		'\n', L'¾', '4', '&', '8', '0', 0x215b, 0x215c, 
 		'3', '\"', '$', 0x215d, '\a', '6', L'¼', '/', 
-		'-', '2', ',', '\033', '7', '1', L'½', '\037'
+		'-', '2', ',', L'␏', '7', '1', L'½', L'␎'
 	},
 	{	// 16 Flexowriter Fig
 		'\0', '5', '\r', '9', ' ', '(', ',', '.', 
 		'\n', ')', '4', '&', '8', '0', '\016', '\017', 
 		'3', '\021', '\022', '$', '/', '6', ',', '\027', 
-		'-', '2', '\032', '\033', '7', '1', '\036', '\037'
+		'-', '2', '\032', L'␏', '7', '1', '\036', L'␎'
 	},
 	{	// 17 Metro-Vick950 Let
-		'\0', 'T', '\r', 'O', ' ', 'H', 'N', 'M', 
+		L'␎', 'T', '\r', 'O', ' ', 'H', 'N', 'M', 
 		'\n', 'L', 'R', 'G', 'I', 'P', 'C', 'V', 
 		'E', 'Z', 'D', 'B', 'S', 'Y', 'F', 'X', 
-		'A', 'W', 'J', '\033', 'U', 'Q', 'K', '\b'
+		'A', 'W', 'J', L'␏', 'U', 'Q', 'K', '\b'
 	},
 	{	// 18 Metro-Vick950 Fig
-		'\0', '?', '\r', '+', ' ', L'£', ',', '.', 
+		L'␎', '?', '\r', '+', ' ', L'£', ',', '.', 
 		'\n', ')', '*', L'&', '%', '-', L'·', '=', 
 		'0', '1', '2', '3', '4', '5', '6', '7', 
-		'8', '9', L'·', '\033', '!', '/', '(', '\b'
+		'8', '9', L'·', L'␏', '!', '/', '(', '\b'
 	},
 	{	// 19 Elliott405 Let
 		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
 		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
 		'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 
-		'X', 'Y', 'Z', '\033', ' ', '\r', '\n', '\037'
+		'X', 'Y', 'Z', L'␏', ' ', '\r', '\n', L'␎'
 	},
 	{	// 20 Elliott405 Fig
 		'\0', '1', '2', '*', '4', '$', '=', '7', 
 		'8', '!', ',', '+', ':', '-', '.', '%', 
 		'0', '(', ')', '3', '?', '5', '6', '/', 
-		L'·', '9', L'£', '\033', ' ', '\r', '\n', '\037'
+		L'·', '9', L'£', L'␏', ' ', '\r', '\n', L'␎'
 	},
 	{	// 21 EMI2400 Let
-		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
+		L'␎', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
 		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
 		'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 
-		'X', 'Y', 'Z', '&', ' ', '\n', '\'', '\037'
+		'X', 'Y', 'Z', '&', ' ', '\n', '\'', L'␏'
 	},
 	{	// 22 EMI2400 Fig
-		'\0', '1', '2', ')', '4', L'½', '%', '7', 
+		L'␎', '1', '2', ')', '4', L'½', '%', '7', 
 		'8', L'£', '+', 0x247e, '/', '-', '.', '\0', 
 		'0', L'→', '(', '3', 0x2153, '5', '6', '*', 
-		L'¼', '9', 0x247d, L'¾', L'×', '\n', '\n', '\037'
+		L'¼', '9', 0x247d, L'¾', L'×', '\n', '\n', L'␏'
 	},
 	{	// 23 BSI Proposal Let
 		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
 		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
 		'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 
-		'X', 'Y', 'Z', '&', ' ', '\n', '\'', '\037'
+		'X', 'Y', 'Z', L'␏', ' ', '\n', '\'', L'␎'
 	},
 	{	// 24 BSI Proposal Fig
 		'\0', '1', '2', L'·', '4', L'·', L'·', '7',
 		'8', L'·', '+', 0x247e, L'·', '-', '.', L'·', 
 		'0', L'·', '\022', '3', L'·', '5', '6', L'·', 
-		L'·', '9', 0x247d, '\033', ' ', '\r', '\n', '\037' 
+		L'·', '9', 0x247d, L'␏', ' ', '\r', '\n', L'␎' 
 	},
 	{	// 25 Stantec Zebra
 		'0', '1', '2', '3', '4', '5', '6', '7', 
@@ -368,112 +374,124 @@ static wchar_t letter[][32] = {
 		'J', 'K', 'L', 'M', 'N', 'A', 'R', '\b'
 	},
 	{	// 27 EMI 1100 Let
-		'\0', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 
+		L'␏', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 
 		'X', 'Y', 'Z', 'D', 'M', 'U', '&', ' ', 
 		'A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 
-		'J', 'K', 'L', 'N', 'O', '\n', '\036', '\b'
+		'J', 'K', 'L', 'N', 'O', '\n', L'␎', '\b'
 	},
 	{	// 28 EMI 1100 Fig
-		'\0', '%', L'£', '-', '*', '/', '.', '%', 
+		L'␏', '%', L'£', '-', '*', '/', '.', '%', 
 		L'¾', '\'', '(', ')', '+', L'×', L'½', ' ', 
 		'0', '1', '2', '3', '4', '5', '6', '7', 
-		'8', '9', 0x247d, 0x247e, 0x247f, '\n', '\036', '\b'
+		'8', '9', 0x247d, 0x247e, 0x247f, '\n', L'␎', '\b'
 	},
 	{	// 29 Pegasus-Mercury Let
-		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
+		L'␏', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
 		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
 		'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 
-		'X', 'Y', 'Z', '\033', '.', '?', L'£', '\b'
+		'X', 'Y', 'Z', L'␎', '.', '?', L'£', '\b'
 	},
 	{	//30 Pegasus-Mercury Fig
-		'\0', '1', '2', '*', '4', '(', ')', '7', 
+		L'␏', '1', '2', '*', '4', '(', ')', '7', 
 		'8', L'≠', '=', '-', L'υ', '\n', ' ', ',', 
 		'0', '>', 0x2265, '3', L'→', '5', '6', '/', 
-		L'×', '9', '+', '\n', '.', L'η', '\r', '\b'
+		L'×', '9', '+', L'␎', '.', L'η', '\r', '\b'
 	},
 	{	//31 Pegasus-Flexowriter Let Lower
-		'\0', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 
+		L'␏', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 
 		'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
 		'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 
-		'x', 'y', 'z', '\033', ' ', '\035', '\036', '\b'
+		'x', 'y', 'z', L'␎', ' ', L'␏', L'␏', '\b'
 	},
 	{	//32 Pegasus-Flexowriter Fig Lower
-		'\0', '1', '2', '\003', '4', '\005', '\006', '7', 
+		L'␏', '1', '2', '\003', '4', '\005', '\006', '7', 
 		'8', '+', '-', 0x247e, 0x2409, '\n', '.', L'·', 
 		'0', '\021', '\022', '3', '\024', '5', '6', '\b', 
-		'\030', '0', 0x247d, '\033', ' ', '\035', '\036', '\b'
+		'\030', '0', 0x247d, L'␎', ' ', L'␏', L'␏', '\b'
 	},
 	{	//33 Pegasus-Flexowriter Let Upper
-		'\0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
+		L'␏', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
 		'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
 		'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 
-		'X', 'Y', 'Z', '\033', ' ', '\035', '\036', '\b'
+		'X', 'Y', 'Z', L'␎', ' ', L'␏', L'␏', '\b'
 	},
 	{	//34 Pegasus-Flexowriter Fig Upper
-		'\0', L'¼', L'½', '\003', '/', '\005', '\006', '<', 
+		L'␏', L'¼', L'½', '\003', '/', '\005', '\006', '<', 
 		'>', '\'', '\r', ':', '\t', '\n', ',', L'·', 
 		L'£', '\021', '\022', L'¾', '\024', '&', '?', '\b', 
-		'\030', '%', '=', '\033', ' ', '\035', '\036', '\b'
+		'\030', '%', '=', L'␎', ' ', L'␏', L'␏', '\b'
 	},
 	{	// 35 Baudot Original UK Let
 		'\0', 'A', 'E', '/', 'Y', 'U', 'I', 'O', 
-		' ', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
+		L'␏', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
 		' ', '-', 'X', 'Z', 'S', 'T', 'W', 'V', 
 		'\b', 'K', 'M', 'L', 'R', 'Q', 'N', 'P'
 	},
 	{	// 36 Baudot Original UK Fig
 		'\0', '1', '2', L'⅟', '3', '4', L'³', '5', 
 		' ', '6', '7', L'¹', '8', '9', L'⁵', '0', 
-		' ', '.', L'⁹', ':', L'⁷', L'²', '?', '\'', 
+		L'␎', '.', L'⁹', ':', L'⁷', L'²', '?', '\'', 
 		'\b', '(', ')', '=', '-', '/', L'£', '+'
 	},
 	{	// 37 Baudot Original Continental Let
 		'\0', 'A', 'E', L'É', 'Y', 'U', 'I', 'O', 
-		' ', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
+		L'␏', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
 		' ', '-', 'X', 'Z', 'S', 'T', 'W', 'V', 
 		'\b', 'K', 'M', 'L', 'R', 'Q', 'N', 'P'
 	},
 	{	// 38 Baudot Original Continental Fig
 		'\0', '1', '2', '&', '3', '4', L'°', '5', 
 		' ', '6', '7', L'ʰ', '8', '9', L'ᶠ', '0', 
-		' ', '.', ',', ':', ';', '!', '?', '\'', 
+		L'␎', '.', ',', ':', ';', '!', '?', '\'', 
 		'\b', '(', ')', '=', '-', '/', L'№', '%'
 	},
 	{	// 39 Baudot-Murray Let
-		' ', 'E', '\t', 'A', ' ', 'S', 'I', 'U', 
+		' ', 'E', '\t', 'A', L'␎', 'S', 'I', 'U', 
 		'\n', 'D', 'R', 'J', 'N', 'F', 'C', 'K', 
 		'T', 'Z', 'L', 'W', 'H', 'Y', 'P', 'Q', 
-		'O', 'B', 'G', ' ', 'M', 'X', 'V', '\b'
+		'O', 'B', 'G', L'␏', 'M', 'X', 'V', '\b'
 	},
 	{	// 40 Baudot-Murray Fig
-		' ', '3', '\t', ' ', ' ', '\'', '8', '7', 
+		' ', '3', '\t', L'·', L'␎', '\'', '8', '7', 
 		'\n', L'²', '4', L'⁷', '-', L'⅟', '(', L'⁹', 
 		'5', '.', '/', '2', L'⁵', '6', '0', '1', 
-		'9', '?', L'³', ' ', ',', L'£', ')', '\b'
+		'9', '?', L'³', L'␏', ',', L'£', ')', '\b'
 	},
 	{	// 41 Baudot ITA2 Let
 		'\0', 'E', '\n', 'A', ' ', 'S', 'I', 'U', 
 		'\r', 'D', 'R', 'J', 'N', 'F', 'C', 'K', 
 		'T', 'Z', 'L', 'W', 'H', 'Y', 'P', 'Q', 
-		'O', 'B', 'G', ' ', 'M', 'X', 'V', '\b'
+		'O', 'B', 'G', L'␏', 'M', 'X', 'V', '\b'
 	},
 	{	// 42 Baudot ITA2/US Fig
 		'\0', '3', '\n', '-', ' ', '\a', '8', '7', 
 		'\r', '$', '4', '\'', ',', '!', ':', '(', 
 		'5', '"', ')', '2', '#', '6', '0', '1', 
-		'9', '?', '?', '&', ' ', '.', '/', ' '
+		'9', '?', '?', '&', L'␏', '.', '/', L'␎'
 	},
 	{	// 43 Baudot ITA2 Fig
 		'\0', '3', '\n', '-', ' ', '\'', '8', '7', 
-		'\r', ' ', '4', '\a', ',', '!', ':', '(', 
+		'\r', L'␅', '4', '\a', ',', '!', ':', '(', 
 		'5',  '+', ')', '2',  L'£','6', '0', '1', 
-		'9', '?', '&', ' ', '.', '/', '=', ' ' 
+		'9', '?', '&', L'␏', '.', '/', '=', L'␎' 
 	},
 	{	// 44 Baudot ITA2 Weather Fig
 		'-', '3', '\n', L'↑', ' ', '\a', '8', '7', 
 		'\r', L'↗', '4', L'↙', L'◍', L'→', L'○', L'←', 
 		'5',  '+', L'↖', '2',  L'↓','6', '0', '1', 
-		'9', L'⊕', L'↘', L'·', '.', '/', L'⦶', ' ' 
+		'9', L'⊕', L'↘', L'·', '.', '/', L'⦶', L'␎' 
+	},
+	{	// 45 Baudot ITA1 Let
+		'\0', 'A', 'E', '\r', 'Y', 'U', 'I', 'O', 
+		L'␏', 'J', 'G', 'H', 'B', 'C', 'F', 'D', 
+		' ', '\n', 'X', 'Z', 'S', 'T', 'W', 'V', 
+		'\b', 'K', 'M', 'L', 'R', 'Q', 'N', 'P'
+	},
+	{	// 46 Baudot ITA1 Fig
+		'\0', '1', '2', '\r', '3', '4', L'␑', '5', 
+		' ', '6', '7', '+', '8', '9', L'␒', '0', 
+		L'␎', '\n', ',', ':', '.', L'␓', '?', '\'', 
+		'\b', '(', ')', '=', '-', '/', L'␔', '%'
 	},
 };
 //		'', '', '', '', '', '', '', '', 
@@ -561,20 +579,27 @@ unsigned char changebitmode(unsigned char c, int from, int to){
 	return c;
 }
 
-wchar_t baudot_enc(wchar_t utf, int *mode, int code, int bitmode, int autoreset){
-	int i,tab;
-	wchar_t c;
+size_t baudot_enc(wchar_t utf, size_t *mode, int code, int bitmode, int autoreset){
+	size_t i,tab;
+//	wchar_t c;
 	
 	if (iswlower(utf) && codetable[code].shifts<4) utf = towupper(utf); //most are uppercase only
-	for(tab=0; tab<codetable[code].shifts; tab++){
-		for(i=0, c=-1; i<32; i++){ 
-			//printf("%d %d\n", utf, letter[codetable[code].table[tab]][i]);
-			if(utf == letter[codetable[code].table[tab]][i]) {c=i; break;}
-		}
-		if(c != -1) break;
+	for(i=0; i<32; i++){ // check active codetab first
+		if(utf == letter[codetable[code].table[*mode]][i]) goto found;
 	}
-	if(c == -1) return c;
-
+	for(tab=0; tab<codetable[code].shifts; tab++){
+		if(tab == *mode) continue; // we checked already
+		for(i=0; i<32; i++){ // check the other tabs
+			//printf("%d %d\n", utf, letter[codetable[code].table[tab]][i]);
+			if(utf == letter[codetable[code].table[tab]][i]) goto settab;
+		}
+	}
+settab:
+	putchar(changebitmode(codetable[code].shiftcode[tab], codetable[code].bitmode, bitmode));
+	*mode=tab;
+found:
+	putchar(changebitmode(i, codetable[code].bitmode, bitmode));
+/*
 	//printf("%02x ",c);
 	//if same char in current map stay on map
 	if(utf==letter[codetable[code].table[*mode]][i]) tab=*mode;
@@ -595,26 +620,39 @@ wchar_t baudot_enc(wchar_t utf, int *mode, int code, int bitmode, int autoreset)
 		putchar(changebitmode(codetable[code].shiftcode[2|(tab>>1)],codetable[code].bitmode,bitmode));
 	}
 	putchar(changebitmode(c,codetable[code].bitmode,bitmode));
-	return c;
+*/
+	return i;
 }
 
-wint_t baudot_dec(wchar_t baudot, int *mode, int code, int bitmode, int autoreset){
-	wint_t c=0;
-	int tab;
+wchar_t baudot_dec(wchar_t baudot, size_t *mode, int code, int bitmode, int autoreset){
+	wchar_t c=0;
 
 	baudot = changebitmode(baudot&0x1f, bitmode, codetable[code].bitmode);
-
+	
+	if(letter[codetable[code].table[*mode]][baudot]==L'␎' || letter[codetable[code].table[*mode]][baudot]==L'␏'){
+		for(size_t m=0; m<codetable[code].shifts; m++){
+			if(codetable[code].shiftcode[m]==baudot){
+				*mode=m;
+				//fprintf(stdout, "mode %ld\n",m);
+				return c;
+			}
+		}
+	}
+/*
 	for(tab=0; tab<codetable[code].shifts; tab++){
 		if(baudot==codetable[code].shiftcode[tab]) {
+			if(L'␏'!=letter[codetable[code].table[*mode]][baudot] && L'␎'!=letter[codetable[code].table[*mode]][baudot]) 
+				fpututf8c(letter[codetable[code].table[*mode]][baudot], stdout);
 			if(tab<2) 
 				*mode=(*mode&2)|tab;
 			else 
 				*mode=(*mode&1)|((tab&1)<<1);
-			//if(' '==letter[codetable[code].table[*mode]][baudot]) fpututf8c(L' ', stdout);
 			return c;
 		}
 	}
+*/
 	c=letter[codetable[code].table[*mode]][baudot];
+	//fprintf(stderr, "%02X %d %c\n", baudot, c, c);//
 	fpututf8c(c, stdout);
 	return c;
 }
@@ -623,7 +661,7 @@ void list(){
 	char *mode[]={"FromRight", "Baudot", "FromLeft"};
 	int i;
 	for(i=0; i<sizeof(codetable)/sizeof(tape); i++){
-		printf("%2d %s (Bitmode=%d - %s)\n", i, codetable[i].name,codetable[i].bitmode,mode[codetable[i].bitmode]);
+		fprintf(stderr,"%2d %s (Bitmode=%d - %s)\n", i, codetable[i].name,codetable[i].bitmode,mode[codetable[i].bitmode]);
 	}
 }
 
@@ -643,7 +681,8 @@ void help(char *name){
 
 
 int main(int argc, char **argv){
-	int opt,mode,code=7,bitmode=-1,autoreset=0;
+	int opt, code=7,bitmode=-1,autoreset=0;
+	size_t mode;
 	bool verbose=false;
 	wchar_t ch;
 //	extern char *optarg;
