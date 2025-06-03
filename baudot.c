@@ -95,84 +95,109 @@ tape codetable[]={
 	{37,38},
 	{'\x08','\x10'}
 },{//10
+	"Baudot-Murray (Variant 0x04/0x1b)",
+	ORDER_FROMRIGHT,
+	2,
+	{39,40},
+	{'\x04','\x1b'}
+},{//11
+	"Baudot (Variant ITA2/US-TTY)",
+	ORDER_FROMRIGHT,
+	2,
+	{41,42},
+	{'\x1f','\x1b'}
+},{//12
+	"Baudot (Variant ITA2)",
+	ORDER_FROMRIGHT,
+	2,
+	{41,43},
+	{'\x1f','\x1b'}
+},{//13
+	"Baudot (Variant ITA2/Weather)",
+	ORDER_FROMRIGHT,
+	2,
+	{41,44},
+	{'\x1f','\x1b'}
+},{//14
 	"Alcor (Algol 60, DIN)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,13},
 	{'\037', '\033'}
-},{//11
+},{//15
 	"Teletype (US CCITT#2)",
 	ORDER_FROMRIGHT,
 	2,
 	{11, 14},
 	{'\037', '\033'}
-},{//12
+},{//16
 	"AT&T (US Stock Market)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,15},
 	{'\037','\033'}
-},{//13
+},{//17
 	"Flexowriter",
 	ORDER_FROMRIGHT,
 	2,
 	{11,16},
 	{'\037','\033'}
-},{//14
+},{//18
 	"Metro-Vick 950",
 	ORDER_FROMRIGHT,
 	2,
 	{17,18},
 	{'\0', '\033'}
-},{//15
+},{//19
 	"Elliott 405",
 	ORDER_FROMRIGHT,
 	2,
 	{19,20},
 	{'\037', '\033'}
-},{//16
+},{//20
 	"EMI 2400",
 	ORDER_FROMRIGHT,
 	2,
 	{21,22},
 	{'\0', '\037'}
-},{//17
+},{//21
 	"BSI Proposal",
 	ORDER_FROMRIGHT,
 	2,
 	{23,24},
 	{'\037','\033'}
-},{//18
+},{//22
 	"Stantec Zebra",
 	ORDER_FROMLEFT,
 	1,
 	{25},
 	{255}
-},{//19
+},{//23
 	"EMI M/C Tool",
 	ORDER_FROMLEFT,
 	1,
 	{26},
 	{255}
-},{//20
+},{//24
 	"EMI 1100",
 	ORDER_FROMLEFT,
 	2,
 	{27, 28},
 	{'\036','\0'}
-},{//21
+},{//25
 	"Pegasus-Mercury",
 	ORDER_FROMLEFT,
 	2,
 	{29,30},
 	{'\033','\0'}
-},{//22
+},{//26
 	"Pegasus-Flexowriter",
 	ORDER_FROMLEFT,
 	4,
 	{31,32,33,34},
 	{'\033','\0','\036','\035'}
-}};
+}
+};
 
 static wchar_t letter[][32] = {
 	// Lorenz:
@@ -414,9 +439,100 @@ static wchar_t letter[][32] = {
 		' ', '.', ',', ':', ';', '!', '?', '\'', 
 		'\b', '(', ')', '=', '-', '/', L'№', '%'
 	},
+	{	// 39 Baudot-Murray Let
+		' ', 'E', '\t', 'A', ' ', 'S', 'I', 'U', 
+		'\n', 'D', 'R', 'J', 'N', 'F', 'C', 'K', 
+		'T', 'Z', 'L', 'W', 'H', 'Y', 'P', 'Q', 
+		'O', 'B', 'G', ' ', 'M', 'X', 'V', '\b'
+	},
+	{	// 40 Baudot-Murray Fig
+		' ', '3', '\t', ' ', ' ', '\'', '8', '7', 
+		'\n', L'²', '4', L'⁷', '-', L'⅟', '(', L'⁹', 
+		'5', '.', '/', '2', L'⁵', '6', '0', '1', 
+		'9', '?', L'³', ' ', ',', L'£', ')', '\b'
+	},
+	{	// 41 Baudot ITA2 Let
+		'\0', 'E', '\n', 'A', ' ', 'S', 'I', 'U', 
+		'\r', 'D', 'R', 'J', 'N', 'F', 'C', 'K', 
+		'T', 'Z', 'L', 'W', 'H', 'Y', 'P', 'Q', 
+		'O', 'B', 'G', ' ', 'M', 'X', 'V', '\b'
+	},
+	{	// 42 Baudot ITA2/US Fig
+		'\0', '3', '\n', '-', ' ', '\a', '8', '7', 
+		'\r', '$', '4', '\'', ',', '!', ':', '(', 
+		'5', '"', ')', '2', '#', '6', '0', '1', 
+		'9', '?', '?', '&', ' ', '.', '/', ' '
+	},
+	{	// 43 Baudot ITA2 Fig
+		'\0', '3', '\n', '-', ' ', '\'', '8', '7', 
+		'\r', ' ', '4', '\a', ',', '!', ':', '(', 
+		'5',  '+', ')', '2',  L'£','6', '0', '1', 
+		'9', '?', '&', ' ', '.', '/', '=', ' ' 
+	},
+	{	// 44 Baudot ITA2 Weather Fig
+		'-', '3', '\n', L'↑', ' ', '\a', '8', '7', 
+		'\r', L'↗', '4', L'↙', L'◍', L'→', L'○', L'←', 
+		'5',  '+', L'↖', '2',  L'↓','6', '0', '1', 
+		'9', L'⊕', L'↘', L'·', '.', '/', L'⦶', ' ' 
+	},
 };
 //		'', '', '', '', '', '', '', '', 
 
+wint_t fgetutf8c(FILE *fp){
+	wint_t utf, ch;
+	int i;
+	
+	ch=fgetc(fp);
+	if(ch==EOF) {
+		return WEOF;
+	}
+	if((0x80&ch) == 0) {
+		return ch;
+	}
+	for(i=0;ch&(0x40>>i)!=0;i++);
+	if(i>4) i=4;
+	utf=ch&(0x3f>>i);
+	do{
+		ch=getc(fp);
+		if(ch==EOF) return WEOF;
+		if((0xc0&ch) != 0x80) return WEOF;
+		utf=(utf<<6)|(ch&0x3f);
+	}while(--i > 0);
+	return utf;
+}
+
+wint_t fpututf8c(wchar_t utf, FILE *fp){
+	int res, i;
+	if(utf<128) {
+		return fputc(utf, fp);
+	}else
+	if(utf<2048) {
+		res=fputc(0xc0|(utf>>6), fp);
+		if(res==EOF) return WEOF;
+		for(i=0;i>=0;i--){
+			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
+			if(res==EOF) return WEOF;
+		}
+	}else
+	if(utf<65536) {
+		res=fputc(0xe0|(utf>>12), fp);
+		if(res==EOF) return WEOF;
+
+		for(i=1;i>=0;i--){
+			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
+			if(res==EOF) return WEOF;
+		}
+	}else{//>=65536
+		res=fputc(0xf0|(utf>>18), fp);
+		if(res==EOF) return WEOF;
+
+		for(i=2;i>=0;i--){
+			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
+			if(res==EOF) return WEOF;
+		}
+	}
+	return utf;
+}
 // Bits in paper countet as BAUDOT 54·123, FROMRIGHT 54·321, FROMLEFT 12·345
 unsigned char changebitmode(unsigned char c, int from, int to){
 	if(from==to || to==-1 || from==-1) return c;
@@ -445,8 +561,9 @@ unsigned char changebitmode(unsigned char c, int from, int to){
 	return c;
 }
 
-int baudot_enc(wint_t utf, int *mode, int code, int bitmode, int autoreset){
-	int i,tab, c;
+wchar_t baudot_enc(wchar_t utf, int *mode, int code, int bitmode, int autoreset){
+	int i,tab;
+	wchar_t c;
 	
 	if (iswlower(utf) && codetable[code].shifts<4) utf = towupper(utf); //most are uppercase only
 	for(tab=0; tab<codetable[code].shifts; tab++){
@@ -481,7 +598,7 @@ int baudot_enc(wint_t utf, int *mode, int code, int bitmode, int autoreset){
 	return c;
 }
 
-int baudot_dec(wint_t baudot, int *mode, int code, int bitmode, int autoreset){
+wint_t baudot_dec(wchar_t baudot, int *mode, int code, int bitmode, int autoreset){
 	wint_t c=0;
 	int tab;
 
@@ -489,14 +606,16 @@ int baudot_dec(wint_t baudot, int *mode, int code, int bitmode, int autoreset){
 
 	for(tab=0; tab<codetable[code].shifts; tab++){
 		if(baudot==codetable[code].shiftcode[tab]) {
-			if(tab<2) *mode=(*mode&2)|tab;
-			else *mode=(*mode&1)|((tab&1)<<1);
-			if(' '==letter[codetable[code].table[*mode]][baudot]) putchar(' ');
+			if(tab<2) 
+				*mode=(*mode&2)|tab;
+			else 
+				*mode=(*mode&1)|((tab&1)<<1);
+			//if(' '==letter[codetable[code].table[*mode]][baudot]) fpututf8c(L' ', stdout);
 			return c;
 		}
 	}
 	c=letter[codetable[code].table[*mode]][baudot];
-	fputwc(c, stdout);
+	fpututf8c(c, stdout);
 	return c;
 }
 
@@ -522,66 +641,11 @@ void help(char *name){
 		"   -bBIT	bitmode (default -1=standard for coding)\n",name);
 }
 
-wint_t fgetutf8c(FILE *fp){
-	wint_t utf, ch;
-	int i;
-	
-	ch=fgetc(fp);
-	if(ch==EOF) {
-		return WEOF;
-	}
-	if((0x80&ch) == 0) {
-		return ch;
-	}
-	for(i=0;ch&(0x40>>i)!=0;i++);
-	if(i>4) i=4;
-	utf=ch&(0x3f>>i);
-	do{
-		ch=getc(fp);
-		if(ch==EOF) return WEOF;
-		if((0xc0&ch) != 0x80) return WEOF;
-		utf=(utf<<6)|(ch&0x3f);
-	}while(--i > 0);
-	return utf;
-}
-
-int fpututf8c(wint_t utf, FILE *fp){
-	int res, i;
-	if(utf<128) {
-		return fputc(utf, fp);
-	}else
-	if(utf<2048) {
-		res=fputc(0xc0|(utf>>6), fp);
-		if(res==EOF) return WEOF;
-		for(i=0;i>=0;i--){
-			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
-			if(res==EOF) return WEOF;
-		}
-	}else
-	if(utf<65536) {
-		res=fputc(0xe0|(utf>>12), fp);
-		if(res==EOF) return WEOF;
-
-		for(i=1;i>=0;i--){
-			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
-			if(res==EOF) return WEOF;
-		}
-	}else{//>=65536
-		res=fputc(0xf0|(utf>>18), fp);
-		if(res==EOF) return WEOF;
-
-		for(i=2;i>=0;i--){
-			res=fputc(0x80|((utf>>(i*6))&0x3f), fp);
-			if(res==EOF) return WEOF;
-		}
-	}
-	return utf;
-}
 
 int main(int argc, char **argv){
 	int opt,mode,code=7,bitmode=-1,autoreset=0;
 	bool verbose=false;
-	wint_t ch;
+	wchar_t ch;
 //	extern char *optarg;
 
 	while(-1 != (opt=getopt(argc, argv, "dvlc:b:h"))){
