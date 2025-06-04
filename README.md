@@ -30,22 +30,23 @@ $> sudo ln -s SOURCEPATH/baudot/baudot /usr/local/bin/
 
 ##Help:
 ```
-$> baudot -h
+> baudot -h
 baudot [OPTION]
   Encodes or decodes UTF-8 to and from Baudot-like 5-tape text encoding
   uses stdin and stdout as input and output
-  © 2007 Hanno Behrens (pebbles@schattenlauf.de) Licence GPL
+  © 2007-2025 Hanno Behrens DL7HH <behrens.hanno@gmail.com> CC-BY
 
   Available Options:
    -h   this help
    -l   list of available codings
+   -v  print verbose tables on stderr
    -d   decode from 5-tape to utf
    -cNUM        used coding (default=7)
    -bBIT        bitmode (default -1=standard for coding)
 ```
 ##Encodings:
 ```
-$> baudot -l
+> baudot -l
  0 CCITT#2 (Bitmode=2 - FromLeft)
  1 CCITT#2/US (Bitmode=2 - FromLeft)
  2 ITA-2 (Bitmode=2 - FromLeft)
@@ -54,19 +55,27 @@ $> baudot -l
  5 Illiac (Bitmode=0 - FromRight)
  6 Baudot (CCITT#1) (Bitmode=0 - FromRight)
  7 Murray (CCITT#2) (Bitmode=0 - FromRight)
- 8 Alcor (Algol 60, DIN) (Bitmode=0 - FromRight)
- 9 Teletype (US CCITT#2) (Bitmode=0 - FromRight)
-10 AT&T (US Stock Market) (Bitmode=0 - FromRight)
-11 Flexowriter (Bitmode=0 - FromRight)
-12 Metro-Vick 950 (Bitmode=0 - FromRight)
-13 Elliott 405 (Bitmode=0 - FromRight)
-14 EMI 2400 (Bitmode=0 - FromRight)
-15 BSI Proposal (Bitmode=0 - FromRight)
-16 Stantec Zebra (Bitmode=2 - FromLeft)
-17 EMI M/C Tool (Bitmode=2 - FromLeft)
-18 EMI 1100 (Bitmode=2 - FromLeft)
-19 Pegasus-Mercury (Bitmode=2 - FromLeft)
-20 Pegasus-Flexowriter (Bitmode=2 - FromLeft)
+ 8 Baudot (Original UK) (Bitmode=0 - FromRight)
+ 9 Baudot (Original Continental) (Bitmode=0 - FromRight)
+10 Baudot-Murray (Variant 0x04/0x1b) (Bitmode=0 - FromRight)
+11 Baudot (Variant ITA1) (Bitmode=0 - FromRight)
+12 Baudot (Variant ITA2/US-TTY) (Bitmode=0 - FromRight)
+13 Baudot (Variant ITA2) (Bitmode=0 - FromRight)
+14 Baudot (Variant ITA2/Weather) (Bitmode=0 - FromRight)
+15 Baudot (Variant MKT2 Russian) (Bitmode=0 - FromRight)
+16 Alcor (Algol 60, DIN) (Bitmode=0 - FromRight)
+17 Teletype (US CCITT#2) (Bitmode=0 - FromRight)
+18 AT&T (US Stock Market) (Bitmode=0 - FromRight)
+19 Flexowriter (Bitmode=0 - FromRight)
+20 Metro-Vick 950 (Bitmode=0 - FromRight)
+21 Elliott 405 (Bitmode=0 - FromRight)
+22 EMI 2400 (Bitmode=0 - FromRight)
+23 BSI Proposal (Bitmode=0 - FromRight)
+24 Stantec Zebra (Bitmode=2 - FromLeft)
+25 EMI M/C Tool (Bitmode=2 - FromLeft)
+26 EMI 1100 (Bitmode=2 - FromLeft)
+27 Pegasus-Mercury (Bitmode=2 - FromLeft)
+28 Pegasus-Flexowriter (Bitmode=2 - FromLeft)
 ```
 ##Examples
 
@@ -210,4 +219,9 @@ Who needs the  if we have the £. There is only one empire and that speaks Engli
 Well, okay, we don't have the exclamation mark.
 But everything we say is important anyway, or not?
 Just use the NORMAL LETTERS, IF YOU NEED TO BE LOUD.
+```
+###Russian 
+```
+echo "Телеграфия на русском языке также работает."|baudot -c15|baudot -d -c15
+ТЕЛЕГРАФИЯ НА РУССКОМ ЯЗЫКЕ ТАКЖЕ РАБОТАЕТ.
 ```
