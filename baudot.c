@@ -599,9 +599,9 @@ unsigned char changebitmode(unsigned char c, int from, int to){
 
 size_t baudot_enc(wint_t utf, size_t *mode, int code, int bitmode, int autoreset){
 	size_t i,tab;
-//	wchar_t c;
-	
-	if (iswlower(utf) && codetable[code].shifts<4) utf = towupper(utf); //most are uppercase only
+
+	if(iswlower(utf) && codetable[code].shifts<4) utf = towupper(utf); //most are uppercase only
+	if(utf>=0x0430 && utf<=0x044f) utf-=0x20; // а-я Russian to upper
 	for(i=0; i<32; i++){ // check active codetab first
 		if(utf == letter[codetable[code].table[*mode]][i]) goto found;
 	}
