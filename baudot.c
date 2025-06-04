@@ -125,78 +125,84 @@ tape codetable[]={
 	{41,44},
 	{'\x1f','\x1b'}
 },{//15
+	"Baudot (Variant MKT2 Russian)",
+	ORDER_FROMRIGHT,
+	2,
+	{47,48},
+	{'\x1f','\x1b'}
+},{//16
 	"Alcor (Algol 60, DIN)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,13},
 	{'\037', '\033'}
-},{//16
+},{//17
 	"Teletype (US CCITT#2)",
 	ORDER_FROMRIGHT,
 	2,
 	{11, 14},
 	{'\037', '\033'}
-},{//17
+},{//18
 	"AT&T (US Stock Market)",
 	ORDER_FROMRIGHT,
 	2,
 	{11,15},
 	{'\037','\033'}
-},{//18
+},{//19
 	"Flexowriter",
 	ORDER_FROMRIGHT,
 	2,
 	{11,16},
 	{'\037','\033'}
-},{//19
+},{//20
 	"Metro-Vick 950",
 	ORDER_FROMRIGHT,
 	2,
 	{17,18},
 	{'\0', '\033'}
-},{//20
+},{//21
 	"Elliott 405",
 	ORDER_FROMRIGHT,
 	2,
 	{19,20},
 	{'\037', '\033'}
-},{//21
+},{//22
 	"EMI 2400",
 	ORDER_FROMRIGHT,
 	2,
 	{21,22},
 	{'\0', '\037'}
-},{//22
+},{//23
 	"BSI Proposal",
 	ORDER_FROMRIGHT,
 	2,
 	{23,24},
 	{'\037','\033'}
-},{//23
+},{//24
 	"Stantec Zebra",
 	ORDER_FROMLEFT,
 	1,
 	{25},
 	{255}
-},{//24
+},{//25
 	"EMI M/C Tool",
 	ORDER_FROMLEFT,
 	1,
 	{26},
 	{255}
-},{//25
+},{//26
 	"EMI 1100",
 	ORDER_FROMLEFT,
 	2,
 	{27, 28},
 	{'\036','\0'}
-},{//26
+},{//27
 	"Pegasus-Mercury",
 	ORDER_FROMLEFT,
 	2,
 	{29,30},
 	{'\033','\0'}
-},{//27
+},{//28
 	"Pegasus-Flexowriter",
 	ORDER_FROMLEFT,
 	4,
@@ -407,7 +413,7 @@ static wchar_t letter[][32] = {
 		L'␏', '1', '2', '\003', '4', '\005', '\006', '7', 
 		'8', '+', '-', 0x247e, 0x2409, '\n', '.', L'·', 
 		'0', '\021', '\022', '3', '\024', '5', '6', '\b', 
-		'\030', '0', 0x247d, L'␎', ' ', L'␏', L'␏', '\b'
+		'\030', '9', 0x247d, L'␎', ' ', L'␏', L'␏', '\b'
 	},
 	{	//33 Pegasus-Flexowriter Let Upper
 		L'␏', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 
@@ -493,25 +499,37 @@ static wchar_t letter[][32] = {
 		L'␎', '\n', ',', ':', '.', L'␓', '?', '\'', 
 		'\b', '(', ')', '=', '-', '/', L'␔', '%'
 	},
+	{	// 47 Baudot Russian MKT2 Let
+		'\0', L'Е', '\n', L'А', ' ', L'С', L'И', L'У', 
+		'\r', L'Д', L'Р', L'Й', L'Н', L'Ф', L'Ц', L'К', 
+		L'Т', L'З', L'Л', L'В', L'Х', L'Ы', L'П', L'Я', 
+		L'О', L'Б', L'Г', L'␏', L'М', L'Ь', L'Ж', '\b'
+	},
+	{	// 48 Baudot Russian MKT2 Fig
+		'\0', '3', '\n', '-', ' ', '\'', '8', '7', 
+		'\r', L'␅', '4', '\a', ',', L'Э', ':', '(', 
+		'5',  '+', ')', '2',  L'Щ','6', '0', '1', 
+		'9', '?', L'Ш', L'␏', '.', '/', '=', L'␎'
+	},
 };
 //		'', '', '', '', '', '', '', '', 
 
 wint_t fgetutf8c(FILE *fp){
-	wint_t utf, ch;
-	int i;
-	
+	wint_t utf;
+	int ch,i;
+
 	ch=fgetc(fp);
 	if(ch==EOF) {
 		return WEOF;
 	}
-	if((0x80&ch) == 0) {
+	if((0x80 & ch) == 0) {
 		return ch;
 	}
-	for(i=0;ch&(0x40>>i)!=0;i++);
+	for(i=0; (ch & 0x40>>i) != 0;i++);
 	if(i>4) i=4;
 	utf=ch&(0x3f>>i);
 	do{
-		ch=getc(fp);
+		ch=fgetc(fp);
 		if(ch==EOF) return WEOF;
 		if((0xc0&ch) != 0x80) return WEOF;
 		utf=(utf<<6)|(ch&0x3f);
@@ -519,7 +537,7 @@ wint_t fgetutf8c(FILE *fp){
 	return utf;
 }
 
-wint_t fpututf8c(wchar_t utf, FILE *fp){
+wint_t fpututf8c(wint_t utf, FILE *fp){
 	int res, i;
 	if(utf<128) {
 		return fputc(utf, fp);
@@ -579,7 +597,7 @@ unsigned char changebitmode(unsigned char c, int from, int to){
 	return c;
 }
 
-size_t baudot_enc(wchar_t utf, size_t *mode, int code, int bitmode, int autoreset){
+size_t baudot_enc(wint_t utf, size_t *mode, int code, int bitmode, int autoreset){
 	size_t i,tab;
 //	wchar_t c;
 	
@@ -624,8 +642,8 @@ found:
 	return i;
 }
 
-wchar_t baudot_dec(wchar_t baudot, size_t *mode, int code, int bitmode, int autoreset){
-	wchar_t c=0;
+wint_t baudot_dec(wchar_t baudot, size_t *mode, int code, int bitmode, int autoreset){
+	wint_t c=0;
 
 	baudot = changebitmode(baudot&0x1f, bitmode, codetable[code].bitmode);
 	
