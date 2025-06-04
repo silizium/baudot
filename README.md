@@ -77,6 +77,7 @@ baudot [OPTION]
 27 Pegasus-Mercury (Bitmode=2 - FromLeft)
 28 Pegasus-Flexowriter (Bitmode=2 - FromLeft)
 ```
+
 ##Examples
 
 Simple test, will output in shifted letters for 
@@ -123,8 +124,8 @@ Table 7: Murray (CCITT#2) encoding Bitmode 6
 Print on simulated paper punch
 The ppt program is part of the "bsdgames" package.
 ```
-5070> echo "the enemy attacks at dawn" | baudot -c9|ppt >&2|ppt -d|baudot -c9 -d    
-Table 9: Teletype (US CCITT#2) encoding Bitmode -1
+5070> echo "the enemy attacks at dawn" | baudot -c17|ppt >&2|ppt -d|baudot -c17 -d    
+Table 17: Teletype (US CCITT#2) encoding Bitmode -1
 ___________
 |     .  o|
 |     .o o|
@@ -153,7 +154,7 @@ ___________
 |     .oo |
 |    o.   |
 ___________
-Table 9: Teletype (US CCITT#2) decoding Bitmode -1
+Table 17: Teletype (US CCITT#2) decoding Bitmode -1
 THE ENEMY ATTACKS AT DAWN
 ```
 Print UTF8 over TELETYPE and back
@@ -168,8 +169,8 @@ tree! Never mind the small characters. Who needs them anyway?
 Seymour Cray never did mind the small characters. Why should 
 we? 
 ```
-$> echo "Über den Hügel"|idn | baudot -c9|ppt >&2|ppt -d|baudot -c9 -d |idn -u           
-Table 9: Teletype (US CCITT#2) encoding Bitmode -1
+$> echo "Über den Hügel"|idn | baudot -c17|ppt >&2|ppt -d|baudot -c17 -d |idn -u           
+Table 17: Teletype (US CCITT#2) encoding Bitmode -1
 ___________
 |   o .ooo|
 |     .oo |
@@ -198,14 +199,14 @@ ___________
 |   oo. o |
 |    o.   |
 ___________
-Table 9: Teletype (US CCITT#2) decoding Bitmode -1
+Table 17: Teletype (US CCITT#2) decoding Bitmode -1
 üBER DEN HüGEL
 ```
 And if we want that damn small characters, we chose the ultra-modern Pegasus-Flexowriter! But I don't think, 
 anyone will ever need these superfluous features that those eggheads in their labcoats wanted.
 ```
-$> echo "We can do IT\!\n4¼ 3¾ 2½.\nWho needs the \$ if we have the £. There is only one empire and that speaks English.\nWell, okay, we don't have the exclamation mark.\nBut everything we say is important anyway, or not?\nJust use the NORMAL LETTERS, IF YOU NEED TO BE LOUD."|tee >&2|baudot -c20|baudot -c20 -d 
-Table 20: Pegasus-Flexowriter encoding Bitmode -1
+$> echo "We can do IT\!\n4¼ 3¾ 2½.\nWho needs the \$ if we have the £. There is only one empire and that speaks English.\nWell, okay, we don't have the exclamation mark.\nBut everything we say is important anyway, or not?\nJust use the NORMAL LETTERS, IF YOU NEED TO BE LOUD."|tee >&2|baudot -c28|baudot -c28 -d 
+Table 28: Pegasus-Flexowriter encoding Bitmode -1
 We can do IT!
 4¼ 3¾ 2½.
 Who needs the $ if we have the £. There is only one empire and that speaks English.
